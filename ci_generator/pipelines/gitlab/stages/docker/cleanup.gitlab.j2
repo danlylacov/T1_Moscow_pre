@@ -1,0 +1,7 @@
+cleanup:
+  stage: cleanup
+  image: docker:24
+  services:
+    - docker:24-dind
+  script:
+    - docker system prune -f || true

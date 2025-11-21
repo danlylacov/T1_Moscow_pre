@@ -1,0 +1,18 @@
+run_migrations:
+  stage: deploy
+  image: python:${PYTHON_VERSION:-3.11}
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}-python
+    paths:
+      - .pip-cache
+  before_script:
+    - pip install --cache-dir .pip-cache -r requirements.txt
+  script:
+    - python manage.py migrate --check || python manage.py migrate
+  only:
+    - main
+  when: manual
+  environment:
+    name: production
+
+

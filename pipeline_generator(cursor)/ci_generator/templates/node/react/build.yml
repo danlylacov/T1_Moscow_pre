@@ -1,0 +1,18 @@
+build:
+  stage: build
+  image: node:${NODE_VERSION:-18}
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}-node
+    paths:
+      - node_modules/
+  dependencies:
+    - install_dependencies
+  script:
+    - npm run build
+  artifacts:
+    paths:
+      - build/
+      - dist/
+    expire_in: 1 week
+
+

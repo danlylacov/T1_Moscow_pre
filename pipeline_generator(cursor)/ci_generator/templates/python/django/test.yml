@@ -1,0 +1,28 @@
+test:
+  stage: test
+  image: python:${PYTHON_VERSION:-3.11}
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}-python
+    paths:
+      - .pip-cache
+  services:
+    - postgres:15
+  variables:
+    POSTGRES_DB: test_db
+    POSTGRES_USER: postgres
+    POSTGRES_PASSWORD: postgres
+    DATABASE_URL: "postgresql://postgres:postgres@postgres:5432/test_db"
+  dependencies: []
+  before_script:
+    - pip install --cache-dir .pip-cache -r requirements.txt
+    - pip install pytest pytest-django pytest-cov
+  script:
+    - python manage.py migrate
+    - pytest tests/ -v --cov=. --cov-report=xml
+  artifacts:
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage.xml
+    expire_in: 1 week
+

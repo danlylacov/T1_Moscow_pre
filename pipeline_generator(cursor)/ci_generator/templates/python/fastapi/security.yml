@@ -1,0 +1,20 @@
+security_scan:
+  stage: security
+  image: python:${PYTHON_VERSION:-3.11}
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}-python
+    paths:
+      - .pip-cache
+  dependencies: []
+  before_script:
+    - pip install --cache-dir .pip-cache bandit safety
+  script:
+    - bandit -r . -f json -o bandit-report.json || true
+    - safety check --json || true
+  artifacts:
+    reports:
+      sast: bandit-report.json
+    expire_in: 1 week
+  allow_failure: true
+
+

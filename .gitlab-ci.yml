@@ -1,0 +1,73 @@
+
+stages:
+  - install
+  - lint
+  - test
+  - build
+  - security
+  - deploy
+
+variables:
+  PYTHON_VERSION: "3.11"
+
+image: python:$PYTHON_VERSION
+
+before_script:
+  - python --version
+  - pip install --upgrade pip
+
+install:
+  stage: install
+  script:
+    - pip install -r requirements.txt
+  cache:
+    paths:
+      - .cache/pip
+    policy: pull-push
+
+lint:
+  stage: lint
+  script:
+    - pip install flake8 black
+    - flake8 . --max-line-length=88 --extend-ignore=E203,W503
+    - black --check --diff .
+  only:
+    - merge_requests
+
+test:
+  stage: test
+  script:
+    - pip install pytest
+    - pytest tests/ -v
+
+security:
+  stage: security
+  script:
+    - pip install bandit safety
+    - bandit -r . -f html -o security-report.html
+    - safety check --json
+  allow_failure: true
+
+build:
+  stage: build
+  image: docker:latest
+  services:
+    - docker:dind
+  variables:
+    DOCKER_TLS_CERTDIR: "/certs"
+  script:
+    - docker build -t $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG .
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - docker push $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG
+  only:
+    - main
+    - develop
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploying application..."
+    - echo "Add your deployment scripts here"
+  only:
+    - main
+  when: manual

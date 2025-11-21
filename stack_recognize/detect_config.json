@@ -1,0 +1,556 @@
+{
+  "languages": {
+    "python": {
+      "extensions": [".py", ".pyw", ".pyx", ".pxd", ".pyi"],
+      "config_files": ["requirements.txt", "pyproject.toml", "setup.py", "Pipfile", "tox.ini"],
+      "package_managers": ["pip", "poetry", "pipenv"]
+    },
+    "javascript": {
+      "extensions": [".js", ".jsx", ".mjs", ".cjs"],
+      "config_files": ["package.json"],
+      "package_managers": ["npm", "yarn", "pnpm"]
+    },
+    "typescript": {
+      "extensions": [".ts", ".tsx"],
+      "config_files": ["tsconfig.json", "package.json"],
+      "package_managers": ["npm", "yarn", "pnpm"]
+    },
+    "java": {
+      "extensions": [".java", ".jar", ".war", ".class"],
+      "config_files": ["pom.xml", "build.gradle", "build.gradle.kts", "build.xml"],
+      "package_managers": ["maven", "gradle"]
+    },
+    "csharp": {
+      "extensions": [".cs", ".csproj", ".sln", ".xproj"],
+      "config_files": ["*.csproj", "*.sln", "project.json", "packages.config"],
+      "package_managers": ["nuget"]
+    },
+    "cpp": {
+      "extensions": [".cpp", ".cc", ".cxx", ".c++", ".h", ".hpp", ".hh", ".hxx"],
+      "config_files": ["CMakeLists.txt", "Makefile", "configure", "*.pro", "*.pri"],
+      "package_managers": ["vcpkg", "conan"]
+    },
+    "c": {
+      "extensions": [".c"],
+      "config_files": ["Makefile", "configure", "autoconf", "CMakeLists.txt"],
+      "package_managers": []
+    },
+    "go": {
+      "extensions": [".go"],
+      "config_files": ["go.mod", "go.sum", "Gopkg.toml", "glide.yaml"],
+      "package_managers": ["go mod", "dep", "glide"]
+    },
+    "rust": {
+      "extensions": [".rs", ".rlib"],
+      "config_files": ["Cargo.toml", "Cargo.lock"],
+      "package_managers": ["cargo"]
+    },
+    "php": {
+      "extensions": [".php", ".phtml", ".php3", ".php4", ".php5", ".php7", ".phps"],
+      "config_files": ["composer.json", "composer.lock", "phpunit.xml"],
+      "package_managers": ["composer"]
+    },
+    "ruby": {
+      "extensions": [".rb", ".rbw", ".rake", ".gemspec"],
+      "config_files": ["Gemfile", "Gemfile.lock", "Rakefile", "*.gemspec"],
+      "package_managers": ["bundler", "gem"]
+    },
+    "swift": {
+      "extensions": [".swift"],
+      "config_files": ["Package.swift", "*.xcodeproj", "*.xcworkspace"],
+      "package_managers": ["swift package manager", "cocoapods"]
+    },
+    "kotlin": {
+      "extensions": [".kt", ".kts"],
+      "config_files": ["build.gradle.kts", "pom.xml"],
+      "package_managers": ["gradle", "maven"]
+    },
+    "scala": {
+      "extensions": [".scala", ".sc"],
+      "config_files": ["build.sbt", "pom.xml", "build.gradle"],
+      "package_managers": ["sbt", "maven", "gradle"]
+    },
+    "haskell": {
+      "extensions": [".hs", ".lhs"],
+      "config_files": ["*.cabal", "stack.yaml", "package.yaml"],
+      "package_managers": ["cabal", "stack"]
+    },
+    "elixir": {
+      "extensions": [".ex", ".exs"],
+      "config_files": ["mix.exs", "mix.lock"],
+      "package_managers": ["mix"]
+    },
+    "erlang": {
+      "extensions": [".erl", ".hrl"],
+      "config_files": ["rebar.config", "erlang.mk"],
+      "package_managers": ["rebar", "erlang.mk"]
+    },
+    "clojure": {
+      "extensions": [".clj", ".cljs", ".cljc", ".edn"],
+      "config_files": ["project.clj", "deps.edn", "build.boot", "shadow-cljs.edn"],
+      "package_managers": ["leiningen", "boot", "clojure cli"]
+    },
+    "r": {
+      "extensions": [".r", ".R", ".Rmd", ".Rnw"],
+      "config_files": ["DESCRIPTION", "NAMESPACE"],
+      "package_managers": ["cran"]
+    },
+    "matlab": {
+      "extensions": [".m", ".mat"],
+      "config_files": [],
+      "package_managers": []
+    },
+    "perl": {
+      "extensions": [".pl", ".pm", ".t", ".pod"],
+      "config_files": ["Makefile.PL", "Build.PL", "cpanfile"],
+      "package_managers": ["cpan", "cpanm"]
+    },
+    "lua": {
+      "extensions": [".lua"],
+      "config_files": ["*.rockspec"],
+      "package_managers": ["luarocks"]
+    },
+    "dart": {
+      "extensions": [".dart"],
+      "config_files": ["pubspec.yaml", "pubspec.lock"],
+      "package_managers": ["pub"]
+    },
+    "elm": {
+      "extensions": [".elm"],
+      "config_files": ["elm.json"],
+      "package_managers": ["elm"]
+    },
+    "julia": {
+      "extensions": [".jl"],
+      "config_files": ["Project.toml", "Manifest.toml"],
+      "package_managers": ["julia pkg"]
+    },
+    "objective-c": {
+      "extensions": [".m", ".mm"],
+      "config_files": ["*.xcodeproj", "*.xcworkspace", "Podfile"],
+      "package_managers": ["cocoapods"]
+    },
+    "sql": {
+      "extensions": [".sql", ".psql"],
+      "config_files": [],
+      "package_managers": []
+    },
+    "html": {
+      "extensions": [".html", ".htm", ".xhtml"],
+      "config_files": [],
+      "package_managers": []
+    },
+    "css": {
+      "extensions": [".css", ".scss", ".sass", ".less", ".styl"],
+      "config_files": ["package.json"],
+      "package_managers": ["npm", "yarn"]
+    },
+    "shell": {
+      "extensions": [".sh", ".bash", ".zsh", ".fish", ".ksh"],
+      "config_files": [".bashrc", ".zshrc", "Makefile"],
+      "package_managers": []
+    },
+    "powershell": {
+      "extensions": [".ps1", ".psm1", ".psd1"],
+      "config_files": [],
+      "package_managers": []
+    },
+    "vbnet": {
+      "extensions": [".vb", ".vbproj"],
+      "config_files": ["*.vbproj"],
+      "package_managers": ["nuget"]
+    },
+    "fsharp": {
+      "extensions": [".fs", ".fsx", ".fsi", ".fsproj"],
+      "config_files": ["*.fsproj", "paket.dependencies"],
+      "package_managers": ["nuget", "paket"]
+    },
+    "ocaml": {
+      "extensions": [".ml", ".mli", ".mll", ".mly"],
+      "config_files": ["dune", "dune-project", "*.opam"],
+      "package_managers": ["opam", "dune"]
+    },
+    "pascal": {
+      "extensions": [".pas", ".pp", ".p", ".inc"],
+      "config_files": ["*.dpr", "*.lpi"],
+      "package_managers": []
+    },
+    "fortran": {
+      "extensions": [".f", ".for", ".f90", ".f95", ".f03", ".f08"],
+      "config_files": ["Makefile"],
+      "package_managers": []
+    },
+    "cobol": {
+      "extensions": [".cbl", ".cob", ".cpy"],
+      "config_files": [],
+      "package_managers": []
+    },
+    "groovy": {
+      "extensions": [".groovy", ".gvy", ".gy", ".gsh"],
+      "config_files": ["build.gradle"],
+      "package_managers": ["gradle"]
+    },
+    "terraform": {
+      "extensions": [".tf", ".tfvars", ".tf.json"],
+      "config_files": [],
+      "package_managers": []
+    },
+    "dockerfile": {
+      "extensions": [".dockerfile"],
+      "config_files": ["Dockerfile"],
+      "package_managers": []
+    },
+    "yaml": {
+      "extensions": [".yml", ".yaml"],
+      "config_files": [],
+      "package_managers": []
+    },
+    "xml": {
+      "extensions": [".xml"],
+      "config_files": [],
+      "package_managers": []
+    },
+    "json": {
+      "extensions": [".json"],
+      "config_files": [],
+      "package_managers": []
+    },
+    "markdown": {
+      "extensions": [".md", ".markdown"],
+      "config_files": [],
+      "package_managers": []
+    },
+    "latex": {
+      "extensions": [".tex", ".bib", ".cls", ".sty"],
+      "config_files": [],
+      "package_managers": []
+    },
+    "vue": {
+      "extensions": [".vue"],
+      "config_files": ["package.json"],
+      "package_managers": ["npm", "yarn"]
+    },
+    "svelte": {
+      "extensions": [".svelte"],
+      "config_files": ["package.json"],
+      "package_managers": ["npm", "yarn"]
+    },
+    "angular": {
+      "extensions": [".ts"],
+      "config_files": ["angular.json", "package.json"],
+      "package_managers": ["npm", "yarn"]
+    }
+  },
+  "frameworks": {
+    "django": {
+      "files": ["manage.py", "wsgi.py", "asgi.py"],
+      "patterns": ["from django", "import django", "django\\."],
+      "dependencies": ["django"]
+    },
+    "flask": {
+      "files": ["app.py", "application.py"],
+      "patterns": ["from flask", "import flask", "flask\\."],
+      "dependencies": ["flask"]
+    },
+    "fastapi": {
+      "files": [],
+      "patterns": ["from fastapi", "import fastapi", "fastapi\\."],
+      "dependencies": ["fastapi"]
+    },
+    "tornado": {
+      "files": [],
+      "patterns": ["import tornado", "from tornado"],
+      "dependencies": ["tornado"]
+    },
+    "celery": {
+      "files": ["celery.py"],
+      "patterns": ["from celery", "import celery"],
+      "dependencies": ["celery"]
+    },
+    "pandas": {
+      "files": [],
+      "patterns": ["import pandas", "from pandas"],
+      "dependencies": ["pandas"]
+    },
+    "numpy": {
+      "files": [],
+      "patterns": ["import numpy", "from numpy"],
+      "dependencies": ["numpy"]
+    },
+    "tensorflow": {
+      "files": [],
+      "patterns": ["import tensorflow", "from tensorflow"],
+      "dependencies": ["tensorflow"]
+    },
+    "pytorch": {
+      "files": [],
+      "patterns": ["import torch", "from torch"],
+      "dependencies": ["torch"]
+    },
+    "scikit-learn": {
+      "files": [],
+      "patterns": ["import sklearn", "from sklearn"],
+      "dependencies": ["scikit-learn"]
+    },
+    "react": {
+      "files": ["package.json"],
+      "patterns": ["import React", "from 'react'", "from \"react\""],
+      "dependencies": ["react"]
+    },
+    "vue": {
+      "files": ["package.json", "vue.config.js"],
+      "patterns": ["import Vue", "from 'vue'", "createApp"],
+      "dependencies": ["vue"]
+    },
+    "angular": {
+      "files": ["angular.json", "package.json"],
+      "patterns": ["@angular", "import.*from '@angular/"],
+      "dependencies": ["@angular/core"]
+    },
+    "express": {
+      "files": ["package.json", "app.js", "server.js"],
+      "patterns": ["require\\('express'\\)", "from 'express'"],
+      "dependencies": ["express"]
+    },
+    "nestjs": {
+      "files": ["nest-cli.json", "package.json"],
+      "patterns": ["@nestjs", "import.*from '@nestjs/"],
+      "dependencies": ["@nestjs/core"]
+    },
+    "nextjs": {
+      "files": ["next.config.js", "package.json"],
+      "patterns": ["import.*from 'next'", "getServerSideProps"],
+      "dependencies": ["next"]
+    },
+    "nuxtjs": {
+      "files": ["nuxt.config.js", "package.json"],
+      "patterns": ["import.*from 'nuxt'", "defineNuxtConfig"],
+      "dependencies": ["nuxt"]
+    },
+    "svelte": {
+      "files": ["svelte.config.js", "package.json"],
+      "patterns": ["import.*from 'svelte'"],
+      "dependencies": ["svelte"]
+    },
+    "ember": {
+      "files": ["ember-cli-build.js", "package.json"],
+      "patterns": ["import Ember", "Ember\\."],
+      "dependencies": ["ember-source"]
+    },
+    "meteor": {
+      "files": [".meteor", "package.json"],
+      "patterns": ["Meteor\\."],
+      "dependencies": ["meteor"]
+    },
+    "jquery": {
+      "files": [],
+      "patterns": ["\\$\\(\\)", "jQuery"],
+      "dependencies": ["jquery"]
+    },
+    "spring-boot": {
+      "files": ["pom.xml", "build.gradle", "application.properties"],
+      "patterns": ["@SpringBootApplication", "org.springframework"],
+      "dependencies": ["spring-boot"]
+    },
+    "spring-mvc": {
+      "files": ["pom.xml", "build.gradle"],
+      "patterns": ["@Controller", "@RequestMapping"],
+      "dependencies": ["spring-webmvc"]
+    },
+    "spring-security": {
+      "files": ["pom.xml", "build.gradle"],
+      "patterns": ["@EnableWebSecurity", "WebSecurityConfigurerAdapter"],
+      "dependencies": ["spring-security"]
+    },
+    "hibernate": {
+      "files": ["pom.xml", "build.gradle"],
+      "patterns": ["org.hibernate", "@Entity", "@Table"],
+      "dependencies": ["hibernate"]
+    },
+    "jakarta-ee": {
+      "files": ["pom.xml", "build.gradle"],
+      "patterns": ["jakarta.", "javax."],
+      "dependencies": ["jakarta.platform"]
+    },
+    "junit": {
+      "files": ["pom.xml", "build.gradle"],
+      "patterns": ["@Test", "org.junit"],
+      "dependencies": ["junit"]
+    },
+    "mockito": {
+      "files": ["pom.xml", "build.gradle"],
+      "patterns": ["Mockito", "@Mock"],
+      "dependencies": ["mockito"]
+    },
+    "laravel": {
+      "files": ["artisan", "composer.json", ".env"],
+      "patterns": ["Illuminate\\\\", "use Illuminate\\\\", "@extends\\('layouts'\\)"],
+      "dependencies": ["laravel/framework"]
+    },
+    "symfony": {
+      "files": ["symfony.lock", "composer.json"],
+      "patterns": ["use Symfony\\\\", "Symfony\\\\\\\\", "@Route"],
+      "dependencies": ["symfony/framework"]
+    },
+    "codeigniter": {
+      "files": ["composer.json"],
+      "patterns": ["CI_Controller", "use CodeIgniter"],
+      "dependencies": ["codeigniter/framework"]
+    },
+    "cakephp": {
+      "files": ["composer.json"],
+      "patterns": ["use Cake\\\\", "Cake\\\\\\\\"],
+      "dependencies": ["cakephp/cakephp"]
+    },
+    "wordpress": {
+      "files": ["wp-config.php", "composer.json"],
+      "patterns": ["wp_", "add_action", "the_content"],
+      "dependencies": ["johnpbloch/wordpress"]
+    },
+    "drupal": {
+      "files": ["composer.json"],
+      "patterns": ["hook_", "drupal_"],
+      "dependencies": ["drupal/core"]
+    },
+    "rails": {
+      "files": ["Gemfile", "config.ru", "Rakefile"],
+      "patterns": ["Rails\\.", "require 'rails'"],
+      "dependencies": ["rails"]
+    },
+    "sinatra": {
+      "files": ["Gemfile", "config.ru"],
+      "patterns": ["require 'sinatra'", "Sinatra::Base"],
+      "dependencies": ["sinatra"]
+    },
+    "gin": {
+      "files": ["go.mod"],
+      "patterns": ["github.com/gin-gonic/gin"],
+      "dependencies": ["github.com/gin-gonic/gin"]
+    },
+    "echo": {
+      "files": ["go.mod"],
+      "patterns": ["github.com/labstack/echo"],
+      "dependencies": ["github.com/labstack/echo"]
+    },
+    "beego": {
+      "files": ["go.mod"],
+      "patterns": ["github.com/astaxie/beego"],
+      "dependencies": ["github.com/astaxie/beego"]
+    },
+    "actix-web": {
+      "files": ["Cargo.toml"],
+      "patterns": ["actix_web", "use actix_web::"],
+      "dependencies": ["actix-web"]
+    },
+    "rocket": {
+      "files": ["Cargo.toml"],
+      "patterns": ["#\\[rocket::", "use rocket::"],
+      "dependencies": ["rocket"]
+    },
+    "tokio": {
+      "files": ["Cargo.toml"],
+      "patterns": ["tokio", "use tokio::"],
+      "dependencies": ["tokio"]
+    },
+    "react-native": {
+      "files": ["package.json", "app.json"],
+      "patterns": ["react-native", "import.*from 'react-native'"],
+      "dependencies": ["react-native"]
+    },
+    "flutter": {
+      "files": ["pubspec.yaml", "lib/main.dart"],
+      "patterns": ["import 'package:flutter/", "runApp\\("],
+      "dependencies": ["flutter"]
+    },
+    "ionic": {
+      "files": ["package.json", "ionic.config.json"],
+      "patterns": ["@ionic/", "import.*from '@ionic/"],
+      "dependencies": ["@ionic/angular"]
+    },
+    "cordova": {
+      "files": ["config.xml", "package.json"],
+      "patterns": ["cordova\\.", "window.cordova"],
+      "dependencies": ["cordova"]
+    },
+    "docker": {
+      "files": ["Dockerfile", "docker-compose.yml", ".dockerignore"],
+      "patterns": ["FROM ", "RUN ", "EXPOSE "],
+      "dependencies": []
+    },
+    "kubernetes": {
+      "files": ["k8s/", "manifests/", "*.yaml", "*.yml"],
+      "patterns": ["apiVersion:", "kind:"],
+      "dependencies": []
+    },
+    "terraform": {
+      "files": ["*.tf", "terraform/", ".terraform.lock.hcl"],
+      "patterns": ["resource ", "provider ", "variable "],
+      "dependencies": []
+    },
+    "ansible": {
+      "files": ["ansible.cfg", "inventory", "playbook.yml"],
+      "patterns": ["- hosts:", "tasks:"],
+      "dependencies": []
+    },
+    "puppet": {
+      "files": ["manifests/", "Puppetfile"],
+      "patterns": ["class ", "include "],
+      "dependencies": []
+    },
+    "chef": {
+      "files": ["chef/", "Berksfile", "Policyfile.rb"],
+      "patterns": ["recipe ", "cookbook "],
+      "dependencies": []
+    }
+  },
+  "package_managers": {
+    "npm": {"files": ["package.json", "package-lock.json"]},
+    "yarn": {"files": ["package.json", "yarn.lock"]},
+    "pnpm": {"files": ["package.json", "pnpm-lock.yaml"]},
+    "pip": {"files": ["requirements.txt", "setup.py"]},
+    "poetry": {"files": ["pyproject.toml", "poetry.lock"]},
+    "pipenv": {"files": ["Pipfile", "Pipfile.lock"]},
+    "maven": {"files": ["pom.xml"]},
+    "gradle": {"files": ["build.gradle", "build.gradle.kts", "gradlew"]},
+    "cargo": {"files": ["Cargo.toml", "Cargo.lock"]},
+    "composer": {"files": ["composer.json", "composer.lock"]},
+    "bundler": {"files": ["Gemfile", "Gemfile.lock"]},
+    "nuget": {"files": ["*.csproj", "packages.config", "nuget.config"]},
+    "go mod": {"files": ["go.mod", "go.sum"]},
+    "sbt": {"files": ["build.sbt", "project/"]},
+    "mix": {"files": ["mix.exs", "mix.lock"]}
+  },
+  "test_runners": {
+    "pytest": {"files": ["pytest.ini", "conftest.py"], "patterns": ["import pytest", "@pytest"]},
+    "unittest": {"files": [], "patterns": ["import unittest", "unittest.main"]},
+    "jest": {"files": ["jest.config.js", "jest.config.ts"], "patterns": ["jest\\.", "describe\\(", "test\\("]},
+    "mocha": {"files": [".mocharc.js", ".mocharc.json"], "patterns": ["describe\\(", "it\\("]},
+    "jasmine": {"files": [], "patterns": ["describe\\(", "it\\("]},
+    "phpunit": {"files": ["phpunit.xml"], "patterns": ["PHPUnit\\\\\\\\", "@test"]},
+    "junit": {"files": [], "patterns": ["@Test", "org.junit"]},
+    "rspec": {"files": [".rspec", "spec/"], "patterns": ["describe ", "it ", "RSpec\\."]},
+    "cypress": {"files": ["cypress.json", "cypress/"], "patterns": ["cy\\.", "describe\\("]},
+    "selenium": {"files": [], "patterns": ["webdriver", "By\\."]},
+    "testng": {"files": [], "patterns": ["@Test", "org.testng"]}
+  },
+  "cicd": {
+    "github": {"files": [".github/workflows/*.yml", ".github/workflows/*.yaml"]},
+    "gitlab": {"files": [".gitlab-ci.yml"]},
+    "jenkins": {"files": ["Jenkinsfile"]},
+    "bitbucket": {"files": ["bitbucket-pipelines.yml"]},
+    "azure": {"files": ["azure-pipelines.yml"]},
+    "circleci": {"files": [".circleci/config.yml"]},
+    "travis": {"files": [".travis.yml"]},
+    "teamcity": {"files": [".teamcity/"]},
+    "bamboo": {"files": ["bamboo-specs/"]}
+  },
+  "devops": {
+    "docker": {"files": ["Dockerfile", "docker-compose.yml", ".dockerignore"]},
+    "kubernetes": {"files": ["k8s/", "manifests/", "*.yaml", "*.yml"]},
+    "helm": {"files": ["Chart.yaml", "charts/", "templates/"]},
+    "terraform": {"files": ["*.tf", "terraform/", ".terraform.lock.hcl"]},
+    "ansible": {"files": ["ansible.cfg", "inventory", "playbook.yml"]},
+    "vagrant": {"files": ["Vagrantfile"]},
+    "packer": {"files": ["*.pkr.hcl", "packer.json"]}
+  }
+}

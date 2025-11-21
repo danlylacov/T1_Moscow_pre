@@ -1,0 +1,17 @@
+test:
+  stage: test
+  image: python:${PYTHON_VERSION:-3.11}
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}-python
+    paths:
+      - .pip-cache
+  dependencies: []
+  before_script:
+    - pip install --cache-dir .pip-cache -r requirements.txt
+  script:
+    - python -m unittest discover -s tests -p '*_test.py' -v || python -m unittest discover -v
+  artifacts:
+    paths:
+      - test-results/
+    expire_in: 1 week
+

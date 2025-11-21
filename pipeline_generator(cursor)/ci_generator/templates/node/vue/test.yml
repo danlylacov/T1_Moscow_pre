@@ -1,0 +1,21 @@
+test:
+  stage: test
+  image: node:${NODE_VERSION:-18}
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}-node
+    paths:
+      - node_modules/
+  dependencies:
+    - install_dependencies
+  script:
+    - npm run test:unit || npm test
+  artifacts:
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage/cobertura-coverage.xml
+    paths:
+      - coverage/
+    expire_in: 1 week
+
+

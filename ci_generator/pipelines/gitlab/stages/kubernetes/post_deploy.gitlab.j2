@@ -1,0 +1,5 @@
+post_deploy:
+  stage: post_deploy
+  image: python:{{ ctx.python_version }}
+  script:
+    - pytest tests/smoke || true

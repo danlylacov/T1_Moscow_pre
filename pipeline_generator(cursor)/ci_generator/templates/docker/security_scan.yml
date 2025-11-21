@@ -1,0 +1,22 @@
+docker_security_scan:
+  stage: security
+  image: aquasec/trivy:latest
+  dependencies: []
+  variables:
+    DOCKER_IMAGE: ${CI_REGISTRY_IMAGE:-${CI_PROJECT_PATH}}:${CI_COMMIT_REF_SLUG:-latest}
+    TRIVY_NO_PROGRESS: "true"
+    TRIVY_EXIT_CODE: "0"
+  script:
+    - trivy image --exit-code 0 --severity HIGH,CRITICAL --format json --output gl-container-scanning-report.json ${DOCKER_IMAGE} || true
+    - trivy image --exit-code 0 --severity HIGH,CRITICAL ${DOCKER_IMAGE} || true
+  artifacts:
+    reports:
+      container_scanning: gl-container-scanning-report.json
+    paths:
+      - gl-container-scanning-report.json
+    expire_in: 1 week
+  allow_failure: true
+  only:
+    - main
+    - develop
+    - merge_requests

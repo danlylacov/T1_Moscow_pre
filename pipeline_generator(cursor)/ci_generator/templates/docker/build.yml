@@ -1,0 +1,29 @@
+build_docker:
+  stage: build
+  image: docker:24
+  services:
+    - docker:24-dind
+  variables:
+    DOCKER_HOST: tcp://docker:2376
+    DOCKER_TLS_CERTDIR: "/certs"
+    DOCKER_IMAGE: ${CI_REGISTRY_IMAGE:-${CI_PROJECT_PATH}}:${CI_COMMIT_REF_SLUG:-latest}
+    DOCKER_TAG: ${CI_COMMIT_REF_SLUG:-latest}
+  before_script:
+    - docker info
+    - echo "Building Docker image: ${DOCKER_IMAGE}"
+  script:
+    - |
+      docker build \
+        --tag ${DOCKER_IMAGE} \
+        --tag ${DOCKER_IMAGE}:${CI_COMMIT_SHORT_SHA} \
+        --file ${DOCKERFILE:-Dockerfile} \
+        ${BUILD_ARGS:+.}
+    - docker images | grep ${CI_REGISTRY_IMAGE:-${CI_PROJECT_PATH}} || true
+  after_script:
+    - docker system prune -f || true
+  only:
+    - main
+    - develop
+    - merge_requests
+    - tags
+

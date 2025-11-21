@@ -1,0 +1,7 @@
+pre_checks:
+  stage: pre_checks
+  image: python:{{ ctx.python_version }}
+  script:
+    - python --version
+    - pip --version
+    - echo "Basic repo checks (lint config, presence of tests, dockerfile...)"

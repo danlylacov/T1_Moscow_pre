@@ -1,0 +1,15 @@
+install_dependencies:
+  stage: install
+  image: node:${NODE_VERSION:-18}
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}-node
+    paths:
+      - node_modules/
+  script:
+    - npm ci --cache .npm --prefer-offline
+  artifacts:
+    paths:
+      - node_modules/
+    expire_in: 1 hour
+
+

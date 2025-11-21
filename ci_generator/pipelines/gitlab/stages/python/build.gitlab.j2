@@ -1,0 +1,9 @@
+build:
+  stage: build
+  image: python:{{ ctx.python_version }}
+  script:
+    - pip install build || true
+    - python -m build || true
+  artifacts:
+    paths:
+      - dist/

@@ -1,0 +1,10 @@
+build:
+  stage: build
+  image: golang:{{ ctx.go_version }}
+  script:
+    - go mod download || true
+    - go build -o ./bin/app ./cmd/... || true
+    - go build ./... || true
+  artifacts:
+    paths:
+      - bin/

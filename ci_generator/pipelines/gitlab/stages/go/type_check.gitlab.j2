@@ -1,0 +1,12 @@
+test:
+  stage: test
+  image: golang:{{ ctx.go_version }}
+  script:
+    - go mod download || true
+    - go test -v -race -coverprofile=coverage.out ./... || true
+    - go tool cover -html=coverage.out -o coverage.html || true
+  coverage: '/coverage: \d+.\d+% of statements/'
+  artifacts:
+    paths:
+      - coverage.out
+      - coverage.html

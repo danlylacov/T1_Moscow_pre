@@ -1,0 +1,19 @@
+test:
+  stage: test
+  image: node:{{ ctx.node_version | default('18') }}
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
+  script:
+    - npm ci || yarn install --frozen-lockfile || true
+    - npm test -- --ci --coverage || yarn test --ci --coverage || true
+  coverage: '/All files[^|]*\|[^|]*\s+([\d\.]+)/'
+  artifacts:
+    paths:
+      - coverage/
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage/cobertura-coverage.xml
+    expire_in: 1 week

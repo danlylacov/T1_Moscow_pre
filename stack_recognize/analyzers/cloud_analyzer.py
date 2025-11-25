@@ -5,6 +5,7 @@ from pathlib import Path
 
 from ..models import ProjectStack
 from ..config import ConfigLoader, PatternConfig
+from ..utils import get_relevant_files, read_file_sample
 
 logger = logging.getLogger(__name__)
 
@@ -54,21 +55,24 @@ class CloudAnalyzer:
 
     def _analyze_by_content(self, repo_path: Path, stack: ProjectStack):
         """Анализ облачных платформ по содержимому файлов."""
-        code_extensions = ['.py', '.js', '.ts', '.java', '.php', '.rb', '.go', '.cs', '.yaml', '.yml']
+        # Только расширения поддерживаемых языков: Python, TypeScript, Java/Kotlin, Go + конфиги
+        code_extensions = ['.py', '.pyw', '.ts', '.tsx', '.java', '.kt', '.kts', '.go', '.yaml', '.yml']
 
-        for file_path in repo_path.rglob('*'):
-            if file_path.is_file() and file_path.suffix in code_extensions:
-                try:
-                    with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
-                        content = f.read()
+        # Используем оптимизированную функцию для получения релевантных файлов
+        relevant_files = get_relevant_files(repo_path, extensions=code_extensions, max_file_size=200 * 1024)
 
-                    for cloud, patterns in self.pattern_config.CLOUD_PATTERNS.items():
-                        if cloud not in stack.cloud_platforms:
-                            for pattern in patterns:
-                                if re.search(pattern, content, re.IGNORECASE):
-                                    stack.cloud_platforms.append(cloud)
-                                    break
-                except (UnicodeDecodeError, IOError):
-                    continue
+        for file_path in relevant_files:
+            # Читаем только начало файла (достаточно для поиска паттернов облачных платформ)
+            content = read_file_sample(file_path, max_lines=50, max_bytes=4096)
+
+            if not content:
+                continue
+
+            for cloud, patterns in self.pattern_config.CLOUD_PATTERNS.items():
+                if cloud not in stack.cloud_platforms:
+                    for pattern in patterns:
+                        if re.search(pattern, content, re.IGNORECASE):
+                            stack.cloud_platforms.append(cloud)
+                            break
 
 

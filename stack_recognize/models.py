@@ -23,7 +23,7 @@ class ProjectStack:
     backend_frameworks: List[str] = field(default_factory=list)
     mobile_frameworks: List[str] = field(default_factory=list)
     package_manager: Optional[str] = None
-    test_runner: Optional[str] = None
+    test_runner: List[str] = field(default_factory=list)
     docker: bool = False
     kubernetes: bool = False
     terraform: bool = False

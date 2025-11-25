@@ -1,0 +1,36 @@
+{
+  "analysis": {
+    "languages": ["python"],
+    "frameworks": [],
+    "frontend_frameworks": [],
+    "backend_frameworks": [],
+    "package_manager": null,
+    "test_runner": null,
+    "docker": false,
+    "kubernetes": false,
+    "terraform": false,
+    "databases": [],
+    "entry_points": [],
+    "main_entry": null
+  },
+  "user_settings": {
+    "platform": "gitlab",
+    "triggers": {
+      "on_push": [],
+      "on_merge_request": false,
+      "on_tags": "",
+      "schedule": "",
+      "manual": false
+    },
+    "stages": [],
+    "docker_registry": null,
+    "docker_image": null,
+    "docker_context": ".",
+    "dockerfile_path": "Dockerfile",
+    "variables": {},
+    "project_name": "simple-app",
+    "python_version": null,
+    "docker_tag": null
+  }
+}
+

@@ -23,7 +23,7 @@ def main():
         print(f"Backend фреймворки: {stack.backend_frameworks}")
         print(f"Mobile фреймворки: {stack.mobile_frameworks}")
         print(f"Менеджер пакетов: {stack.package_manager}")
-        print(f"Тестовый раннер: {stack.test_runner}")
+        print(f"Тестовые раннеры: {stack.test_runner}")
         print(f"Docker: {stack.docker}")
         print(f"Kubernetes: {stack.kubernetes}")
         print(f"Terraform: {stack.terraform}")

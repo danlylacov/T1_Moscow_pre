@@ -1,0 +1,51 @@
+{
+  "analysis": {
+    "languages": ["javascript", "typescript"],
+    "frameworks": ["react"],
+    "frontend_frameworks": ["react"],
+    "backend_frameworks": [],
+    "package_manager": "npm",
+    "test_runner": "jest",
+    "docker": true,
+    "kubernetes": false,
+    "terraform": false,
+    "databases": [],
+    "entry_points": [
+      {
+        "path": "src/index.tsx",
+        "type": "main",
+        "lang": "typescript",
+        "confidence": 0.9
+      }
+    ],
+    "main_entry": {
+      "path": "src/index.tsx",
+      "type": "main",
+      "lang": "typescript",
+      "confidence": 0.9
+    }
+  },
+  "user_settings": {
+    "platform": "gitlab",
+    "triggers": {
+      "on_push": ["main", "develop"],
+      "on_merge_request": true,
+      "on_tags": "v*",
+      "schedule": "",
+      "manual": false
+    },
+    "stages": ["lint", "test", "docker_build", "docker_push"],
+    "docker_registry": "registry.example.com",
+    "docker_image": "frontend-app",
+    "docker_context": ".",
+    "dockerfile_path": "Dockerfile",
+    "variables": {
+      "NODE_VERSION": "18",
+      "BUILD_ENV": "production"
+    },
+    "project_name": "react-app",
+    "python_version": null,
+    "docker_tag": "$CI_COMMIT_SHORT_SHA"
+  }
+}
+

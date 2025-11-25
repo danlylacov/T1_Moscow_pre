@@ -4,6 +4,7 @@ from pathlib import Path
 
 from ..models import ProjectStack
 from ..config import ConfigLoader
+from ..utils import get_relevant_files
 
 logger = logging.getLogger(__name__)
 
@@ -39,9 +40,16 @@ class HintsAnalyzer:
             'Наличие оркестрации': ['kustomization.yaml', 'values.yaml'],
         }
 
+        # Используем оптимизированный поиск файлов
+        relevant_files = get_relevant_files(repo_path)
+        
         for hint, patterns in hint_files.items():
             for pattern in patterns:
-                if list(repo_path.rglob(pattern)):
+                matches = [f for f in relevant_files 
+                          if f.name == pattern or 
+                          (pattern.endswith('.*') and f.name.endswith(pattern[1:])) or
+                          (pattern.startswith('*.') and f.name.endswith(pattern[1:]))]
+                if matches:
                     stack.hints.append(hint)
                     break
 

@@ -12,7 +12,7 @@ from app.schemas import Project, ProjectCreate, ProjectCreateRequest, ProjectAna
 router = APIRouter()
 
 
-ANALYZER_URL = os.getenv("ANALYZER_URL", "http://localhost:8002/analyze")
+ANALYZER_URL = os.getenv("ANALYZER_URL", "http://localhost:8001/analyze")
 
 
 async def fetch_analysis(repo_url: str, token: str) -> ProjectAnalysis:

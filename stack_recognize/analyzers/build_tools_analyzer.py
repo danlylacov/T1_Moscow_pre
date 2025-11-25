@@ -4,6 +4,7 @@ from pathlib import Path
 
 from ..models import ProjectStack
 from ..config import ConfigLoader
+from ..utils import get_relevant_files
 
 logger = logging.getLogger(__name__)
 
@@ -45,9 +46,13 @@ class BuildToolsAnalyzer:
             'ant': ['build.xml'],
         }
 
+        # Используем оптимизированный поиск файлов
+        relevant_files = get_relevant_files(repo_path)
+        
         for tool, patterns in build_tools_files.items():
             for pattern in patterns:
-                if list(repo_path.rglob(pattern)):
+                matches = [f for f in relevant_files if f.name == pattern]
+                if matches:
                     if tool not in stack.build_tools:
                         stack.build_tools.append(tool)
                     break

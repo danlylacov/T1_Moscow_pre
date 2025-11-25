@@ -21,6 +21,7 @@ COPY . /app/stack_recognize
 EXPOSE 8000
 
 # Запуск FastAPI-обертки как пакета stack_recognize
+# Порт внутри контейнера 8000, но будет проброшен как 8001 на хост
 CMD ["uvicorn", "stack_recognize.api:app", "--host", "0.0.0.0", "--port", "8000"]
 
 

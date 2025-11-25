@@ -16,7 +16,8 @@ def enabled(analysis: dict) -> bool:
     Включён, если test_runner непустой.
     Конкретный фреймворк (pytest / unittest / nose / ...) обрабатывается в шаблоне.
     """
-    return bool(analysis.get("test_runner", "").strip())
+    test_runner = analysis.get("test_runner") or ""
+    return bool(str(test_runner).strip())
 
 
 def get_stages(analysis: dict, user_settings: dict):

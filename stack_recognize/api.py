@@ -12,7 +12,7 @@
       "frontend_frameworks": [...],
       "backend_frameworks": [...],
       "package_manager": "pip",
-      "test_runner": "pytest",
+      "test_runner": ["pytest"],
       "docker": true,
       "kubernetes": false,
       "terraform": false,
@@ -31,7 +31,9 @@ import logging
 from pathlib import Path
 from typing import List, Optional
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request, Response
+from fastapi.middleware.cors import CORSMiddleware
+from starlette.middleware.base import BaseHTTPMiddleware
 from pydantic import BaseModel, Field, HttpUrl
 
 try:
@@ -48,9 +50,42 @@ logger = logging.getLogger(__name__)
 
 app = FastAPI(
     title="Tech Stack Analyzer API",
-    description="FastAPI-обертка над сервисом анализа технологического стека репозитория",
+    description="FastAPI-обертка над сервисом анализа технологического стека репозитория. "
+                "Примечание: Анализ больших репозиториев может занять до 5-10 минут.",
     version="1.0.0",
+    # Кастомная конфигурация Swagger UI для долгих запросов
+    swagger_ui_parameters={
+        "persistAuthorization": True,
+        "displayRequestDuration": True,
+        "requestTimeout": 600000,  # 10 минут в миллисекундах
+        "tryItOutEnabled": True,
+    },
 )
+
+
+class TimeoutMiddleware(BaseHTTPMiddleware):
+    """Middleware для увеличения таймаутов для долгих запросов."""
+    
+    async def dispatch(self, request: Request, call_next):
+        response = await call_next(request)
+        # Увеличиваем таймауты для долгих запросов
+        response.headers["X-Accel-Buffering"] = "no"  # Отключаем буферизацию в nginx
+        response.headers["Connection"] = "keep-alive"
+        response.headers["Keep-Alive"] = "timeout=600, max=1000"
+        return response
+
+
+# Настройка CORS для работы с браузером
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # В продакшене лучше указать конкретные домены
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# Добавляем middleware для увеличения таймаутов
+app.add_middleware(TimeoutMiddleware)
 
 
 # --------- Pydantic-модели запроса/ответа ---------
@@ -95,7 +130,7 @@ class AnalysisResponse(BaseModel):
     frontend_frameworks: List[str] = []
     backend_frameworks: List[str] = []
     package_manager: Optional[str] = None
-    test_runner: Optional[str] = None
+    test_runner: List[str] = []
     docker: bool = False
     docker_context: Optional[str] = None
     dockerfile_path: Optional[str] = None
@@ -168,8 +203,18 @@ def _stack_to_response(stack: ProjectStack) -> AnalysisResponse:
 
     docker_context, dockerfile_path = _extract_docker_paths(stack)
 
+    # Фильтрация языков: только поддерживаемые 4 языка
+    # Принудительно фильтруем, чтобы исключить любые неразрешенные языки
+    allowed_languages = {'python', 'typescript', 'java', 'go'}
+    filtered_languages = []
+    for lang in stack.languages:
+        # Нормализация: kotlin -> java
+        normalized = 'java' if lang in {'kotlin', 'java'} else lang
+        if normalized in allowed_languages and normalized not in filtered_languages:
+            filtered_languages.append(normalized)
+
     return AnalysisResponse(
-        languages=stack.languages,
+        languages=filtered_languages,
         frameworks=stack.frameworks,
         frontend_frameworks=stack.frontend_frameworks,
         backend_frameworks=stack.backend_frameworks,
@@ -194,18 +239,20 @@ def _extract_docker_paths(stack: ProjectStack) -> tuple[Optional[str], Optional[
 
     dockerfile_path — относительный путь до Dockerfile (включая имя файла).
     docker_context — директория, в которой лежит Dockerfile.
+    
+    Если найдено несколько Dockerfile, используется основной (из ключа 'docker').
     """
     docker_files = stack.files_detected.get("docker") if hasattr(stack, "files_detected") else None
     if not docker_files:
         return None, None
 
+    # docker_files уже содержит только основной Dockerfile (выбранный по приоритету)
     dockerfile_rel: Optional[str] = None
-
-    for rel in docker_files:
-        name = Path(rel).name
-        if name.startswith("Dockerfile") or name.endswith(".dockerfile"):
-            dockerfile_rel = rel
-            break
+    
+    if isinstance(docker_files, list) and len(docker_files) > 0:
+        dockerfile_rel = docker_files[0]
+    elif isinstance(docker_files, str):
+        dockerfile_rel = docker_files
 
     if dockerfile_rel is None:
         return None, None
@@ -219,14 +266,24 @@ def _extract_docker_paths(stack: ProjectStack) -> tuple[Optional[str], Optional[
 
 
 @app.post("/analyze", response_model=AnalysisResponse)
-def analyze_repo(payload: AnalyzeRequest) -> AnalysisResponse:
-    """Проанализировать репозиторий и вернуть JSON с технологическим стеком."""
+async def analyze_repo(payload: AnalyzeRequest, response: Response) -> AnalysisResponse:
+    """
+    Проанализировать репозиторий и вернуть JSON с технологическим стеком.
+    
+    Примечание: Анализ может занять до 5 минут для больших репозиториев.
+    """
+    # Устанавливаем заголовки для долгих запросов
+    response.headers["X-Accel-Buffering"] = "no"
+    response.headers["Cache-Control"] = "no-cache"
+    response.headers["Connection"] = "keep-alive"
+    
     detector = ProjectStackDetector()
 
     repo_url = str(payload.repo_url)
     auth_url = _build_authenticated_url(repo_url, payload.token)
 
     try:
+        # Выполняем анализ (может быть долгим)
         stack = detector.detect_stack(auth_url)
     except Exception as exc:  # noqa: BLE001
         logger.exception("Ошибка при анализе репозитория")

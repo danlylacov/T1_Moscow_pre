@@ -7,7 +7,7 @@ from typing import Dict
 
 from ..models import ProjectStack, EntryPoint
 from ..config import ConfigLoader, PatternConfig
-from ..utils import get_language_by_extension, detect_language_from_command
+from ..utils import get_language_by_extension, detect_language_from_command, get_relevant_files, read_file_sample
 
 logger = logging.getLogger(__name__)
 
@@ -25,18 +25,13 @@ class EntryPointAnalyzer:
         self.config_loader = config_loader
         self.pattern_config = PatternConfig()
 
-        # Конфигурационные файлы, указывающие на точку входа
+        # Конфигурационные файлы, указывающие на точку входа (только для поддерживаемых языков)
         self.config_files = {
             'package.json': self._parse_package_json_entry,
             'pyproject.toml': self._parse_pyproject_toml_entry,
             'pom.xml': self._parse_pom_xml_entry,
             'build.gradle': self._parse_gradle_entry,
-            'composer.json': self._parse_composer_json_entry,
-            'Cargo.toml': self._parse_cargo_toml_entry,
-            'webpack.config.js': self._parse_webpack_config,
-            'vite.config.js': self._parse_vite_config,
             'next.config.js': self._parse_next_config,
-            'nuxt.config.js': self._parse_nuxt_config,
             'angular.json': self._parse_angular_config,
             'vue.config.js': self._parse_vue_config,
             'dockerfile': self._parse_dockerfile_entry,
@@ -90,52 +85,55 @@ class EntryPointAnalyzer:
         for config_file, parser_method in self.config_files.items():
             if config_file == 'dockerfile':
                 continue  # Обрабатывается отдельно
-            matches = list(repo_path.rglob(config_file))
+            # Используем оптимизированный поиск файлов
+            matches = [f for f in get_relevant_files(repo_path) 
+                      if f.name == config_file]
             for match in matches:
-                if match.is_file():
-                    try:
-                        parser_method(match, stack)
-                    except Exception as e:
-                        logger.warning(f"Ошибка анализа {config_file}: {e}")
+                try:
+                    parser_method(match, stack)
+                except Exception as e:
+                    logger.warning(f"Ошибка анализа {config_file}: {e}")
 
     def _find_entry_points_by_content(self, repo_path: Path, stack: ProjectStack):
         """Поиск точек входа по содержимому файлов."""
-        code_extensions = ['.py', '.js', '.ts', '.java', '.php', '.rb', '.go', '.rs', '.cs']
+        # Только расширения поддерживаемых языков: Python, TypeScript, Java/Kotlin, Go
+        code_extensions = ['.py', '.pyw', '.ts', '.tsx', '.java', '.kt', '.kts', '.go']
 
-        for file_path in repo_path.rglob('*'):
-            if file_path.is_file() and file_path.suffix in code_extensions:
-                try:
-                    with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
-                        content = f.read()
+        # Используем оптимизированную функцию для получения релевантных файлов
+        relevant_files = get_relevant_files(repo_path, extensions=code_extensions, max_file_size=200 * 1024)
 
-                    # Определяем язык файла по расширению
-                    file_lang = get_language_by_extension(file_path.suffix)
-                    if file_lang and file_lang in self.pattern_config.ENTRY_POINT_PATTERNS:
-                        patterns = self.pattern_config.ENTRY_POINT_PATTERNS[file_lang]
-                        for pattern, framework, confidence in patterns:
-                            if re.search(pattern, content):
-                                entry_point = EntryPoint(
-                                    type='app' if framework != 'main' else 'main',
-                                    file_path=str(file_path.relative_to(repo_path)),
-                                    framework=framework,
-                                    language=file_lang,
-                                    confidence=confidence
-                                )
-                                self._add_entry_point(entry_point, stack)
-                                break
+        for file_path in relevant_files:
+            # Читаем только начало файла (достаточно для поиска паттернов точек входа)
+            content = read_file_sample(file_path, max_lines=50, max_bytes=4096)
 
-                except (UnicodeDecodeError, IOError) as e:
-                    continue
+            if not content:
+                continue
+
+            # Определяем язык файла по расширению
+            file_lang = get_language_by_extension(file_path.suffix)
+            if file_lang and file_lang in self.pattern_config.ENTRY_POINT_PATTERNS:
+                patterns = self.pattern_config.ENTRY_POINT_PATTERNS[file_lang]
+                for pattern, framework, confidence in patterns:
+                    if re.search(pattern, content):
+                        entry_point = EntryPoint(
+                            type='app' if framework != 'main' else 'main',
+                            file_path=str(file_path.relative_to(repo_path)),
+                            framework=framework,
+                            language=file_lang,
+                            confidence=confidence
+                        )
+                        self._add_entry_point(entry_point, stack)
+                        break
 
     def _analyze_docker_entry_points(self, repo_path: Path, stack: ProjectStack):
         """Анализ Docker файлов для определения точек входа."""
-        docker_files = list(repo_path.rglob('Dockerfile')) + \
-                       list(repo_path.rglob('Dockerfile.*')) + \
-                       list(repo_path.rglob('*.dockerfile'))
+        # Используем оптимизированный поиск Docker файлов
+        relevant_files = get_relevant_files(repo_path)
+        docker_files = [f for f in relevant_files 
+                       if f.name.startswith('Dockerfile') or f.name.endswith('.dockerfile')]
 
         for docker_file in docker_files:
-            if docker_file.is_file():
-                self._parse_dockerfile_entry(docker_file, stack)
+            self._parse_dockerfile_entry(docker_file, stack)
 
     def _parse_package_json_entry(self, file_path: Path, stack: ProjectStack):
         """Анализ package.json для определения точки входа."""
@@ -146,10 +144,13 @@ class EntryPointAnalyzer:
             # Основная точка входа
             main_file = package_data.get('main')
             if main_file:
+                # Определяем язык по расширению файла
+                main_path = Path(main_file)
+                lang = 'typescript' if main_path.suffix in ['.ts', '.tsx'] else 'typescript'
                 entry_point = EntryPoint(
                     type='main',
                     file_path=str(file_path.parent / main_file),
-                    language='javascript',
+                    language=lang,
                     framework='node',
                     confidence=0.9
                 )
@@ -160,13 +161,15 @@ class EntryPointAnalyzer:
             for script_name, script_command in scripts.items():
                 if script_name in ['start', 'dev', 'serve']:
                     # Пытаемся извлечь файл из команды
-                    file_match = re.search(r'node\s+(\S+)', script_command)
+                    file_match = re.search(r'(?:node|ts-node|tsx)\s+(\S+)', script_command)
                     if file_match:
                         entry_file = file_match.group(1)
+                        entry_path = Path(entry_file)
+                        lang = 'typescript' if entry_path.suffix in ['.ts', '.tsx'] else 'typescript'
                         entry_point = EntryPoint(
                             type='script',
                             file_path=str(file_path.parent / entry_file),
-                            language='javascript',
+                            language=lang,
                             framework='node',
                             confidence=0.8,
                             description=f"Script: {script_name}"
@@ -244,45 +247,6 @@ class EntryPointAnalyzer:
         except (UnicodeDecodeError, IOError) as e:
             logger.warning(f"Не удалось проанализировать build.gradle: {e}")
 
-    def _parse_composer_json_entry(self, file_path: Path, stack: ProjectStack):
-        """Анализ composer.json для определения точки входа."""
-        try:
-            with open(file_path, 'r', encoding='utf-8') as f:
-                composer_data = json.load(f)
-
-            # Ищем autoload files
-            autoload = composer_data.get('autoload', {})
-            files = autoload.get('files', [])
-            for file in files:
-                entry_point = EntryPoint(
-                    type='main',
-                    file_path=file,
-                    language='php',
-                    confidence=0.6
-                )
-                self._add_entry_point(entry_point, stack)
-
-        except (json.JSONDecodeError, UnicodeDecodeError) as e:
-            logger.warning(f"Не удалось проанализировать composer.json: {e}")
-
-    def _parse_cargo_toml_entry(self, file_path: Path, stack: ProjectStack):
-        """Анализ Cargo.toml для определения точки входа."""
-        try:
-            with open(file_path, 'r', encoding='utf-8') as f:
-                content = f.read()
-
-            # По умолчанию для Rust - src/main.rs
-            entry_point = EntryPoint(
-                type='main',
-                file_path='src/main.rs',
-                language='rust',
-                framework='cargo',
-                confidence=0.8
-            )
-            self._add_entry_point(entry_point, stack)
-
-        except (UnicodeDecodeError, IOError) as e:
-            logger.warning(f"Не удалось проанализировать Cargo.toml: {e}")
 
     def _parse_dockerfile_entry(self, file_path: Path, stack: ProjectStack):
         """Анализ Dockerfile для определения точки входа."""
@@ -300,7 +264,7 @@ class EntryPointAnalyzer:
 
             if command:
                 # Пытаемся извлечь файл из команды
-                file_match = re.search(r'(?:node|python|java|php|ruby)\s+(\S+)', command)
+                file_match = re.search(r'(?:node|ts-node|tsx|python|java|go)\s+(\S+)', command)
                 if file_match:
                     entry_file = file_match.group(1)
                     entry_point = EntryPoint(
@@ -340,57 +304,13 @@ class EntryPointAnalyzer:
         except (UnicodeDecodeError, IOError) as e:
             logger.warning(f"Не удалось проанализировать docker-compose.yml: {e}")
 
-    def _parse_webpack_config(self, file_path: Path, stack: ProjectStack):
-        """Анализ webpack.config.js для определения точки входа."""
-        try:
-            with open(file_path, 'r', encoding='utf-8') as f:
-                content = f.read()
-
-            # Ищем entry point configuration
-            entry_match = re.search(r'entry:\s*[\'"]([^\'"]+)[\'"]', content)
-            if entry_match:
-                entry_file = entry_match.group(1)
-                entry_point = EntryPoint(
-                    type='webpack',
-                    file_path=entry_file,
-                    language='javascript',
-                    framework='webpack',
-                    confidence=0.8
-                )
-                self._add_entry_point(entry_point, stack)
-
-        except (UnicodeDecodeError, IOError) as e:
-            logger.warning(f"Не удалось проанализировать webpack.config.js: {e}")
-
-    def _parse_vite_config(self, file_path: Path, stack: ProjectStack):
-        """Анализ vite.config.js для определения точки входа."""
-        entry_point = EntryPoint(
-            type='vite',
-            file_path='index.html',
-            language='html',
-            framework='vite',
-            confidence=0.7
-        )
-        self._add_entry_point(entry_point, stack)
-
     def _parse_next_config(self, file_path: Path, stack: ProjectStack):
         """Анализ next.config.js для определения точки входа."""
         entry_point = EntryPoint(
             type='nextjs',
-            file_path='pages/index.js',
-            language='javascript',
+            file_path='pages/index.ts',
+            language='typescript',
             framework='nextjs',
-            confidence=0.8
-        )
-        self._add_entry_point(entry_point, stack)
-
-    def _parse_nuxt_config(self, file_path: Path, stack: ProjectStack):
-        """Анализ nuxt.config.js для определения точки входа."""
-        entry_point = EntryPoint(
-            type='nuxt',
-            file_path='pages/index.vue',
-            language='javascript',
-            framework='nuxt',
             confidence=0.8
         )
         self._add_entry_point(entry_point, stack)
@@ -422,8 +342,8 @@ class EntryPointAnalyzer:
         """Анализ vue.config.js для определения точки входа."""
         entry_point = EntryPoint(
             type='vue',
-            file_path='src/main.js',
-            language='javascript',
+            file_path='src/main.ts',
+            language='typescript',
             framework='vue',
             confidence=0.8
         )
@@ -458,4 +378,13 @@ class EntryPointAnalyzer:
                 return
 
         stack.entry_points.append(entry_point)
+        
+        # Добавляем язык в список языков, если он определен в точке входа
+        if entry_point.language:
+            # Нормализация: kotlin -> java
+            normalized_language = 'java' if entry_point.language in {'kotlin', 'java'} else entry_point.language
+            allowed_languages = {'python', 'typescript', 'java', 'go'}
+            if normalized_language in allowed_languages and normalized_language not in stack.languages:
+                stack.languages.append(normalized_language)
+                logger.debug(f"Добавлен язык из точки входа: {normalized_language}")
 

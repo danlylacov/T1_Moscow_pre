@@ -77,135 +77,82 @@ class PatternConfig:
             (r'Flask\(\)', 'flask', 0.6),
             (r'FastAPI\(\)', 'fastapi', 0.8),
         ],
-        'javascript': [
+        'typescript': [
             (r'app\.listen\(', 'express', 0.9),
             (r'express\(\)', 'express', 0.7),
             (r'module\.exports\s*=', 'node', 0.8),
             (r'export default', 'es6', 0.7),
             (r'require\([\'"]express[\'"]\)', 'express', 0.6),
+            (r'import.*express', 'express', 0.6),
             (r'ReactDOM\.render\(', 'react', 0.9),
             (r'createApp\(', 'vue', 0.9),
             (r'bootstrapApplication\(', 'angular', 0.9),
+            (r'@nestjs', 'nestjs', 0.8),
+            (r'from [\'"]next[\'"]', 'nextjs', 0.8),
         ],
         'java': [
             (r'public static void main\(String\[\] args\)', 'java', 1.0),
-            (r'@SpringBootApplication', 'spring', 0.9),
-            (r'SpringApplication\.run\(', 'spring', 0.9),
+            (r'fun main\(', 'kotlin', 1.0),  # Kotlin main function
+            (r'@SpringBootApplication', 'spring-boot', 0.9),
+            (r'SpringApplication\.run\(', 'spring-boot', 0.9),
             (r'@RestController', 'spring', 0.7),
-        ],
-        'php': [
-            (r'<?php', 'php', 0.5),
-            (r'laravel/framework', 'laravel', 0.8),
-            (r'Illuminate\\', 'laravel', 0.7),
-            (r'symfony/', 'symfony', 0.8),
-        ],
-        'ruby': [
-            (r'Ruby on Rails', 'rails', 0.8),
-            (r'require [\'"]rails[\'"]', 'rails', 0.7),
-            (r'Rails\.application', 'rails', 0.9),
-            (r'Sinatra::Application', 'sinatra', 0.9),
+            (r'io\.quarkus', 'quarkus', 0.8),
+            (r'io\.micronaut', 'micronaut', 0.8),
+            (r'io\.vertx', 'vertx', 0.8),
         ],
         'go': [
             (r'func main\(\)', 'go', 1.0),
             (r'package main', 'go', 0.8),
+            (r'gin\.', 'gin', 0.7),
+            (r'echo\.', 'echo', 0.7),
+            (r'fiber\.', 'fiber', 0.7),
+            (r'beego\.', 'beego', 0.7),
         ],
-        'rust': [
-            (r'fn main\(\)', 'rust', 1.0),
-            (r'#\[tokio::main\]', 'tokio', 0.9),
-        ]
     }
 
     # Стандартные имена файлов точек входа
     STANDARD_ENTRY_FILES = {
         'python': ['main.py', 'app.py', 'application.py', 'run.py', 'wsgi.py', 'asgi.py', 'manage.py'],
-        'javascript': ['index.js', 'app.js', 'server.js', 'main.js', 'src/index.js', 'src/app.js'],
         'typescript': ['index.ts', 'app.ts', 'server.ts', 'main.ts', 'src/index.ts', 'src/app.ts'],
-        'java': ['Main.java', 'Application.java', 'src/main/java/**/*.java'],
-        'php': ['index.php', 'app.php', 'server.php', 'public/index.php'],
-        'ruby': ['app.rb', 'application.rb', 'config.ru', 'bin/rails'],
+        'java': ['Main.java', 'Application.java', 'src/main/java/**/*.java', 'Main.kt', 'Application.kt'],
         'go': ['main.go', 'cmd/**/*.go'],
-        'rust': ['main.rs', 'src/main.rs'],
-        'csharp': ['Program.cs', 'Startup.cs'],
-        'html': ['index.html', 'default.html', 'public/index.html'],
     }
 
     # Расширенные паттерны для определения фреймворков
     FRAMEWORK_PATTERNS = {
         # Python фреймворки
         'django': [r'from django', r'import django', r'django\.', r'DJANGO_SETTINGS'],
-        'flask': [r'from flask', r'import flask', r'flask\.', r'Flask\(\)'],
+        # Более строгие паттерны для Flask, чтобы избежать ложных срабатываний
+        # Проверяем только реальные импорты и использование Flask
+        'flask': [r'from flask import', r'from flask\.', r'import flask', r'\bFlask\(\)', r'@app\.route'],
         'fastapi': [r'from fastapi', r'import fastapi', r'fastapi\.', r'FastAPI\(\)'],
-        'sanic': [r'from sanic', r'import sanic', r'sanic\.'],
-        'tornado': [r'import tornado', r'tornado\.'],
-        'bottle': [r'import bottle', r'bottle\.'],
-        'cherrypy': [r'import cherrypy', r'cherrypy\.'],
 
-        # Java фреймворки
-        'spring': [r'org\.springframework', r'@SpringBootApplication', r'SpringApplication'],
-        'spring-boot': [r'@SpringBootApplication', r'SpringBootApplication'],
-        'jakarta-ee': [r'jakarta\.', r'javax\.enterprise'],
-        'quarkus': [r'io\.quarkus', r'@QuarkusTest'],
+        # Java/Kotlin фреймворки
+        # Spring (общий) - только общие паттерны Spring Framework, без Spring Boot
+        # Обычно используется только если нет Spring Boot
+        'spring': [r'org\.springframework\.(web|mvc|context|beans)', r'@SpringMvcTest', r'@SpringTest', r'@Controller', r'@Service'],
+        # Spring Boot - специфичные паттерны (имеет приоритет над spring)
+        'spring-boot': [r'@SpringBootApplication', r'SpringBootApplication', r'org\.springframework\.boot'],
+        # Quarkus - только специфичные паттерны
+        'quarkus': [r'io\.quarkus', r'@QuarkusTest', r'@QuarkusApplication', r'quarkus\.'],
         'micronaut': [r'io\.micronaut', r'@MicronautTest'],
         'vertx': [r'io\.vertx', r'Vertx'],
-        'play': [r'play\.', r'import play\.'],
 
-        # JavaScript/TypeScript фреймворки
-        'express': [r'require\([\'"]express[\'"]\)', r'import express', r'const express'],
-        'koa': [r'require\([\'"]koa[\'"]\)', r'import koa', r'const Koa'],
+        # TypeScript/JavaScript фреймворки (Backend)
+        'express': [r'require\([\'"]express[\'"]\)', r'import express', r'const express', r'from [\'"]express[\'"]'],
         'nest': [r'@nestjs/', r'import.*from [\'"]@nestjs/'],
-        'adonis': [r'@adonisjs/', r'adonis'],
-        'sails': [r'sails', r'require\([\'"]sails[\'"]\)'],
-        'meteor': [r'meteor/', r'Package\.use'],
 
-        # Frontend фреймворки
+        # TypeScript/JavaScript фреймворки (Frontend)
         'react': [r'require\([\'"]react[\'"]\)', r'import React', r'from [\'"]react[\'"]'],
-        'vue': [r'require\([\'"]vue[\'"]\)', r'import Vue', r'from [\'"]vue[\'"]'],
+        'vue': [r'require\([\'"]vue[\'"]\)', r'import Vue', r'from [\'"]vue[\'"]', r'createApp'],
         'angular': [r'@angular/', r'import.*from [\'"]@angular/'],
-        'svelte': [r'svelte', r'import.*from [\'"]svelte[\'"]'],
-        'ember': [r'ember', r'import Ember'],
-        'backbone': [r'backbone', r'import Backbone'],
-        'nextjs': [r'next/', r'import.*from [\'"]next[\'"]'],
-        'nuxt': [r'nuxt/', r'import.*from [\'"]nuxt[\'"]'],
-        'gatsby': [r'gatsby', r'import.*from [\'"]gatsby[\'"]'],
-
-        # PHP фреймворки
-        'laravel': [r'Illuminate\\', r'use Illuminate\\', r'laravel/framework'],
-        'symfony': [r'use Symfony\\', r'Symfony\\\\', r'namespace Symfony'],
-        'codeigniter': [r'CI_', r'use CodeIgniter'],
-        'yii': [r'Yii::', r'namespace yii\\'],
-        'cakephp': [r'Cake\\', r'use Cake\\'],
-        'zend': [r'Zend_', r'Laminas'],
-
-        # Ruby фреймворки
-        'rails': [r'require [\'"]rails[\'"]', r'Rails\.', r'ActiveRecord'],
-        'sinatra': [r'require [\'"]sinatra[\'"]', r'Sinatra::'],
-        'hanami': [r'Hanami::', r'require [\'"]hanami[\'"]'],
+        'nextjs': [r'next/', r'import.*from [\'"]next[\'"]', r'getServerSideProps'],
 
         # Go фреймворки
         'gin': [r'github.com/gin-gonic/gin', r'gin\.'],
         'echo': [r'github.com/labstack/echo', r'echo\.'],
         'fiber': [r'github.com/gofiber/fiber', r'fiber\.'],
         'beego': [r'github.com/astaxie/beego', r'beego\.'],
-
-        # Rust фреймворки
-        'actix': [r'actix_web', r'use actix_web'],
-        'rocket': [r'rocket', r'#\[rocket::'],
-        'warp': [r'warp', r'use warp'],
-
-        # .NET фреймворки
-        'aspnet-core': [r'Microsoft\.AspNetCore', r'using Microsoft\.AspNetCore'],
-        'aspnet-mvc': [r'System\.Web\.Mvc', r'using System\.Web\.Mvc'],
-        'blazor': [r'Microsoft\.AspnetCore\.Components', r'Blazor'],
-
-        # Mobile фреймворки
-        'react-native': [r'react-native', r'import.*from [\'"]react-native[\'"]'],
-        'flutter': [r'flutter/', r'import.*flutter'],
-        'ionic': [r'ionic', r'import.*ionic'],
-        'cordova': [r'cordova', r'org\.apache\.cordova'],
-        'capacitor': [r'@capacitor/', r'import.*from [\'"]@capacitor/'],
-
-        # Другие
-        'electron': [r'electron', r'require\([\'"]electron[\'"]\)'],
     }
 
     # Паттерны для тестовых раннеров
@@ -226,17 +173,26 @@ class PatternConfig:
         'selenium': [r'selenium', r'webdriver'],
     }
 
-    # Паттерны для баз данных
+    # Паттерны для баз данных (более строгие - ищем реальные импорты и использование)
     DATABASE_PATTERNS = {
-        'postgresql': [r'postgresql', r'postgres', r'pg\.', r'psycopg2'],
-        'mysql': [r'mysql', r'mysqldb', r'pymysql'],
-        'mongodb': [r'mongodb', r'pymongo', r'mongoose'],
-        'redis': [r'redis', r'redis-py'],
-        'sqlite': [r'sqlite', r'sqlite3'],
-        'cassandra': [r'cassandra', r'cql'],
-        'elasticsearch': [r'elasticsearch', r'elastic'],
-        'oracle': [r'oracle', r'cx_oracle'],
-        'sqlserver': [r'sqlserver', r'pymssql', r'microsoft\.sql'],
+        # PostgreSQL - ищем импорты и использование драйверов
+        'postgresql': [r'import psycopg2', r'from psycopg2', r'require\([\'"]pg[\'"]\)', r'import.*pg[\'"]', r'pg\.connect', r'postgresql://'],
+        # MySQL - ищем импорты драйверов
+        'mysql': [r'import pymysql', r'import mysqldb', r'from pymysql', r'require\([\'"]mysql[\'"]\)', r'mysql\.createConnection', r'mysql://'],
+        # MongoDB - ищем импорты драйверов
+        'mongodb': [r'import pymongo', r'from pymongo', r'require\([\'"]mongodb[\'"]\)', r'require\([\'"]mongoose[\'"]\)', r'import.*mongoose', r'mongoose\.connect'],
+        # Redis - ищем импорты драйверов
+        'redis': [r'import redis', r'from redis', r'require\([\'"]redis[\'"]\)', r'redis\.createClient', r'redis\.NewClient'],
+        # SQLite - ищем импорты
+        'sqlite': [r'import sqlite3', r'from sqlite3', r'sqlite3\.connect', r'\.db[\'"]', r'\.sqlite[\'"]'],
+        # Cassandra - ищем импорты
+        'cassandra': [r'from cassandra', r'import cassandra', r'cassandra\.cluster'],
+        # Elasticsearch - ищем импорты клиентов
+        'elasticsearch': [r'from elasticsearch', r'import elasticsearch', r'Elasticsearch\(\)', r'require\([\'"]@elastic/elasticsearch[\'"]\)'],
+        # Oracle - ищем импорты драйверов
+        'oracle': [r'import cx_Oracle', r'from cx_Oracle', r'oracle\.connect'],
+        # SQL Server - ищем импорты драйверов
+        'sqlserver': [r'import pymssql', r'from pymssql', r'mssql://', r'sqlserver://'],
     }
 
     # Паттерны для облачных платформ
@@ -250,22 +206,15 @@ class PatternConfig:
 
     # Классификация фреймворков
     FRONTEND_FRAMEWORKS = {
-        'react', 'vue', 'angular', 'svelte', 'ember', 'backbone',
-        'nextjs', 'nuxt', 'gatsby'
+        'react', 'vue', 'angular', 'nextjs'
     }
 
     BACKEND_FRAMEWORKS = {
-        'django', 'flask', 'fastapi', 'sanic', 'tornado', 'bottle', 'cherrypy',
-        'spring', 'spring-boot', 'jakarta-ee', 'quarkus', 'micronaut', 'vertx', 'play',
-        'express', 'koa', 'nest', 'adonis', 'sails', 'meteor',
-        'laravel', 'symfony', 'codeigniter', 'yii', 'cakephp', 'zend',
-        'rails', 'sinatra', 'hanami',
-        'gin', 'echo', 'fiber', 'beego',
-        'actix', 'rocket', 'warp',
-        'aspnet-core', 'aspnet-mvc', 'blazor'
+        'django', 'flask', 'fastapi',
+        'spring', 'spring-boot', 'quarkus', 'micronaut', 'vertx',
+        'express', 'nest',
+        'gin', 'echo', 'fiber', 'beego'
     }
 
-    MOBILE_FRAMEWORKS = {
-        'react-native', 'flutter', 'ionic', 'cordova', 'capacitor'
-    }
+    MOBILE_FRAMEWORKS = set()  # Мобильные фреймворки не поддерживаются
 

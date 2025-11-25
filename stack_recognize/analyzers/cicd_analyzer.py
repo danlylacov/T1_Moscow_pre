@@ -4,6 +4,7 @@ from pathlib import Path
 
 from ..models import ProjectStack
 from ..config import ConfigLoader
+from ..utils import get_relevant_files
 
 logger = logging.getLogger(__name__)
 
@@ -41,10 +42,18 @@ class CICDAnalyzer:
         }
 
         detected_files = {}
+        
+        # Используем оптимизированный поиск файлов
+        relevant_files = get_relevant_files(repo_path)
 
         for provider, patterns in cicd_files.items():
             for pattern in patterns:
-                matches = list(repo_path.rglob(pattern))
+                # Упрощенный поиск по имени файла или пути
+                matches = [f for f in relevant_files 
+                          if f.name == pattern or 
+                          str(f.relative_to(repo_path)) == pattern or
+                          str(f.relative_to(repo_path)).startswith(pattern.rstrip('*'))]
+                
                 if matches:
                     stack.cicd.append(provider)
                     detected_files[f'cicd_{provider}'] = [str(m.relative_to(repo_path)) for m in matches]

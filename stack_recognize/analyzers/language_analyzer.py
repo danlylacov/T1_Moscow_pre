@@ -6,7 +6,7 @@ from typing import Dict
 
 from ..models import ProjectStack
 from ..config import ConfigLoader
-from ..utils import get_language_extensions
+from ..utils import get_language_extensions, get_relevant_files
 
 logger = logging.getLogger(__name__)
 
@@ -34,20 +34,28 @@ class LanguageAnalyzer:
         """
         detected_files = {}
 
-        for file_path in repo_path.rglob('*'):
-            if file_path.is_file():
-                filename = file_path.name
-                file_path_str = str(file_path.relative_to(repo_path))
+        # Используем оптимизированную функцию для получения релевантных файлов
+        # Ограничиваем размер файлов до 500KB для анализа языков
+        relevant_files = get_relevant_files(repo_path, max_file_size=512 * 1024)
+        logger.debug(f"Найдено релевантных файлов для анализа языков: {len(relevant_files)}")
 
-                # Определение языков по расширениям файлов
-                for language, extensions in self.language_extensions.items():
-                    if filename in extensions or (file_path.suffix and file_path.suffix.lower() in extensions):
-                        self._add_language(language, stack)
-                        key = f'{language}_files'
-                        detected_files[key] = detected_files.get(key, []) + [file_path_str]
+        for file_path in relevant_files:
+            filename = file_path.name
+            file_path_str = str(file_path.relative_to(repo_path))
 
-                # Определение менеджеров пакетов и сборщиков
-                self._detect_package_manager(filename, file_path, repo_path, stack, detected_files)
+            # Определение языков по расширениям файлов
+            file_suffix = file_path.suffix.lower() if file_path.suffix else None
+            for language, extensions in self.language_extensions.items():
+                # Проверяем расширение файла (с точкой) или имя файла без расширения для специальных случаев
+                if file_suffix and file_suffix in extensions:
+                    self._add_language(language, stack)
+                    key = f'{language}_files'
+                    detected_files[key] = detected_files.get(key, []) + [file_path_str]
+                    logger.debug(f"Обнаружен файл {file_path_str} с языком {language} (расширение: {file_suffix})")
+                    break  # Язык определен, переходим к следующему файлу
+
+            # Определение менеджеров пакетов и сборщиков
+            self._detect_package_manager(filename, file_path, repo_path, stack, detected_files)
 
         stack.files_detected.update(detected_files)
 
@@ -96,30 +104,19 @@ class LanguageAnalyzer:
             else:
                 stack.package_manager = 'npm'  # по умолчанию
 
-            # Определение фреймворков из зависимостей
+            # Определение фреймворков из зависимостей (только поддерживаемые)
             dependencies = {**package_data.get('dependencies', {}),
                             **package_data.get('devDependencies', {})}
 
             framework_mappings = {
+                # TypeScript/JavaScript фреймворки (Frontend)
                 'react': 'react',
                 'vue': 'vue',
                 '@angular/core': 'angular',
-                'svelte': 'svelte',
-                'ember-source': 'ember',
-                'backbone': 'backbone',
                 'next': 'nextjs',
-                'nuxt': 'nuxt',
-                'gatsby': 'gatsby',
+                # TypeScript/JavaScript фреймворки (Backend)
                 'express': 'express',
-                'koa': 'koa',
                 '@nestjs/core': 'nest',
-                'adonis': 'adonis',
-                'sails': 'sails',
-                'meteor': 'meteor',
-                'electron': 'electron',
-                'react-native': 'react-native',
-                'ionic': 'ionic',
-                '@capacitor/core': 'capacitor',
             }
 
             for dep, framework in framework_mappings.items():
@@ -131,7 +128,22 @@ class LanguageAnalyzer:
             logger.warning(f"Не удалось проанализировать package.json: {e}")
 
     def _add_language(self, language: str, stack: ProjectStack):
-        """Добавление языка в список, если его еще нет."""
-        if language not in stack.languages:
-            stack.languages.append(language)
+        """Добавление языка в список, если его еще нет.
+        
+        Поддерживаются только 4 языка: Python, TypeScript, Java/Kotlin, Go.
+        """
+        # Разрешенные языки
+        allowed_languages = {'python', 'typescript', 'java', 'go'}
+        
+        # Нормализация языка (kotlin -> java)
+        normalized_language = 'java' if language in {'kotlin', 'java'} else language
+        
+        # Логирование попыток добавить неразрешенные языки
+        if language not in allowed_languages and normalized_language not in allowed_languages:
+            logger.debug(f"Попытка добавить неразрешенный язык: {language} (нормализован: {normalized_language})")
+            return
+        
+        if normalized_language in allowed_languages and normalized_language not in stack.languages:
+            stack.languages.append(normalized_language)
+            logger.debug(f"Добавлен язык: {normalized_language}")
 

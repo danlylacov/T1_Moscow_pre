@@ -35,9 +35,22 @@ async def call_pipeline_generator(
 
     Ожидаем, что сервис вернёт просто строку с пайплайном в теле ответа.
     """
+    # Убираем docker_context и dockerfile_path из analysis (они не должны быть там)
+    # и добавляем их в user_settings, если они есть
+    analysis_dict = analysis.model_dump()
+    docker_context = analysis_dict.pop("docker_context", ".")
+    dockerfile_path = analysis_dict.pop("dockerfile_path", "Dockerfile")
+    
+    user_settings_dict = user_settings.model_dump()
+    # Добавляем docker_context и dockerfile_path в user_settings, если их там нет
+    if "docker_context" not in user_settings_dict or not user_settings_dict.get("docker_context"):
+        user_settings_dict["docker_context"] = docker_context
+    if "dockerfile_path" not in user_settings_dict or not user_settings_dict.get("dockerfile_path"):
+        user_settings_dict["dockerfile_path"] = dockerfile_path
+    
     payload = {
-        "analysis": analysis.model_dump(),
-        "user_settings": user_settings.model_dump(),
+        "analysis": analysis_dict,
+        "user_settings": user_settings_dict,
     }
     try:
         async with httpx.AsyncClient(timeout=120) as client:

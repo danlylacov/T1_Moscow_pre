@@ -1,0 +1,73 @@
+version: '3.8'
+
+services:
+  api-gateway:
+    # Используем образ из GitLab Container Registry
+    image: ${CI_REGISTRY_IMAGE-api-gateway:${IMAGE_TAG:-latest}
+    
+    ports:
+      - "${PORT_API-GATEWAY_8080:-8080:8080}"
+    
+    
+    
+    networks:
+      - app_network
+    
+    restart: unless-stopped
+  tg_bot:
+    # Используем образ из GitLab Container Registry
+    image: ${CI_REGISTRY_IMAGE-tg_bot:${IMAGE_TAG:-latest}
+    
+    ports:
+      - "${PORT_TG_BOT_8080:-8080:8080}"
+    
+    
+    
+    networks:
+      - app_network
+    
+    restart: unless-stopped
+  api-t-connector:
+    # Используем образ из GitLab Container Registry
+    image: ${CI_REGISTRY_IMAGE-api-t-connector:${IMAGE_TAG:-latest}
+    
+    ports:
+      - "${PORT_API-T-CONNECTOR_8080:-8080:8080}"
+    
+    
+    
+    networks:
+      - app_network
+    
+    restart: unless-stopped
+  company-info:
+    # Используем образ из GitLab Container Registry
+    image: ${CI_REGISTRY_IMAGE-company-info:${IMAGE_TAG:-latest}
+    
+    ports:
+      - "${PORT_COMPANY-INFO_8080:-8080:8080}"
+    
+    
+    
+    networks:
+      - app_network
+    
+    restart: unless-stopped
+  definition-of-anomaly:
+    # Используем образ из GitLab Container Registry
+    image: ${CI_REGISTRY_IMAGE-definition-of-anomaly:${IMAGE_TAG:-latest}
+    
+    ports:
+      - "${PORT_DEFINITION-OF-ANOMALY_8080:-8080:8080}"
+    
+    
+    
+    networks:
+      - app_network
+    
+    restart: unless-stopped
+
+networks:
+  app_network:
+    driver: bridge
+

@@ -8,6 +8,7 @@ stages:
   - docker_build
   - docker_push
   - migration
+  - deploy
   - cleanup
 
 # Triggers (from user_settings.triggers)
@@ -154,102 +155,66 @@ test:
       junit:
         - target/surefire-reports/TEST-*.xml
     expire_in: 1 week
-docker_build:
+build_and_push:
   stage: docker_build
   image: docker:24
   services:
-    - docker:24-dind
+    - name: docker:24-dind
+      command: ["--tls=false"]
   variables:
     DOCKER_HOST: tcp://docker:2375
+  before_script:
+    - docker info
+    - echo "Checking GitLab CI variables..."
+    - echo "Logging to GitLab Container Registry with CI_JOB_TOKEN..."
+    - echo "$CI_JOB_TOKEN" | docker login -u "gitlab-ci-token" "$CI_REGISTRY" --password-stdin
   script:
-    - echo "Building api-gateway/Dockerfile..."
-    - docker build -f api-gateway/Dockerfile -t $CI_REGISTRY_IMAGE-api-gateway:$CI_COMMIT_SHORT_SHA api-gateway
-    - docker save -o image-api_gateway.tar $CI_REGISTRY_IMAGE-api-gateway:$CI_COMMIT_SHORT_SHA || true
-    - echo "Building tg_bot/Dockerfile..."
-    - docker build -f tg_bot/Dockerfile -t $CI_REGISTRY_IMAGE-tg_bot:$CI_COMMIT_SHORT_SHA tg_bot
-    - docker save -o image-tg_bot.tar $CI_REGISTRY_IMAGE-tg_bot:$CI_COMMIT_SHORT_SHA || true
-    - echo "Building api-T-connector/Dockerfile..."
-    - docker build -f api-T-connector/Dockerfile -t $CI_REGISTRY_IMAGE-api-t-connector:$CI_COMMIT_SHORT_SHA api-T-connector
-    - docker save -o image-api_t_connector.tar $CI_REGISTRY_IMAGE-api-t-connector:$CI_COMMIT_SHORT_SHA || true
-    - echo "Building company-info/Dockerfile..."
-    - docker build -f company-info/Dockerfile -t $CI_REGISTRY_IMAGE-company-info:$CI_COMMIT_SHORT_SHA company-info
-    - docker save -o image-company_info.tar $CI_REGISTRY_IMAGE-company-info:$CI_COMMIT_SHORT_SHA || true
-    - echo "Building definition-of-anomaly/Dockerfile..."
-    - docker build -f definition-of-anomaly/Dockerfile -t $CI_REGISTRY_IMAGE-definition-of-anomaly:$CI_COMMIT_SHORT_SHA definition-of-anomaly
-    - docker save -o image-definition_of_anomaly.tar $CI_REGISTRY_IMAGE-definition-of-anomaly:$CI_COMMIT_SHORT_SHA || true
-  artifacts:
-    paths:
-      - image-api_gateway.tar
-      - image-tg_bot.tar
-      - image-api_t_connector.tar
-      - image-company_info.tar
-      - image-definition_of_anomaly.tar
+    - echo "Building and pushing Docker images..."
+    
+    # Api Gateway
+    - echo "Building Api Gateway..."
+    - docker build -f api-gateway/Dockerfile -t $CI_REGISTRY_IMAGE-api-gateway:$CI_COMMIT_SHORT_SHA -t $CI_REGISTRY_IMAGE-api-gateway:latest api-gateway
+    - echo "Pushing Api Gateway..."
+    - docker push $CI_REGISTRY_IMAGE-api-gateway:$CI_COMMIT_SHORT_SHA || echo "Failed to push $CI_COMMIT_SHORT_SHA tag"
+    - docker push $CI_REGISTRY_IMAGE-api-gateway:latest || echo "Failed to push latest tag"
+    - echo "✅ Api Gateway pushed successfully"
+    
+    # Tg_bot
+    - echo "Building Tg_bot..."
+    - docker build -f tg_bot/Dockerfile -t $CI_REGISTRY_IMAGE-tg_bot:$CI_COMMIT_SHORT_SHA -t $CI_REGISTRY_IMAGE-tg_bot:latest tg_bot
+    - echo "Pushing Tg_bot..."
+    - docker push $CI_REGISTRY_IMAGE-tg_bot:$CI_COMMIT_SHORT_SHA || echo "Failed to push $CI_COMMIT_SHORT_SHA tag"
+    - docker push $CI_REGISTRY_IMAGE-tg_bot:latest || echo "Failed to push latest tag"
+    - echo "✅ Tg_bot pushed successfully"
+    
+    # Api T Connector
+    - echo "Building Api T Connector..."
+    - docker build -f api-T-connector/Dockerfile -t $CI_REGISTRY_IMAGE-api-t-connector:$CI_COMMIT_SHORT_SHA -t $CI_REGISTRY_IMAGE-api-t-connector:latest api-T-connector
+    - echo "Pushing Api T Connector..."
+    - docker push $CI_REGISTRY_IMAGE-api-t-connector:$CI_COMMIT_SHORT_SHA || echo "Failed to push $CI_COMMIT_SHORT_SHA tag"
+    - docker push $CI_REGISTRY_IMAGE-api-t-connector:latest || echo "Failed to push latest tag"
+    - echo "✅ Api T Connector pushed successfully"
+    
+    # Company Info
+    - echo "Building Company Info..."
+    - docker build -f company-info/Dockerfile -t $CI_REGISTRY_IMAGE-company-info:$CI_COMMIT_SHORT_SHA -t $CI_REGISTRY_IMAGE-company-info:latest company-info
+    - echo "Pushing Company Info..."
+    - docker push $CI_REGISTRY_IMAGE-company-info:$CI_COMMIT_SHORT_SHA || echo "Failed to push $CI_COMMIT_SHORT_SHA tag"
+    - docker push $CI_REGISTRY_IMAGE-company-info:latest || echo "Failed to push latest tag"
+    - echo "✅ Company Info pushed successfully"
+    
+    # Definition Of Anomaly
+    - echo "Building Definition Of Anomaly..."
+    - docker build -f definition-of-anomaly/Dockerfile -t $CI_REGISTRY_IMAGE-definition-of-anomaly:$CI_COMMIT_SHORT_SHA -t $CI_REGISTRY_IMAGE-definition-of-anomaly:latest definition-of-anomaly
+    - echo "Pushing Definition Of Anomaly..."
+    - docker push $CI_REGISTRY_IMAGE-definition-of-anomaly:$CI_COMMIT_SHORT_SHA || echo "Failed to push $CI_COMMIT_SHORT_SHA tag"
+    - docker push $CI_REGISTRY_IMAGE-definition-of-anomaly:latest || echo "Failed to push latest tag"
+    - echo "✅ Definition Of Anomaly pushed successfully"
+    
+    - echo "🎉 All images built and pushed successfully!"
+  after_script:
+    - docker logout $CI_REGISTRY || true
 
-docker_push_api_gateway:
-  stage: docker_push
-  image: docker:24
-  services:
-    - docker:24-dind
-  variables:
-    DOCKER_HOST: tcp://docker:2375
-  dependencies:
-    - docker_build
-  script:
-    - docker load -i image-api_gateway.tar || true
-    - echo "$CI_REGISTRY_PASSWORD" | docker login -u "$CI_REGISTRY_USER" $CI_REGISTRY --password-stdin
-    - docker push $CI_REGISTRY_IMAGE-api-gateway:$CI_COMMIT_SHORT_SHA
-docker_push_tg_bot:
-  stage: docker_push
-  image: docker:24
-  services:
-    - docker:24-dind
-  variables:
-    DOCKER_HOST: tcp://docker:2375
-  dependencies:
-    - docker_build
-  script:
-    - docker load -i image-tg_bot.tar || true
-    - echo "$CI_REGISTRY_PASSWORD" | docker login -u "$CI_REGISTRY_USER" $CI_REGISTRY --password-stdin
-    - docker push $CI_REGISTRY_IMAGE-tg_bot:$CI_COMMIT_SHORT_SHA
-docker_push_api_t_connector:
-  stage: docker_push
-  image: docker:24
-  services:
-    - docker:24-dind
-  variables:
-    DOCKER_HOST: tcp://docker:2375
-  dependencies:
-    - docker_build
-  script:
-    - docker load -i image-api_t_connector.tar || true
-    - echo "$CI_REGISTRY_PASSWORD" | docker login -u "$CI_REGISTRY_USER" $CI_REGISTRY --password-stdin
-    - docker push $CI_REGISTRY_IMAGE-api-t-connector:$CI_COMMIT_SHORT_SHA
-docker_push_company_info:
-  stage: docker_push
-  image: docker:24
-  services:
-    - docker:24-dind
-  variables:
-    DOCKER_HOST: tcp://docker:2375
-  dependencies:
-    - docker_build
-  script:
-    - docker load -i image-company_info.tar || true
-    - echo "$CI_REGISTRY_PASSWORD" | docker login -u "$CI_REGISTRY_USER" $CI_REGISTRY --password-stdin
-    - docker push $CI_REGISTRY_IMAGE-company-info:$CI_COMMIT_SHORT_SHA
-docker_push_definition_of_anomaly:
-  stage: docker_push
-  image: docker:24
-  services:
-    - docker:24-dind
-  variables:
-    DOCKER_HOST: tcp://docker:2375
-  dependencies:
-    - docker_build
-  script:
-    - docker load -i image-definition_of_anomaly.tar || true
-    - echo "$CI_REGISTRY_PASSWORD" | docker login -u "$CI_REGISTRY_USER" $CI_REGISTRY --password-stdin
-    - docker push $CI_REGISTRY_IMAGE-definition-of-anomaly:$CI_COMMIT_SHORT_SHA
 
 migration:
   stage: migration
@@ -269,6 +234,7 @@ migration:
         fi
       fi
     - echo "No migration tool detected for Spring Boot."
+
 
 cleanup:
   stage: cleanup

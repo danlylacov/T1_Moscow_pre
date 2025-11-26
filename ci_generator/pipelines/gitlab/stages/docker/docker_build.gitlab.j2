@@ -2,45 +2,40 @@
 {% set is_single_dockerfile = dockerfile_paths|length == 1 %}
 {% set single_dockerfile_in_root = is_single_dockerfile and (dockerfile_paths[0] == "Dockerfile" or "/" not in dockerfile_paths[0]) %}
 {% if dockerfile_paths|length > 0 and not single_dockerfile_in_root %}
-{# Несколько Dockerfile или один не в корне - билдим все #}
-docker_build:
+{# Несколько Dockerfile - одна джоба build_and_push для всех #}
+build_and_push:
   stage: docker_build
   image: docker:24
   services:
-    - docker:24-dind
+    - name: docker:24-dind
+      command: ["--tls=false"]
   variables:
     DOCKER_HOST: tcp://docker:2375
+  before_script:
+    - docker info
+    - echo "Checking GitLab CI variables..."
+    - echo "Logging to GitLab Container Registry with CI_JOB_TOKEN..."
+    - echo "$CI_JOB_TOKEN" | docker login -u "gitlab-ci-token" "$CI_REGISTRY" --password-stdin
   script:
+    - echo "Building and pushing Docker images..."
 {% for dockerfile_path in dockerfile_paths %}
 {% set dockerfile_dir = dockerfile_path.rsplit('/', 1)[0] if '/' in dockerfile_path else '.' %}
 {% set service_name_raw = dockerfile_dir.split('/')[-1] if dockerfile_dir != '.' else 'main' %}
 {% set service_name = service_name_raw | lower %}
-{% set service_name_safe = service_name_raw | lower | replace('-', '_') | replace('/', '_') %}
-{% set image_name = (ctx.project_name | default("myapp")) | lower %}
-{% set image_tag = ctx.tag | default("$CI_COMMIT_SHORT_SHA") %}
-{% set registry = ctx.registry | default("$CI_REGISTRY") %}
-{% if registry == "$CI_REGISTRY" or registry == "$CI_REGISTRY_IMAGE" %}
-{% set full_image_name = "$CI_REGISTRY_IMAGE-" + service_name %}
-{% else %}
-{% set full_image_name = registry + "/" + image_name + "-" + service_name %}
-{% endif %}
-    - echo "Building {{ dockerfile_path }}..."
-{% if registry == "$CI_REGISTRY" or registry == "$CI_REGISTRY_IMAGE" %}
-    - docker build -f {{ dockerfile_path }} -t $CI_REGISTRY_IMAGE-{{ service_name }}:{{ image_tag }} {{ dockerfile_dir | default(".", true) }}
-    - docker save -o image-{{ service_name_safe }}.tar $CI_REGISTRY_IMAGE-{{ service_name }}:{{ image_tag }} || true
-{% else %}
-    - docker build -f {{ dockerfile_path }} -t {{ full_image_name }}:{{ image_tag }} {{ dockerfile_dir | default(".", true) }}
-    - docker save -o image-{{ service_name_safe }}.tar {{ full_image_name }}:{{ image_tag }} || true
-{% endif %}
+{% set service_name_display = service_name_raw | replace('-', ' ') | title %}
+    
+    # {{ service_name_display }}
+    - echo "Building {{ service_name_display }}..."
+    - docker build -f {{ dockerfile_path }} -t $CI_REGISTRY_IMAGE-{{ service_name }}:$CI_COMMIT_SHORT_SHA -t $CI_REGISTRY_IMAGE-{{ service_name }}:latest {{ dockerfile_dir | default(".", true) }}
+    - echo "Pushing {{ service_name_display }}..."
+    - docker push $CI_REGISTRY_IMAGE-{{ service_name }}:$CI_COMMIT_SHORT_SHA || echo "Failed to push $CI_COMMIT_SHORT_SHA tag"
+    - docker push $CI_REGISTRY_IMAGE-{{ service_name }}:latest || echo "Failed to push latest tag"
+    - echo "✅ {{ service_name_display }} pushed successfully"
 {% endfor %}
-  artifacts:
-    paths:
-{% for dockerfile_path in dockerfile_paths %}
-{% set dockerfile_dir = dockerfile_path.rsplit('/', 1)[0] if '/' in dockerfile_path else '.' %}
-{% set service_name_raw = dockerfile_dir.split('/')[-1] if dockerfile_dir != '.' else 'main' %}
-{% set service_name_safe = service_name_raw | lower | replace('-', '_') | replace('/', '_') %}
-      - image-{{ service_name_safe }}.tar
-{% endfor %}
+    
+    - echo "🎉 All images built and pushed successfully!"
+  after_script:
+    - docker logout $CI_REGISTRY || true
 {% else %}
 {# Один Dockerfile в корне - используем стандартные переменные #}
 docker_build:

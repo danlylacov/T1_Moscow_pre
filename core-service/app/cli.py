@@ -13,6 +13,110 @@ from app.services.analyzer import analyze_repository, get_full_stack
 from app.services.pipeline_generator import generate_pipeline
 
 
+def format_stack_to_markdown(analysis, full_stack) -> str:
+    """Форматировать стек проекта в Markdown для README."""
+    lines = ["# Технологический стек проекта\n"]
+    
+    # Языки программирования
+    if analysis.languages:
+        lines.append("## Языки программирования")
+        lines.append(", ".join(analysis.languages))
+        lines.append("")
+    
+    # Фреймворки
+    if analysis.frameworks:
+        lines.append("## Фреймворки")
+        lines.append(", ".join(analysis.frameworks))
+        lines.append("")
+    
+    # Frontend фреймворки
+    if analysis.frontend_frameworks:
+        lines.append("## Frontend фреймворки")
+        lines.append(", ".join(analysis.frontend_frameworks))
+        lines.append("")
+    
+    # Backend фреймворки
+    if analysis.backend_frameworks:
+        lines.append("## Backend фреймворки")
+        lines.append(", ".join(analysis.backend_frameworks))
+        lines.append("")
+    
+    # Менеджер пакетов
+    if analysis.package_manager:
+        lines.append("## Менеджер пакетов")
+        lines.append(analysis.package_manager)
+        lines.append("")
+    
+    # Инструмент тестирования
+    if analysis.test_runner:
+        lines.append("## Инструмент тестирования")
+        lines.append(analysis.test_runner)
+        lines.append("")
+    
+    # Docker
+    if analysis.docker:
+        lines.append("## Docker")
+        lines.append("✓ Используется Docker")
+        if analysis.dockerfile_paths:
+            lines.append(f"\n**Dockerfile:**")
+            for df_path in analysis.dockerfile_paths:
+                lines.append(f"- `{df_path}`")
+        if analysis.docker_context:
+            lines.append(f"\n**Docker context:** `{analysis.docker_context}`")
+        lines.append("")
+    
+    # Kubernetes
+    if analysis.kubernetes:
+        lines.append("## Kubernetes")
+        lines.append("✓ Используется Kubernetes")
+        lines.append("")
+    
+    # Terraform
+    if analysis.terraform:
+        lines.append("## Terraform")
+        lines.append("✓ Используется Terraform")
+        lines.append("")
+    
+    # Базы данных
+    if analysis.databases:
+        lines.append("## Базы данных")
+        lines.append(", ".join(analysis.databases))
+        lines.append("")
+    
+    # Java версия
+    if analysis.java_version:
+        lines.append("## Java версия")
+        lines.append(analysis.java_version)
+        lines.append("")
+    
+    # Build tools
+    if full_stack.build_tools:
+        lines.append("## Инструменты сборки")
+        lines.append(", ".join(full_stack.build_tools))
+        lines.append("")
+    
+    # Cloud платформы
+    if full_stack.cloud_platforms:
+        lines.append("## Cloud платформы")
+        lines.append(", ".join(full_stack.cloud_platforms))
+        lines.append("")
+    
+    # CI/CD
+    if full_stack.cicd:
+        lines.append("## CI/CD")
+        lines.append(", ".join(full_stack.cicd))
+        lines.append("")
+    
+    return "\n".join(lines)
+
+# Путь к корню проекта
+# __file__ = core-service/app/cli.py
+# parents[0] = core-service/app/
+# parents[1] = core-service/
+# parents[2] = T1/ (корень проекта)
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+
+
 def init_db():
     """Инициализировать базу данных."""
     Base.metadata.create_all(bind=engine)
@@ -146,7 +250,8 @@ def generate(project_id: int, output: Optional[str], platform: str, stages: Opti
 @click.option("--output", type=click.Path(), help="Путь для сохранения пайплайна")
 @click.option("--platform", default="gitlab", help="Платформа CI/CD (gitlab/jenkins)")
 @click.option("--stack-output", type=click.Path(), help="Путь для сохранения стека проекта (JSON)")
-def generate_from_repo(url: str, token: str, output: Optional[str], platform: str, stack_output: Optional[str]):
+@click.option("--docker-compose/--no-docker-compose", default=None, help="Генерировать docker-compose.yml (по умолчанию: True если есть Docker и нет Kubernetes)")
+def generate_from_repo(url: str, token: str, output: Optional[str], platform: str, stack_output: Optional[str], docker_compose: Optional[bool]):
     """Сгенерировать CI/CD пайплайн напрямую из репозитория со всеми возможными стадиями."""
     click.echo(f"Анализ репозитория {url}...")
     
@@ -235,6 +340,8 @@ def generate_from_repo(url: str, token: str, output: Optional[str], platform: st
             "docker_image": "$CI_REGISTRY_IMAGE",
             "docker_context": analysis.docker_context if analysis.docker else ".",
             "dockerfile_path": analysis.dockerfile_path if analysis.docker else "Dockerfile",
+            # use_docker_compose: только если флаг явно указан
+            "use_docker_compose": docker_compose if docker_compose is not None else False,
         }
         
         # Генерация пайплайна
@@ -249,7 +356,78 @@ def generate_from_repo(url: str, token: str, output: Optional[str], platform: st
             click.echo(pipeline)
             click.echo("="*80)
         
+        # Сохранение стека в README с названием проекта
+        # Извлекаем название проекта из URL (последняя часть после последнего слеша)
+        project_name = url.rstrip('/').split('/')[-1]
+        if project_name.endswith('.git'):
+            project_name = project_name[:-4]
+        # Очищаем название от специальных символов для использования в имени файла
+        project_name = project_name.replace('/', '_').replace('\\', '_').replace(' ', '_')
+        readme_filename = f"README-{project_name}.md"
+        
+        # Всегда сохраняем README в той же директории, что и output
+        # Если output не указан, не сохраняем README (чтобы избежать перезаписи)
+        if output:
+            readme_path = Path(output).parent / readme_filename
+            stack_markdown = format_stack_to_markdown(analysis, full_stack)
+            readme_path.write_text(stack_markdown, encoding="utf-8")
+            click.echo(f"✓ Стек проекта записан в {readme_path}")
+        else:
+            click.echo("ℹ️  README не сохранен (укажите --output для сохранения)")
+        
         click.echo("✓ Пайплайн успешно сгенерирован")
+        
+        # Генерация docker-compose.yml только если флаг явно указан
+        if docker_compose is True:
+            try:
+                # Импортируем генератор docker-compose
+                COMPOSE_GENERATOR_PATH = PROJECT_ROOT / "docker_compose_generator"
+                if str(COMPOSE_GENERATOR_PATH) not in sys.path:
+                    sys.path.insert(0, str(COMPOSE_GENERATOR_PATH))
+                
+                # Используем прямой импорт через importlib
+                import importlib.util
+                compose_generator_path = COMPOSE_GENERATOR_PATH / "generator" / "compose_generator.py"
+                spec = importlib.util.spec_from_file_location("compose_generator", compose_generator_path)
+                compose_generator_module = importlib.util.module_from_spec(spec)
+                spec.loader.exec_module(compose_generator_module)
+                generate_docker_compose = compose_generator_module.generate_docker_compose
+                
+                # Настройки для генерации docker-compose
+                compose_settings: Dict[str, Any] = {
+                    "use_gitlab_registry": True,
+                    "project_name": "app",
+                    "db_credentials": {},
+                    "db_versions": {},
+                    "environment": {}
+                }
+                
+                # Генерируем docker-compose.yml
+                compose_content = generate_docker_compose(analysis, compose_settings)
+                
+                # Сохраняем docker-compose.yml
+                if output:
+                    # Если указан output, сохраняем в той же директории, что и пайплайн
+                    output_path = Path(output)
+                    if output_path.is_absolute():
+                        compose_output = output_path.parent / "docker-compose.yml"
+                    else:
+                        # Относительный путь - сохраняем относительно текущей директории (где запущен скрипт)
+                        compose_output = output_path.parent / "docker-compose.yml" if output_path.parent != Path(".") else Path("docker-compose.yml")
+                else:
+                    # Если output не указан, сохраняем в текущей рабочей директории
+                    compose_output = Path("docker-compose.yml")
+                
+                # Создаем директорию, если её нет
+                compose_output.parent.mkdir(parents=True, exist_ok=True)
+                
+                compose_output.write_text(compose_content, encoding="utf-8")
+                click.echo(f"✓ docker-compose.yml сохранен в {compose_output.absolute()}")
+                
+            except Exception as e:
+                click.echo(f"⚠ Предупреждение: не удалось сгенерировать docker-compose.yml: {e}", err=True)
+                import traceback
+                traceback.print_exc()
         
     except Exception as e:
         click.echo(f"✗ Ошибка: {e}", err=True)

@@ -137,6 +137,7 @@ def generate_pipeline(analysis: ProjectAnalysis, user_settings: Dict[str, Any]) 
         "dockerfile_paths": dockerfile_paths,  # Список всех Dockerfile
         "analysis": analysis_dict,
         "user_settings": user_settings_dict,
+        "use_docker_compose": user_settings_dict.get("use_docker_compose", False),  # Флаг для генерации docker-compose
     })
     
     # Рендеринг пайплайна

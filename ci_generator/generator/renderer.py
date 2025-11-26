@@ -33,6 +33,12 @@ class PipelineRenderer:
         """
         base = os.path.join(platform, "stages")
         
+        # Специальная логика для deploy: если use_docker_compose = True, используем shared/deploy
+        if stage == "deploy" and ctx and ctx.get("use_docker_compose", False):
+            candidate = os.path.join(base, "shared", f"{stage}.{ext}")
+            if os.path.exists(os.path.join(self.templates_root, candidate)):
+                return candidate
+        
         # Определяем приоритетный язык из контекста
         language_dir = None
         if ctx:
@@ -56,7 +62,18 @@ class PipelineRenderer:
                 return candidate
         
         # Затем проверяем остальные директории в порядке приоритета
-        for d in self.stage_dirs:
+        # Для deploy: shared должен быть перед kubernetes
+        search_dirs = self.stage_dirs.copy()
+        if stage == "deploy":
+            # Перемещаем shared перед kubernetes для deploy
+            if "shared" in search_dirs and "kubernetes" in search_dirs:
+                shared_idx = search_dirs.index("shared")
+                k8s_idx = search_dirs.index("kubernetes")
+                if shared_idx > k8s_idx:
+                    search_dirs.remove("shared")
+                    search_dirs.insert(k8s_idx, "shared")
+        
+        for d in search_dirs:
             # Пропускаем уже проверенную директорию языка
             if d == language_dir:
                 continue

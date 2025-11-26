@@ -35,6 +35,7 @@ migration:
     - echo "Running Liquibase migrations (Micronaut)..."
     {% if ctx.build_tool == 'maven' %}- mvn liquibase:update{% else %}- ./gradlew liquibaseUpdate{% endif %}
     {% else %}
+
     - echo "No migration tool detected for Micronaut."
     {% endif %}
     {% elif 'ktor' in frameworks %}

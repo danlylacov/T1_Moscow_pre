@@ -7,26 +7,11 @@ logger = logging.getLogger(__name__)
 try:
     from GitLabRepoService import GitLabRepoService
 except ImportError:
-    print("Ошибка: файл GitLabRepoService не найден в текущей директории.")
     logger.error("Ошибка: файл gitlab_service.py не найден в текущей директории.")
 
 
-def string_to_yaml_file(yaml_content: str, file_name: str):
-    """
-    Сохраняет текстовую строку в файл .yml
-    """
-    try:
-        # Используем utf-8 для корректной записи кириллицы и спецсимволов
-        with open(file_name, "w", encoding="utf-8") as f:
-            f.write(yaml_content.strip())  # .strip() убирает лишние пробелы в начале/конце
-
-        print(f"✅ Файл успешно создан: {os.path.abspath(file_name)}")
-
-    except Exception as e:
-        print(f"❌ Ошибка при записи файла: {e}")
-
 ##!!!! Важно метод считывает файл из корня если надо по другому то {Использовать метод string_to_yaml_file}
-def run_process(repo_link, repo_token, branch, file_name_on_disk):
+def run_process(repo_link, repo_token, branch, yaml_content_str):
     # 1. Конфигурация
     # Ссылка на репозиторий (куда будем делать MR)
     # repo_link = "https://gitlab.com/viktorgezz/git-service-1"
@@ -41,12 +26,17 @@ def run_process(repo_link, repo_token, branch, file_name_on_disk):
     # Пытаемся прочитать реальный файл,
     # file_name_on_disk = "pipeline.yml"
 
-    if os.path.exists(file_name_on_disk):
-        print(f"Чтение файла: {file_name_on_disk}")
-        with open(file_name_on_disk, "rb") as f:
-            file_bytes = f.read()
+    # 1. Проверка токена
+    if not repo_token:
+        logger.error("Токен не передан. Укажите токен.")
+        return
+
+    if yaml_content_str:
+        logger.info("Конвертация YAML-строки в байты для отправки...")
+        file_bytes = yaml_content_str.encode('utf-8')
     else:
-        logger.error(f"file {file_name_on_disk} not found")
+        logger.error("Передан пустой контент для файла pipeline.yml")
+        return
 
     # 3. Инициализация и запуск сервиса
     runner = GitLabRepoService()
@@ -64,3 +54,28 @@ def run_process(repo_link, repo_token, branch, file_name_on_disk):
 
     except Exception as e:
         logger.error(f"Произошла ошибка при выполнении: {e}")
+
+
+## ! Пример .yml
+#     my_pipeline_config = """
+# stages:
+#     - build
+#     - test
+#     - deploy
+#
+# build_job:
+#     stage: build
+#     script:
+#         - echo "Compiling the code..."
+#         - echo "Build complete."
+#
+# test_job:
+#     stage: test
+#     script:
+#         - echo "Running unit tests..."
+#
+# deploy_job:
+#     stage: deploy
+#     script:
+#     - echo "Deploying to production..."
+# """

@@ -16,7 +16,7 @@ class GitLabRepoService:
     UPDATE_MESSAGE = "Update pipeline configuration file"
     MR_TITLE = "Add pipeline configuration file"
     MR_DESCRIPTION = "Automated Merge Request adding pipeline.yml configuration"
-    FILE_NAME = "pipeline.yml"
+    FILE_NAME = ".gitlab-ci.yml"
 
     def modify_repo(self, link: str, token: str, base_branch: str, file_content: bytes):
         """

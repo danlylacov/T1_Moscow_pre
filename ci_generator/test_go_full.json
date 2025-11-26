@@ -1,0 +1,48 @@
+{
+  "analysis": {
+    "languages": ["go"],
+    "frameworks": ["gin"],
+    "frontend_frameworks": [],
+    "backend_frameworks": ["gin"],
+    "package_manager": "go mod",
+    "test_runner": "go-testing",
+    "docker": true,
+    "kubernetes": true,
+    "terraform": false,
+    "databases": ["postgresql"],
+    "entry_points": [
+      {
+        "path": "cmd/main.go",
+        "type": "main",
+        "lang": "go",
+        "confidence": 0.9
+      }
+    ],
+    "main_entry": {
+      "path": "cmd/main.go",
+      "type": "main",
+      "lang": "go",
+      "confidence": 0.9
+    }
+  },
+  "user_settings": {
+    "platform": "gitlab",
+    "triggers": {
+      "on_push": ["main", "develop"],
+      "on_merge_request": true,
+      "on_tags": "v*",
+      "schedule": "",
+      "manual": false
+    },
+    "stages": [],
+    "docker_registry": "registry.example.com/team",
+    "docker_image": "go-app",
+    "docker_context": ".",
+    "dockerfile_path": "Dockerfile",
+    "variables": {},
+    "project_name": "go-app",
+    "go_version": "1.21",
+    "docker_tag": "$CI_COMMIT_SHORT_SHA"
+  }
+}
+

@@ -1,0 +1,3510 @@
+{
+    "languages": [
+        "go",
+        "typescript",
+        "java"
+    ],
+    "frameworks": [
+        "react",
+        "express",
+        "spring",
+        "gin"
+    ],
+    "frontend_frameworks": [
+        "react"
+    ],
+    "backend_frameworks": [
+        "express",
+        "spring",
+        "gin"
+    ],
+    "package_manager": "npm",
+    "test_runner": [
+        "go-testing",
+        "cucumber",
+        "vitest",
+        "junit",
+        "mocha"
+    ],
+    "docker": true,
+    "docker_context": "components/proxy",
+    "dockerfile_path": "components/proxy/Dockerfile",
+    "docker_by_category": null,
+    "kubernetes": true,
+    "terraform": true,
+    "databases": [
+        "mysql",
+        "redis"
+    ],
+    "entry_points": [
+        {
+            "path": "components/ws-manager-bridge-api/typescript/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-db/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/content-service-api/typescript/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/server/src/repohost/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/server/src/errors/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-protocol/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ws-manager-bridge/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ws-manager-api/typescript/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ide-metrics-api/typescript-grpcweb/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ws-daemon-api/typescript/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/image-builder-api/typescript/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api/typescript/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api/typescript/src/gitpod/experimental/v1/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor/frontend/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/server/src/server.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/server/src/api/server.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/server/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ws-manager-bridge/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor-api/java/src/main/java/io/gitpod/supervisor/api/TaskServiceGrpc.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor-api/java/src/main/java/io/gitpod/supervisor/api/NotificationServiceGrpc.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor-api/java/src/main/java/io/gitpod/supervisor/api/InfoServiceGrpc.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor-api/java/src/main/java/io/gitpod/supervisor/api/Notification.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor-api/java/src/main/java/io/gitpod/supervisor/api/Port.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor-api/java/src/main/java/io/gitpod/supervisor/api/Status.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor-api/java/src/main/java/io/gitpod/supervisor/api/TokenServiceGrpc.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor-api/java/src/main/java/io/gitpod/supervisor/api/Info.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor-api/java/src/main/java/io/gitpod/supervisor/api/ControlServiceGrpc.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor-api/java/src/main/java/io/gitpod/supervisor/api/Task.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor-api/java/src/main/java/io/gitpod/supervisor/api/Control.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor-api/java/src/main/java/io/gitpod/supervisor/api/PortServiceGrpc.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor-api/java/src/main/java/io/gitpod/supervisor/api/StatusServiceGrpc.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor-api/java/src/main/java/io/gitpod/supervisor/api/TerminalOuterClass.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor-api/java/src/main/java/io/gitpod/supervisor/api/Token.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor-api/java/src/main/java/io/gitpod/supervisor/api/TerminalServiceGrpc.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor-api/java/src/main/java/io/gitpod/supervisor/testclient/TestClient.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-protocol/java/src/main/java/io/gitpod/gitpodprotocol/api/GitpodServer.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-protocol/java/src/main/java/io/gitpod/gitpodprotocol/api/GitpodServerConnectionImpl.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-protocol/java/src/main/java/io/gitpod/gitpodprotocol/api/BufferingWebSocketMessageWriter.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-protocol/java/src/main/java/io/gitpod/gitpodprotocol/api/GitpodClient.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-protocol/java/src/main/java/io/gitpod/gitpodprotocol/api/GitpodServerConnection.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-protocol/java/src/main/java/io/gitpod/gitpodprotocol/api/GitpodServerLauncher.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-protocol/java/src/main/java/io/gitpod/gitpodprotocol/api/entities/WorkspaceInstanceStatus.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-protocol/java/src/main/java/io/gitpod/gitpodprotocol/api/entities/WorkspaceTimeoutDuration.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-protocol/java/src/main/java/io/gitpod/gitpodprotocol/api/entities/IDEOptions.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-protocol/java/src/main/java/io/gitpod/gitpodprotocol/api/entities/Error.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-protocol/java/src/main/java/io/gitpod/gitpodprotocol/api/entities/WorkspaceContext.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-protocol/java/src/main/java/io/gitpod/gitpodprotocol/api/entities/PortVisibility.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-protocol/java/src/main/java/io/gitpod/gitpodprotocol/api/entities/IDEClient.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-protocol/java/src/main/java/io/gitpod/gitpodprotocol/api/entities/IDEOption.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-protocol/java/src/main/java/io/gitpod/gitpodprotocol/api/entities/WorkspaceInstancePort.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-protocol/java/src/main/java/io/gitpod/gitpodprotocol/api/entities/WorkspaceInfo.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-protocol/java/src/main/java/io/gitpod/gitpodprotocol/api/entities/WorkspaceType.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-protocol/java/src/main/java/io/gitpod/gitpodprotocol/api/entities/User.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-protocol/java/src/main/java/io/gitpod/gitpodprotocol/api/entities/SendHeartBeatOptions.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-protocol/java/src/main/java/io/gitpod/gitpodprotocol/api/entities/SetWorkspaceTimeoutResult.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-protocol/java/src/main/java/io/gitpod/gitpodprotocol/api/entities/GetWorkspacesOptions.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-protocol/java/src/main/java/io/gitpod/gitpodprotocol/api/entities/WorkspaceInstanceConditions.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-protocol/java/src/main/java/io/gitpod/gitpodprotocol/api/entities/WorkspacePhase.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-protocol/java/src/main/java/io/gitpod/gitpodprotocol/api/entities/Repository.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-protocol/java/src/main/java/io/gitpod/gitpodprotocol/api/entities/WorkspaceInstance.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-protocol/java/src/main/java/io/gitpod/gitpodprotocol/api/entities/Workspace.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-protocol/java/src/main/java/io/gitpod/gitpodprotocol/api/entities/TakeSnapshotOptions.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-protocol/java/src/main/java/io/gitpod/gitpodprotocol/api/entities/RemoteTrackMessage.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-protocol/java/src/main/java/io/gitpod/gitpodprotocol/testclient/TestClient.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ide-metrics-api/java/src/main/java/io/gitpod/idemetrics/api/Idemetrics.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ide-metrics-api/java/src/main/java/io/gitpod/idemetrics/api/MetricsServiceGrpc.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api/java/src/main/java/io/gitpod/publicapi/v1/WorkspaceOuterClass.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api/java/src/main/java/io/gitpod/publicapi/v1/Scm.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api/java/src/main/java/io/gitpod/publicapi/v1/Error.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api/java/src/main/java/io/gitpod/publicapi/v1/Editor.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api/java/src/main/java/io/gitpod/publicapi/v1/Installation.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api/java/src/main/java/io/gitpod/publicapi/v1/Authprovider.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api/java/src/main/java/io/gitpod/publicapi/v1/Auditlogs.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api/java/src/main/java/io/gitpod/publicapi/v1/OrganizationOuterClass.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api/java/src/main/java/io/gitpod/publicapi/v1/Ssh.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api/java/src/main/java/io/gitpod/publicapi/v1/UserOuterClass.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api/java/src/main/java/io/gitpod/publicapi/v1/PrebuildOuterClass.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api/java/src/main/java/io/gitpod/publicapi/v1/Verification.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api/java/src/main/java/io/gitpod/publicapi/v1/Envvar.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api/java/src/main/java/io/gitpod/publicapi/v1/Sorting.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api/java/src/main/java/io/gitpod/publicapi/v1/ConfigurationOuterClass.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api/java/src/main/java/io/gitpod/publicapi/v1/Pagination.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api/java/src/main/java/io/gitpod/publicapi/v1/Token.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api/java/src/main/java/io/gitpod/publicapi/experimental/v1/Scm.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api/java/src/main/java/io/gitpod/publicapi/experimental/v1/Stats.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api/java/src/main/java/io/gitpod/publicapi/experimental/v1/UserOuterClass.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api/java/src/main/java/io/gitpod/publicapi/experimental/v1/EditorServiceOuterClass.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api/java/src/main/java/io/gitpod/publicapi/experimental/v1/Oidc.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api/java/src/main/java/io/gitpod/publicapi/experimental/v1/IdeClient.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api/java/src/main/java/io/gitpod/publicapi/experimental/v1/Tokens.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api/java/src/main/java/io/gitpod/publicapi/experimental/v1/Teams.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api/java/src/main/java/io/gitpod/publicapi/experimental/v1/PaginationOuterClass.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api/java/src/main/java/io/gitpod/publicapi/experimental/v1/Identityprovider.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api/java/src/main/java/io/gitpod/publicapi/experimental/v1/Workspaces.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api/java/src/main/java/io/gitpod/publicapi/experimental/v1/Dummy.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api/java/src/main/java/io/gitpod/publicapi/experimental/v1/Projects.java",
+            "type": "main",
+            "lang": "java",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ide/code-desktop/status/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ide/jetbrains/launcher/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ide/jetbrains/cli/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ide/code/codehelper/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ws-manager-mk2/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ws-manager-mk2/cmd/sample-workspace/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ide-service/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api-server/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/service-waiter/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ws-daemon/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ws-daemon/cmd/content-initializer/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ws-daemon/seccomp-profile-installer/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ws-daemon/nsinsider/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/openvsx-proxy/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/image-builder-mk3/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/node-labeler/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/docker-up/docker-up/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/docker-up/runc-facade/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ws-proxy/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/registry-facade/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/content-service/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/main/update-manifest/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/main/gitpod-local-companion/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/main/gitpod-cli/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ide-metrics/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/image-builder-bob/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/image-builder-bob/cmd/runc-facade/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ee/agent-smith/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ee/agent-smith/cmd/testbed/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ee/agent-smith/cmd/testtarget/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/blobserve/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/usage/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/workspacekit/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/pkg/agent/workspace/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/pkg/agent/daemon/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "install/preview/prettylog/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "install/installer/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/changelog/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/kubecdl/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/rejector/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/loadgen/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/version-manifest/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/addlicense/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/blowtorch/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gp-gcloud/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/preview/previewctl/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ide/jetbrains/cli/cmd/root.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ide/jetbrains/cli/cmd/open.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ide/jetbrains/cli/cmd/preview.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ide-service/cmd/run.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ide-service/cmd/test.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ide-service/cmd/root.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api-server/cmd/run.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/public-api-server/cmd/root.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/service-waiter/cmd/root.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/service-waiter/cmd/redis.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/service-waiter/cmd/database.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/service-waiter/cmd/database_test.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/service-waiter/cmd/component.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ws-daemon/cmd/generate-init-request.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ws-daemon/cmd/content-initializer.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ws-daemon/cmd/debug-run-initializer.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ws-daemon/cmd/run.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ws-daemon/cmd/client-snapshot.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ws-daemon/cmd/debug.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ws-daemon/cmd/generate.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ws-daemon/cmd/client.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ws-daemon/cmd/root.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ws-daemon/cmd/validate-config.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ws-daemon/cmd/client-init.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/image-builder-mk3/cmd/run.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/image-builder-mk3/cmd/root.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/image-builder-mk3/cmd/generate-config.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/node-labeler/cmd/run.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/node-labeler/cmd/root.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/node-labeler/cmd/podutils.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/node-labeler/cmd/metrics.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/node-labeler/cmd/run_test.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ws-proxy/cmd/run.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ws-proxy/cmd/root.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/registry-facade/cmd/run.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/registry-facade/cmd/setup.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/registry-facade/cmd/debug.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/registry-facade/cmd/root.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/content-service/cmd/run.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/content-service/cmd/test.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/content-service/cmd/root.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/cmd/organizations.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/cmd/organization-list.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/cmd/organization-get.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/cmd/workspace-up.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/cmd/workspace.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/cmd/workspace-create.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/cmd/config-set.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/cmd/workspace-ssh.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/cmd/config-context-use.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/cmd/config-context-delete.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/cmd/login_test.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/cmd/whoami.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/cmd/config-context-modify.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/cmd/config-get.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/cmd/workspace-list-editors.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/cmd/root.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/cmd/config.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/cmd/version-update_test.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/cmd/workspace-open.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/cmd/config-context.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/cmd/workspace-delete.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/cmd/workspace-stop.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/cmd/workspace-list-classes.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/cmd/workspace-start.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/cmd/config-context-list.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/cmd/version-update.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/cmd/root_test.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/cmd/workspace-list_test.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/cmd/login.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/cmd/workspace-get.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/cmd/version.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/cmd/workspace-list.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ide-metrics/cmd/run.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ide-metrics/cmd/root.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/image-builder-bob/cmd/build.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/image-builder-bob/cmd/root.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/image-builder-bob/cmd/daemon.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/image-builder-bob/cmd/proxy.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ee/agent-smith/cmd/run.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ee/agent-smith/cmd/signature-new.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ee/agent-smith/cmd/config-schema.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ee/agent-smith/cmd/root.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ee/agent-smith/cmd/signature-elfdump.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ee/agent-smith/cmd/signature.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/ee/agent-smith/cmd/signature-matches.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/git-commit-message-helper_test.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/ports-expose.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/validate_test.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/credential-helper.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/user-info.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/idp-token.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/stop-workspace.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/ports-visibility.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/sync-await.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/git-track-command.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/completion.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/env_test.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/tasks-list.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/validate.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/timeout-set.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/idp-login-aws.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/gitpodRun.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/git-commit-message-helper.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/tasks-attach.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/info.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/timeout-show.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/top.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/ports-await.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/env.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/ports-list.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/tasks-stop.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/root.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/credential-helper_test.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/open.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/idp-gcloud-token.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/ssh.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/sync-done.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/idp-login-vault.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/ports.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/idp-login.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/docs.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/root_test.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/timeout.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/preview.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/timeout-extend.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/tasks.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/idp.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/preview_test.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/git-token-validator.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/init.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/version.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/url.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/snapshot.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-cli/cmd/ports-protocol.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/blobserve/cmd/run.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/blobserve/cmd/root.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/usage/cmd/run.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/usage/cmd/root.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/workspacekit/cmd/rings.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/workspacekit/cmd/rings_test.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/workspacekit/cmd/root.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/workspacekit/cmd/nsenter.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/workspacekit/cmd/lift.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor/cmd/prepare-ide-prebuild.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor/cmd/terminal-list.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor/cmd/error-report.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor/cmd/call-server.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor/cmd/terminal.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor/cmd/run.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor/cmd/container.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor/cmd/debug-proxy.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor/cmd/send-analytics.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor/cmd/top.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor/cmd/terminal-attach.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor/cmd/terminal-new.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor/cmd/root.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor/cmd/container-drop.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor/cmd/tunnel.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor/cmd/terminal-close.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor/cmd/notify.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/supervisor/cmd/init.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "install/installer/cmd/config_files_containerd.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "install/installer/cmd/mirror.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "install/installer/cmd/validate_cluster.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "install/installer/cmd/validate.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "install/installer/cmd/mirror_repo.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "install/installer/cmd/config_init.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "install/installer/cmd/mirror_list.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "install/installer/cmd/root.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "install/installer/cmd/render_test.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "install/installer/cmd/config.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "install/installer/cmd/ideconfigmap.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "install/installer/cmd/config_cluster.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "install/installer/cmd/render.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "install/installer/cmd/validate_config.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "install/installer/cmd/init.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "install/installer/cmd/version.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "install/installer/cmd/config_files.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/imagebuilds-resolve-baseimage.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/workspaces-list.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/workspaces-subscribe.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/users-verify.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/workspaces-stop.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/clusters-uncordon.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/public-api-workspaces-get.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/completion.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/workspaces-dispose-content.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/workspaces-snapshot.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/imagebuilds-logs.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/imagebuilds-resolve.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/public-api-workspace.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/users-unblock.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/imagebuilds-resolve-workspaceimage.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/users-block.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/imagebuilds-build-batch.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/debug.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/workspaces-start.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/clusters-register.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/clusters-update.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/public-api-workspaces-list.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/imagebuilds.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/workspaces-last-heartbeat.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/workspaces-backup.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/public-api-workspaces-ownertoken.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/imagebuilds-build.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/root.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/clusters-swap.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/clusters.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/users.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/workspaces.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/clusters-cordon.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/imagebuilds-list.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/public-api.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/clusters-deregister.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/clusters-gettlsconfig.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/debug-log.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/workspaces-describe.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gpctl/cmd/clusters-list.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/ssh-load-test/cmd/reopen.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/ssh-load-test/cmd/lotconn.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/ssh-load-test/cmd/root.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/loadgen/cmd/run.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/loadgen/cmd/benchmark.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/loadgen/cmd/root.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/blowtorch/cmd/revert.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/blowtorch/cmd/remove.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/blowtorch/cmd/root.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/blowtorch/cmd/inject.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/blowtorch/cmd/ablaze.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gp-gcloud/cmd/root.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gp-gcloud/cmd/compute/instance-templates-create.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/gp-gcloud/cmd/compute/root.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/preview/previewctl/cmd/stale.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/preview/previewctl/cmd/access.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/preview/previewctl/cmd/get.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/preview/previewctl/cmd/report.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/preview/previewctl/cmd/install_context.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/preview/previewctl/cmd/create.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/preview/previewctl/cmd/root.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/preview/previewctl/cmd/workspaces.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/preview/previewctl/cmd/credentials.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/preview/previewctl/cmd/list_previews.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/preview/previewctl/cmd/get_name.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/preview/previewctl/cmd/ssh_vm.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dev/preview/previewctl/cmd/admin.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "/tmp/repo_analyzer_lczdu8d4/components/local-app-api/typescript-grpcweb/lib/localapp.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "/tmp/repo_analyzer_lczdu8d4/components/server/dist/main.js",
+            "type": "script",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "/tmp/repo_analyzer_lczdu8d4/components/gitpod-protocol/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "/tmp/repo_analyzer_lczdu8d4/components/ws-manager-bridge/dist/index.js",
+            "type": "script",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "/tmp/repo_analyzer_lczdu8d4/components/ide-metrics-api/typescript-grpcweb/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "/tmp/repo_analyzer_lczdu8d4/components/public-api/typescript/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "components/ide/code-desktop/status/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/ide/jetbrains/launcher/main_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "components/ide/jetbrains/launcher/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "components/ide/jetbrains/cli/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/ide/code/codehelper/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/supervisor-api/java/src/main/java/io/gitpod/supervisor/testclient/TestClient.java",
+            "type": "app",
+            "lang": "java",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/gitpod-db/src/tables.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "components/gitpod-db/src/typeorm/ormconfig.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "components/gitpod-db/src/redis/publisher.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "components/ws-manager-mk2/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "components/ws-manager-mk2/cmd/sample-workspace/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/ws-manager-mk2/pkg/maintenance/maintenance.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "components/spicedb/codegen/codegen.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/ide-service/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/content-service-api/go/ideplugin.pb.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/content-service-api/go/ideplugin_grpc.pb.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/content-service-api/typescript/util/generate-ws-ready.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/dashboard/src/OauthClientApproval.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/Usage.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/FromReferrer.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/Pagination/PaginationNavigationButton.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/prebuilds/list/PrebuildListPage.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/components/ErrorMessage.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/components/InfoBox.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/components/SelectableCard.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/components/WorkspaceLogs.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/components/SelectWorkspaceClassComponent.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/components/TabMenuItem.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/components/PendingChangesDropdown.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/components/PillLabel.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/components/Arrow.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/components/Header.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/components/PrebuildLogs.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/components/SelectIDEComponent.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/components/DateSelector.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/components/UsageBasedBillingConfig.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/components/PillMenuItem.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/user-settings/Account.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/user-settings/Notifications.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/user-settings/PersonalAccessTokens.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/user-settings/SelectIDE.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/user-settings/Preferences.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/projects/InstallGitHubApp.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/menu/OrganizationSelector.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/menu/Menu.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/error-pages/ExpiredOTS.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/error-pages/DefaultError.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/teams/Members.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/teams/TeamUsageBasedBilling.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/teams/TeamAuthentication.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/teams/JoinTeam.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/teams/SSO.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/teams/TeamPolicies.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/teams/GitIntegrationsPage.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/teams/TeamOnboarding.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/teams/TeamSettings.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/teams/NewTeam.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/teams/TeamNetworking.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/feedback-form/FeedbackModal.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/admin/Property.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/admin/ProjectDetail.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/admin/WorkspacesSearch.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/admin/ProjectsSearch.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/admin/TeamDetail.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/admin/UserSearch.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/admin/Label.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/admin/UserDetail.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/admin/WorkspaceDetail.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/dashboard/src/admin/TeamsSearch.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/server/src/monitoring-endpoints.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/server/src/express-util.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/analytics-controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/session-handler.spec.db.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/express-util.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/server.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/session-handler.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/one-time-secret-server.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/analytics.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/code-sync/code-sync-service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/azure-devops/azure-repository-provider.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "components/server/src/azure-devops/azure-auth-provider.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/bitbucket-server/bitbucket-server-auth-provider.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/prebuilds/github-enterprise-app.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/prebuilds/gitlab-app.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/prebuilds/bitbucket-server-app.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/prebuilds/bitbucket-app.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/prebuilds/github-app.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/api/server.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/workspace/headless-log-controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/workspace/workspace-download-service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/workspace/workspace-starter.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "components/server/src/gitlab/gitlab-auth-provider.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/express/ws-layer.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/express/ws-handler.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/express/ws-layer.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/express/ws-connection-handler.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/oauth-server/oauth-controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/websocket/websocket-connection-manager.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/test/authentication-github.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/server/src/liveness/liveness-controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/liveness/readiness-controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/liveness/probes.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "components/server/src/liveness/startup-controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/iam/iam-session-app.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/server/src/iam/iam-session-app.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/util/request-context.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/user/user-controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/user/newsletter-subscription-controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/user/phone-number.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "components/server/src/bitbucket/bitbucket-auth-provider.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/github/github-auth-provider.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/auth/nonce-service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/auth/bearer-authenticator.spec.db.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/auth/bearer-authenticator.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/auth/return-to-validation.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/auth/authenticator.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/auth/auth-provider.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/auth/login-completion-handler.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/auth/generic-auth-provider.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/server/src/dev/authenticator-dev.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "components/public-api-server/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/public-api-server/pkg/proxy/conn.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/service-waiter/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/ws-daemon/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/ws-daemon/cmd/content-initializer/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/ws-daemon/seccomp-profile-installer/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/ws-daemon/nsinsider/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/gitpod-protocol/src/context-url.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "components/gitpod-protocol/src/snapshot-url.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "components/gitpod-protocol/src/messaging/error.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "components/gitpod-protocol/src/util/logging.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "components/gitpod-protocol/src/util/debug-app.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/gitpod-protocol/java/src/main/java/io/gitpod/gitpodprotocol/testclient/TestClient.java",
+            "type": "app",
+            "lang": "java",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/ws-manager-bridge/src/bridge.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "components/ws-manager-bridge/src/healthz.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "components/ws-manager-bridge/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/openvsx-proxy/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/image-builder-mk3/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/node-labeler/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/docker-up/docker-up/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "components/docker-up/runc-facade/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/ws-proxy/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/registry-facade/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/content-service/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/content-service/pkg/service/ideplugin-service.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "components/local-app/main/update-manifest/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/local-app/main/gitpod-local-companion/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/local-app/main/gitpod-cli/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/ide-metrics/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/image-builder-bob/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/image-builder-bob/cmd/runc-facade/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/ee/agent-smith/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/ee/agent-smith/cmd/testbed/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "components/ee/agent-smith/cmd/testtarget/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/gitpod-cli/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/gitpod-cli/generate-theia-protocol.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/blobserve/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/public-api/go/protoc-proxy-gen/protoc-proxy-gen.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/usage/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/workspacekit/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "components/supervisor/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "test/pkg/agent/workspace/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "test/pkg/agent/daemon/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "install/preview/prettylog/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "install/installer/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "install/installer/scripts/structdoc.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "dev/gpctl/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "dev/changelog/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "dev/changelog/update.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "dev/changelog/pullrequest.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "dev/kubecdl/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "dev/rejector/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "dev/loadgen/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "dev/version-manifest/main_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "dev/version-manifest/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "dev/addlicense/tmpl.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "dev/addlicense/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "dev/blowtorch/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "dev/gp-gcloud/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "dev/preview/previewctl/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        }
+    ],
+    "main_entry": {
+        "path": "/tmp/repo_analyzer_lczdu8d4/components/local-app-api/typescript-grpcweb/lib/localapp.js",
+        "type": "main",
+        "lang": "typescript",
+        "confidence": 0.9
+    },
+    "test_by_category": null
+}

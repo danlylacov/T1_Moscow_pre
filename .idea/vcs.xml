@@ -2,5 +2,39 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cicd_stack" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_repos/express_test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_repos/fastapi_test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_repos/flask_test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_repos/gin_test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_repos/monorepos/lerna_test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_repos/monorepos/nx_test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_repos/monorepos/turbo_test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_repos/real_apps_analysis/calibre" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_repos/real_apps_analysis/cassandra" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_repos/real_apps_analysis/elasticsearch" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_repos/real_apps_analysis/ghost" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_repos/real_apps_analysis/gitea" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_repos/real_apps_analysis/home-assistant" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_repos/real_apps_analysis/jenkins" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_repos/real_apps_analysis/kafka" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_repos/real_apps_analysis/keycloak" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_repos/real_apps_analysis/mastodon" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_repos/real_apps_analysis/minio" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_repos/real_apps_analysis/n8n" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_repos/real_apps_analysis/odoo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_repos/real_apps_analysis/pixelfed" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_repos/real_apps_analysis/rocket-chat" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_repos/real_apps_analysis/syncthing" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_repos/real_apps_analysis/traefik" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_repos/real_apps_analysis/vault" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_repos/real_apps_analysis/wiki" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_repos/spring-boot_test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_repos/terraform_k8s_test/helm-charts_test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_repos/terraform_k8s_test/k8s-examples_test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_repos/terraform_k8s_test/k8s_test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_repos/terraform_k8s_test/terraform-eks_test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_repos/terraform_k8s_test/terraform_test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_repos/terraform_k8s_test/terragrunt_test" vcs="Git" />
   </component>
 </project>

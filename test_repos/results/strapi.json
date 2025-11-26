@@ -1,0 +1,3015 @@
+{
+    "languages": [
+        "typescript"
+    ],
+    "frameworks": [
+        "react",
+        "nextjs"
+    ],
+    "frontend_frameworks": [
+        "react",
+        "nextjs"
+    ],
+    "backend_frameworks": [],
+    "package_manager": "yarn",
+    "test_runner": [
+        "jest",
+        "vitest",
+        "playwright",
+        "cucumber"
+    ],
+    "docker": true,
+    "docker_context": null,
+    "dockerfile_path": null,
+    "docker_by_category": null,
+    "kubernetes": false,
+    "terraform": false,
+    "databases": [
+        "sqlite"
+    ],
+    "entry_points": [
+        {
+            "path": "templates/website/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/providers/email-amazon-ses/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/providers/email-nodemailer/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/providers/email-mailgun/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/providers/upload-local/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/providers/upload-aws-s3/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/providers/email-sendgrid/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/providers/upload-cloudinary/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/providers/email-sendmail/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/sentry/server/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/sentry/server/src/services/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/sentry/admin/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/i18n/server/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/i18n/server/src/routes/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/i18n/server/src/routes/validation/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/i18n/server/src/content-types/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/i18n/server/src/content-types/locale/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/i18n/server/src/models/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/i18n/server/src/utils/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/i18n/server/src/controllers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/i18n/server/src/services/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/i18n/server/src/services/sanitize/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/i18n/server/src/constants/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/i18n/admin/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/cloud/admin/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/documentation/server/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/documentation/server/src/config/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/documentation/server/src/routes/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/documentation/server/src/controllers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/documentation/server/src/services/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/documentation/server/src/services/helpers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/documentation/admin/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/documentation/admin/src/utils/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/color-picker/server/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/color-picker/admin/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/graphql/server/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/graphql/server/src/config/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/graphql/server/src/services/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/graphql/server/src/services/format/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/graphql/server/src/services/content-api/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/graphql/server/src/services/content-api/register-functions/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/graphql/server/src/services/builders/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/graphql/server/src/services/builders/resolvers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/graphql/server/src/services/builders/filters/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/graphql/server/src/services/builders/filters/operators/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/graphql/server/src/services/builders/mutations/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/graphql/server/src/services/builders/queries/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/graphql/server/src/services/extension/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/graphql/server/src/services/utils/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/graphql/server/src/services/utils/mappers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/graphql/server/src/services/internals/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/graphql/server/src/services/internals/helpers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/graphql/server/src/services/internals/types/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/graphql/server/src/services/internals/args/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/graphql/server/src/services/internals/scalars/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/graphql/admin/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/upgrade/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/upgrade/src/modules/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/upgrade/src/modules/format/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/upgrade/src/modules/json/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/upgrade/src/modules/codemod/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/upgrade/src/modules/upgrader/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/upgrade/src/modules/codemod-runner/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/upgrade/src/modules/project/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/upgrade/src/modules/requirement/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/upgrade/src/modules/runner/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/upgrade/src/modules/runner/json/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/upgrade/src/modules/runner/code/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/upgrade/src/modules/timer/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/upgrade/src/modules/codemod-repository/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/upgrade/src/modules/file-scanner/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/upgrade/src/modules/version/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/upgrade/src/modules/npm/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/upgrade/src/modules/error/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/upgrade/src/modules/report/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/upgrade/src/modules/logger/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/upgrade/src/tasks/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/upgrade/src/tasks/upgrade/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/upgrade/src/tasks/upgrade/requirements/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/upgrade/src/tasks/upgrade/prompts/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/upgrade/src/tasks/codemods/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/upgrade/src/cli/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/logger/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/logger/src/formats/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/logger/src/configs/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/generators/generators/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/admin-test-utils/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/admin-test-utils/src/fixtures/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/admin-test-utils/src/fixtures/store/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/admin-test-utils/src/fixtures/permissions/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/admin-test-utils/src/fixtures/meta-data/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/admin-test-utils/src/fixtures/collection-types/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/strapi/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/strapi/src/cli/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/strapi/src/cli/commands/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/strapi/src/cli/commands/openapi/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/email/server/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/email/server/src/middlewares/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/email/server/src/routes/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/email/server/src/routes/validation/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/email/server/src/controllers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/email/server/src/services/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/email/admin/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/review-workflows/server/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/review-workflows/server/src/routes/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/review-workflows/server/src/content-types/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/review-workflows/server/src/content-types/workflow-stage/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/review-workflows/server/src/content-types/workflow/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/review-workflows/server/src/utils/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/review-workflows/server/src/controllers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/review-workflows/server/src/homepage/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/review-workflows/server/src/homepage/routes/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/review-workflows/server/src/homepage/controllers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/review-workflows/server/src/homepage/services/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/review-workflows/server/src/services/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/review-workflows/server/src/services/metrics/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/review-workflows/admin/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/upload/server/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/upload/server/src/routes/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/upload/server/src/routes/validation/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/upload/server/src/content-types/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/upload/server/src/utils/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/upload/server/src/controllers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/upload/server/src/services/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/upload/server/src/services/extensions/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/upload/admin/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/upload/admin/src/utils/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/types/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/types/src/public/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/types/src/plugin/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/types/src/plugin/config/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/types/src/plugin/config/strapi-server/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/types/src/plugin/config/strapi-admin/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/types/src/modules/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/types/src/modules/entity-service/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/types/src/modules/entity-service/params/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/types/src/modules/entity-service/params/attributes/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/types/src/modules/entity-service/params/filters/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/types/src/modules/documents/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/types/src/modules/documents/params/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/types/src/modules/documents/params/attributes/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/types/src/modules/documents/params/filters/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/types/src/modules/documents/result/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/types/src/utils/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/types/src/uid/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/types/src/struct/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/types/src/core/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/types/src/core/config/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/types/src/core/core-api/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/types/src/core/commands/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/types/src/internal/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/types/src/schema/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/types/src/schema/attribute/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/types/src/schema/attribute/definitions/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/types/src/data/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-type-builder/server/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-type-builder/server/src/routes/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-type-builder/server/src/utils/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-type-builder/server/src/controllers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-type-builder/server/src/controllers/ai/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-type-builder/server/src/services/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-type-builder/server/src/services/schema-builder/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-type-builder/admin/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-type-builder/admin/src/components/IconPicker/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-type-builder/admin/src/components/CustomRadioGroup/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-type-builder/admin/src/components/ComponentCard/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-type-builder/admin/src/components/ComponentCard/ComponentIcon/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-type-builder/admin/src/utils/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/database/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/database/src/repairs/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/database/src/types/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/database/src/validations/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/database/src/validations/relations/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/database/src/query/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/database/src/query/helpers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/database/src/query/helpers/populate/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/database/src/query/helpers/streams/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/database/src/utils/identifiers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/database/src/dialects/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/database/src/dialects/postgresql/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/database/src/dialects/sqlite/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/database/src/dialects/mysql/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/database/src/migrations/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/database/src/migrations/internal-migrations/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/database/src/entity-manager/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/database/src/fields/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/database/src/metadata/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/database/src/errors/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/database/src/lifecycles/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/database/src/lifecycles/subscribers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/database/src/schema/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/utils/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/utils/src/validation/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/utils/src/validation/route-validators/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/utils/src/primitives/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/utils/src/sanitize/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/utils/src/sanitize/visitors/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/utils/src/validate/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/utils/src/validate/visitors/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/utils/src/traverse/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/data-transfer/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/data-transfer/src/strapi/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/data-transfer/src/strapi/providers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/data-transfer/src/strapi/providers/local-source/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/data-transfer/src/strapi/providers/remote-destination/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/data-transfer/src/strapi/providers/local-destination/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/data-transfer/src/strapi/providers/local-destination/strategies/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/data-transfer/src/strapi/providers/local-destination/strategies/restore/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/data-transfer/src/strapi/providers/remote-source/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/data-transfer/src/strapi/remote/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/data-transfer/src/strapi/remote/flows/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/data-transfer/src/strapi/remote/handlers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/data-transfer/src/strapi/queries/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/data-transfer/src/utils/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/data-transfer/src/utils/encryption/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/data-transfer/src/engine/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/data-transfer/src/engine/validation/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/data-transfer/src/engine/validation/schemas/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/data-transfer/src/errors/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/data-transfer/src/file/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/data-transfer/src/file/providers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/data-transfer/src/file/providers/source/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/data-transfer/src/file/providers/destination/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/permissions/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/permissions/src/domain/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/permissions/src/domain/permission/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/permissions/src/engine/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/permissions/src/engine/abilities/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/core/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/core/src/middlewares/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/core/src/registries/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/core/src/configuration/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/core/src/providers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/core/src/domain/module/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/core/src/domain/content-type/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/core/src/utils/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/core/src/utils/update-notifier/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/core/src/migrations/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/core/src/services/content-api/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/core/src/services/content-api/permissions/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/core/src/services/content-api/permissions/providers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/core/src/services/document-service/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/core/src/services/document-service/middlewares/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/core/src/services/document-service/attributes/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/core/src/services/server/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/core/src/services/entity-validator/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/core/src/services/entity-validator/__tests__/utils/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/core/src/services/entity-service/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/core/src/services/metrics/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/core/src/services/auth/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/core/src/ee/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/core/src/core-api/routes/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/core/src/core-api/routes/validation/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/core/src/core-api/controller/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/core/src/core-api/service/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/core/src/loaders/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/core/src/loaders/plugins/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/openapi/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/openapi/src/registries/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/openapi/src/pre-processor/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/openapi/src/generator/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/openapi/src/routes/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/openapi/src/routes/providers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/openapi/src/routes/rules/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/openapi/src/utils/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/openapi/src/utils/timer/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/openapi/src/context/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/openapi/src/context/factories/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/openapi/src/assemblers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/openapi/src/assemblers/document/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/openapi/src/assemblers/document/path/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/openapi/src/assemblers/document/path/path-item/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/openapi/src/assemblers/document/path/path-item/operation/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/openapi/src/post-processor/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/openapi/__tests__/fixtures/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/openapi/__tests__/mocks/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-releases/server/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-releases/server/src/routes/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-releases/server/src/content-types/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-releases/server/src/content-types/release/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-releases/server/src/content-types/release-action/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-releases/server/src/utils/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-releases/server/src/controllers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-releases/server/src/migrations/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-releases/server/src/services/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-releases/admin/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/admin/server/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/admin/server/src/middlewares/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/admin/server/src/config/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/admin/server/src/strategies/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/admin/server/src/routes/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/admin/server/src/policies/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/admin/server/src/content-types/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/admin/server/src/domain/condition/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/admin/server/src/domain/action/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/admin/server/src/domain/permission/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/admin/server/src/validation/common-functions/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/admin/server/src/validation/authentication/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/admin/server/src/validation/transfer/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/admin/server/src/controllers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/admin/server/src/controllers/formatters/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/admin/server/src/controllers/transfer/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/admin/server/src/services/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/admin/server/src/services/transfer/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/admin/server/src/services/permission/sections-builder/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/admin/server/src/services/permission/permissions-manager/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/admin/ee/server/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/admin/ee/server/src/routes/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/admin/ee/server/src/content-types/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/admin/ee/server/src/utils/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/admin/ee/server/src/controllers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/admin/ee/server/src/controllers/authentication-utils/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/admin/ee/server/src/services/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/admin/_internal/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/admin/admin/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/admin/admin/tests/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-manager/server/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-manager/server/src/middlewares/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-manager/server/src/routes/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-manager/server/src/policies/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-manager/server/src/history/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-manager/server/src/history/routes/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-manager/server/src/history/controllers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-manager/server/src/history/services/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-manager/server/src/utils/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-manager/server/src/controllers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-manager/server/src/controllers/validation/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-manager/server/src/homepage/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-manager/server/src/homepage/routes/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-manager/server/src/homepage/controllers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-manager/server/src/homepage/services/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-manager/server/src/services/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-manager/server/src/services/utils/configuration/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-manager/server/src/preview/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-manager/server/src/preview/routes/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-manager/server/src/preview/controllers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-manager/server/src/preview/services/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-manager/server/src/constants/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-manager/shared/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-manager/shared/contracts/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-manager/admin/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-manager/admin/src/history/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-manager/admin/src/preview/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/cli/cloud/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/cli/cloud/src/logout/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/cli/cloud/src/create-growth-sso-trial/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/cli/cloud/src/login/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/cli/cloud/src/list-projects/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/cli/cloud/src/deploy-project/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/cli/cloud/src/create-project/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/cli/cloud/src/environment/list/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/cli/cloud/src/environment/link/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/cli/cloud/src/services/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/cli/cloud/src/link/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/cli/create-strapi-app/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/cli/create-strapi-app/templates/vanilla/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/cli/create-strapi-app/templates/example/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/kitchensink-ts/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/experimental-dev/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/empty/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/api/utils/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/api/core/strapi/document-service/resources/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/api/core/strapi/document-service/utils/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-manager/admin/src/modules/app.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "templates/website/config/server.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/i18n/admin/tests/server.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/documentation/tests/server.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/types/src/modules/server.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/types/src/core/config/server.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/admin/admin/tests/server.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-manager/admin/src/history/tests/server.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/content-manager/admin/tests/server.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/cli/create-strapi-app/templates/vanilla/config/server.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/cli/create-strapi-app/templates/example/config/server.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/kitchensink-ts/config/server.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/experimental-dev/config/server.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/empty/config/server.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/users-permissions/server/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/users-permissions/server/middlewares/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/users-permissions/server/routes/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/users-permissions/server/routes/content-api/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/users-permissions/server/routes/admin/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/users-permissions/server/bootstrap/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/users-permissions/server/content-types/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/users-permissions/server/content-types/role/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/users-permissions/server/content-types/permission/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/users-permissions/server/content-types/user/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/users-permissions/server/utils/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/users-permissions/server/utils/sanitize/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/users-permissions/server/utils/sanitize/visitors/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/users-permissions/server/controllers/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/users-permissions/server/services/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/users-permissions/server/graphql/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/users-permissions/server/graphql/types/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/users-permissions/server/graphql/mutations/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/users-permissions/server/graphql/queries/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/users-permissions/admin/src/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/plugins/users-permissions/admin/src/utils/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/api-tests/builder/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/eslint-config-custom/front/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/eslint-config-custom/back/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/typescript/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/typescript/lib/utils/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/typescript/lib/generators/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/typescript/lib/generators/components/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/typescript/lib/generators/content-types/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/typescript/lib/generators/common/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/typescript/lib/generators/common/models/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/utils/typescript/lib/compilers/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/admin/server/src/utils/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/cli/create-strapi/bin/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/cli/cloud/bin/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/cli/create-strapi-app/templates/vanilla-js/src/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/cli/create-strapi-app/templates/example-js/src/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/cli/create-strapi-app/bin/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/plugins/workspace-plugin/server/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/plugins/workspace-plugin/server/config/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/plugins/workspace-plugin/admin/src/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/plugins/todo-example/server/src/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/plugins/todo-example/server/src/routes/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/plugins/todo-example/server/src/content-types/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/plugins/todo-example/server/src/utils/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/plugins/todo-example/server/src/controllers/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/plugins/todo-example/server/src/services/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/getstarted/src/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/getstarted/src/api/address/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/getstarted/src/plugins/local-plugin/server/config/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/getstarted/src/plugins/local-plugin/server/content-types/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/getstarted/src/plugins/local-plugin/server/content-types/test/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/getstarted/src/plugins/local-plugin/server/controllers/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/getstarted/src/plugins/local-plugin/admin/src/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "scripts/front/merge-duplicated-translations/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": ".github/actions/check-pr-status/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": ".github/actions/check-pr-status/dist/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/e2e/app-template/src/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/api/core/strapi/document-service/resources/fixtures/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/api/core/strapi/document-service/resources/schemas/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/api/core/strapi/api/validate/resources/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/api/core/strapi/api/validate/resources/fixtures/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/api/core/strapi/api/validate/resources/schemas/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cli/app-template/src/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cli/app-template/template/src/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cli/utils/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/kitchensink/src/admin/app.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/cli/create-strapi-app/templates/vanilla-js/config/server.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/cli/create-strapi-app/templates/example-js/config/server.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/kitchensink/config/server.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/getstarted/config/server.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/e2e/app-template/config/server.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cli/app-template/config/server.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "/tmp/repo_analyzer_s14ykkn_/.github/actions/check-pr-status/dist/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "templates/website/src/index.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "templates/website/src/api/page/routes/page.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "templates/website/src/api/page/controllers/page.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "templates/website/src/api/page/services/page.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "templates/website/src/api/global/routes/global.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "templates/website/src/api/global/controllers/global.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "templates/website/src/api/global/services/global.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "templates/website/src/api/lead-form-submission/routes/lead-form-submission.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "templates/website/src/api/lead-form-submission/controllers/lead-form-submission.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "templates/website/src/api/lead-form-submission/services/lead-form-submission.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "templates/website/src/admin/app.example.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "templates/website/src/admin/vite.config.example.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "templates/website/config/plugins.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "templates/website/config/api.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "templates/website/config/admin.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "templates/website/config/database.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "templates/website/config/middlewares.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "templates/website/config/server.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/kitchensink-ts/src/index.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/kitchensink-ts/src/admin/app.example.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/kitchensink-ts/src/admin/webpack.config.example.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/kitchensink-ts/config/api.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/kitchensink-ts/config/admin.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/kitchensink-ts/config/database.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/kitchensink-ts/config/middlewares.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/kitchensink-ts/config/server.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/experimental-dev/src/index.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/experimental-dev/src/admin/vite.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/experimental-dev/config/api.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/experimental-dev/config/admin.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/experimental-dev/config/database.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/experimental-dev/config/middlewares.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/experimental-dev/config/server.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/empty/src/index.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/empty/src/admin/app.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/empty/src/admin/vite.config.example.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/empty/config/features.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/empty/config/plugins.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/empty/config/api.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/empty/config/admin.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/empty/config/database.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/empty/config/middlewares.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/empty/config/server.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/api/core/strapi/plugin-routes-extension-bc.test.api.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/api/core/strapi/document-service/resources/index.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        }
+    ],
+    "main_entry": {
+        "path": "/tmp/repo_analyzer_s14ykkn_/.github/actions/check-pr-status/dist/index.js",
+        "type": "main",
+        "lang": "typescript",
+        "confidence": 0.9
+    },
+    "test_by_category": null
+}

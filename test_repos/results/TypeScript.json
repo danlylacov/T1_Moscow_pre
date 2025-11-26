@@ -1,0 +1,4927 @@
+{
+    "languages": [
+        "typescript"
+    ],
+    "frameworks": [
+        "express",
+        "nextjs",
+        "vue",
+        "angular",
+        "react"
+    ],
+    "frontend_frameworks": [
+        "nextjs",
+        "vue",
+        "angular",
+        "react"
+    ],
+    "backend_frameworks": [
+        "express"
+    ],
+    "package_manager": "npm",
+    "test_runner": [
+        "vitest",
+        "mocha",
+        "cucumber"
+    ],
+    "docker": false,
+    "docker_context": null,
+    "dockerfile_path": null,
+    "docker_by_category": null,
+    "kubernetes": false,
+    "terraform": false,
+    "databases": [],
+    "entry_points": [
+        {
+            "path": "tests/cases/projects/RelativePaths/app.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/projects/relative-nested/app.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/tsserver/server.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/projects/VisibilityOfCrosssModuleTypeUsage/server.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/projects/InvalidReferences/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/projects/reference-1/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/projects/decoratorMetadata/emitDecoratorMetadataSystemJS/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/projects/decoratorMetadata/emitDecoratorMetadataSystemJSIsolatedModule/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/projects/decoratorMetadata/emitDecoratorMetadataSystemJSIsolatedModuleNoResolve/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/projects/decoratorMetadata/emitDecoratorMetadataCommonJSIsolatedModuleNoResolve/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/projects/decoratorMetadata/emitDecoratorMetadataCommonJSIsolatedModule/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/baselines/reference/project/nodeModulesMaxDepthExceeded/amd/maxDepthExceeded/built/node_modules/m1/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/baselines/reference/project/nodeModulesMaxDepthExceeded/node/maxDepthExceeded/built/node_modules/m1/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/projects/NodeModulesSearch/importHigher/node_modules/m2/node_modules/m3/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/projects/NodeModulesSearch/importHigher/node_modules/m1/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/projects/NodeModulesSearch/maxDepthIncreased/node_modules/m2/node_modules/m3/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/projects/NodeModulesSearch/maxDepthIncreased/node_modules/m1/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/projects/NodeModulesSearch/maxDepthExceeded/node_modules/m2/node_modules/m3/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/projects/NodeModulesSearch/maxDepthExceeded/node_modules/m1/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/baselines/reference/project/visibilityOfTypeUsedAcrossModules/amd/server.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/baselines/reference/project/visibilityOfTypeUsedAcrossModules/node/server.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/baselines/reference/project/emitDecoratorMetadataCommonJSISolatedModules/amd/main.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/baselines/reference/project/emitDecoratorMetadataCommonJSISolatedModules/node/main.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/baselines/reference/project/emitDecoratorMetadataSystemJS/amd/main.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/baselines/reference/project/emitDecoratorMetadataSystemJS/node/main.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/baselines/reference/project/emitDecoratorMetadataCommonJSISolatedModulesNoResolve/amd/main.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/baselines/reference/project/emitDecoratorMetadataCommonJSISolatedModulesNoResolve/node/main.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/baselines/reference/project/emitDecoratorMetadataSystemJSISolatedModules/amd/main.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/baselines/reference/project/emitDecoratorMetadataSystemJSISolatedModules/node/main.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/baselines/reference/project/emitDecoratorMetadataSystemJSISolatedModulesNoResolve/amd/main.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/baselines/reference/project/emitDecoratorMetadataSystemJSISolatedModulesNoResolve/node/main.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "/tmp/repo_analyzer_1mbm70de/lib/typescript.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "src/testRunner/unittests/helpers/demoProjectReferences.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/testRunner/unittests/helpers/alternateResult.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "src/testRunner/unittests/helpers/declarationEmit.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/testRunner/unittests/tscWatch/resolveJsonModuleWithIncremental.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/testRunner/unittests/services/extract/symbolWalker.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/testRunner/unittests/tsbuild/javascriptProjectEmit.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "src/testRunner/unittests/tsbuild/resolveJsonModule.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/testRunner/unittests/tsbuild/inferredTypeFromTransitiveModule.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/testRunner/unittests/tsserver/maxNodeModuleJsDepth.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "src/testRunner/unittests/tsserver/completionsIncomplete.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/baselines/reference/transpile/declarationsSimple.d.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/baselines/reference/extractFunction/extractFunction_NamelessClass.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/organizeImportsReactJsx.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/refactorConvertToEsModule_export_object_shorthand.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/javaScriptModules19.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/completionsJSDocNoCrash3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/completionsImport_umdDefaultNoCrash1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/completionsImport_default_anonymous.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/renameForDefaultExport07.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/importNameCodeFixExistingImport3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/findAllRefsClassExpression1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/completionsImport_require_addToExisting.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/refactorConvertParamsToDestructuredObject_namelessClass.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/externalModuleIntellisense.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/duplicatePackageServices.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/findAllReferencesJsRequireDestructuring1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/codeFixGenerateDefinitions.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/renameModuleExportsProperties1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/tsxGoToDefinitionClassInDifferentFile.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/goToDefinitionJsxNotSet.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/moveToNewFile_prologueDirectives6.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/goToDefinitionImportedNames7.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/importFixes_quotePreferenceSingle_importHelpers.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/importNameCodeFixDefaultExport7.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/getEditsForFileRename_directory_down.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/importNameCodeFix_require_importVsRequire_addToExistingWins.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/renameModuleExportsProperties2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/refactorConvertExport_defaultToNamed.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/organizeImportsReactJsxDev.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/findAllRefsExportDefaultClassConstructor.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/codefixUnreferenceableDecoratorMetadata2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/renameDefaultImport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/navbar_exportDefault.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/renameDefaultImportDifferentName.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/unusedImports12FS.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/codeFixMissingTypeAnnotationOnExports10.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/importNameCodeFixDefaultExport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/findAllReferencesJsRequireDestructuring.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/refactorConvertExport_namedToDefaultInModuleAugmentation1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/codeFixMissingTypeAnnotationOnExports44-default-export.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/codeFixCannotFindModule_suggestion_js.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/importNameCodeFix_noDestructureNonObjectLiteral.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/importNameCodeFixNewImportDefault0.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/unusedImports6FS.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/codeFixConvertToTypeOnlyImport1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/explainFilesNodeNextWithTypesReference.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/renameForDefaultExport04.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/javascriptModulesTypeImport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/completionsImportDefaultExportCrash2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/importNameCodeFix_shorthandPropertyAssignment2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/refactorConvertExport_defaultToNamed3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/suggestionOfUnusedVariableWithExternalModule.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/codeFixConvertToTypeOnlyImport2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/findAllRefs_importType_js.1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/refactorConvertParamsToDestructuredObject_importedFunction2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/renameForDefaultExport02.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/renameFromNodeModulesDep4.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/importNameCodeFix_defaultExport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/codeFixConvertToTypeOnlyImport3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/exportDefaultFunction.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/javascriptModules21.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/importNameCodeFix_all.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/refactorConvertExport_namedToDefault_alreadyHasDefault.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/findAllRefsForDefaultExport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/importNameCodeFix_commonjs_allowSynthetic.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/emptyExportFindReferences.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/refactorConvertToEsModule_module_node12.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/renameJsExports02.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/completionsImport_require_addNew.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/completionsImport_default_didNotExistBefore.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/goToDefinitionSwitchCase6.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/findAllRefsJsDocImportTag5.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/documentHighlights_33722.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/moveToNewFile_defaultExport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/preparePasteEdits_multipleLocations.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/importNameCodeFix_typeOnly3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/importNameCodeFixNewImportAmbient1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/findAllRefsImportType.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/importNameCodeFix_require_UMD.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/completionListForUnicodeEscapeName.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/importNameCodeFixExistingImport1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/incorrectJsDocObjectLiteralType.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/renameForDefaultExport06.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/autoImportNodeNextJSRequire.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/refactorConvertImport_namedToNamespace4.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/codeFixClassImplementDefaultClass.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/findAllRefsTypedef_importType.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/importJsNodeModule1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/refactorConvertExport_onlyValidIdentifiers.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/completionListIsGlobalCompletion.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/moveToNewFile_fileNameBasedOnExportedName.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/completionsImport_umdDefaultNoCrash2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/refactorConvertExport_exportNodeKinds.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/importNameCodeFix_require_importVsRequire_importWins.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/moveToNewFile_requireImport2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/findAllRefsOfConstructor_multipleFiles.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/jsdocLink6.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/exportDefaultClass.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/importNameCodeFix_importType2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/completionsImport_reExportDefault2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/importNameCodeFixNewImportAmbient3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/refactorConvertToEsModule_export_alias.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/javascriptModulesTypeImportAsValue.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/refactorConvertExport_namedToDefault2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/completionsImport_default_exportDefaultIdentifier.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/importNameCodeFixNewImportExportEqualsCommonJSInteropOn.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/unusedImports14FS.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/findAllRefsCommonJsRequire3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/autoImportVerbatimCJS1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/importJsNodeModule2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/completionListForImportAttributes.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/findAllRefs_importType_js.3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/findAllRefsForDefaultExport03.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/completionsObjectLiteralModuleExports.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/codefixUnreferenceableDecoratorMetadata1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/completionsImport_default_addToNamedImports.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/completionsImport_jsxOpeningTagImportDefault.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/getEditsForFileRename_directory_up.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/goToDefinitionDestructuredRequire1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/goToDefinitionDestructuredRequire2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/moveToNewFile_prologueDirectives5.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/renameJsExports03.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/refactorConvertToEsModule_export_moduleDotExports.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/importNameCodeFixDefaultExport4.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/tslibFindAllReferencesOnRuntimeImportWithPaths1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/findAllRefsDefaultImport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/codeFixClassImplementInterfaceAutoImports_typeOnly.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/quickinfoVerbosityImport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/importFixWithMultipleModuleExportAssignment.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/codeFixClassImplementInterfaceAutoImports.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/unusedImports11FS.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/renameReExportDefault.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/javascriptModules20.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/codeFixAddMissingImportForReactJsx2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/importNameCodeFix_require_addToExisting.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/refactorConvertToEsModule_inCommonJsFile.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/completionsDefaultExport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/duplicatePackageServices_fileChanges.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/importNameCodeFix_jsxOpeningTagImportDefault.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/unusedImports13FS.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/renameForDefaultExport01.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/renameForDefaultExport03.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/codeFixInferFromUsageSetterWithInaccessibleTypeJS.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/refactorConvertToEsModule_export_moduleDotExports_changesImports.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/importNameCodeFixDefaultExport5.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/refactorConvertExport_namedToDefault1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/findAllRefs_importType_js.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/extract-method_jsxPreceedingWhitespace.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/completionsImport_default_alreadyExistedWithRename.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/goToDefinitionImports.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/importNameCodeFix_importType1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/completionEntryClassMembersWithInferredFunctionReturnType1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/refactorConvertExport_defaultToNamed2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/codeFixInferFromUsageSetterWithInaccessibleType.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/moveToNewFile_importNameLikeGlobal1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/completionsImport_default_addToNamespaceImport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/findAllRefsForDefaultExport01.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/renameExportCrash.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/renameForDefaultExport09.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/importNameCodeFix_require.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/completionsImport_defaultFalsePositive.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/moveToNewFile_aliasDefaultExportNamedImport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/completionsImport_filteredByPackageJson_ambient.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/moveToNewFile_requireImport1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/completionsImport_ambient.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/extract-method-in-anonymous-function-declaration.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/completionsOverridingMethodDefaultExported.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/importNameCodeFixDefaultExport2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/importNameCodeFixDefaultExport6.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/docCommentTemplateJsSpecialPropertyAssignment.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/moveToNewFile_cleanUpLastNamedImport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/importNameCodeFixNewImportNodeModules2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/completionsImport_defaultAndNamedConflict.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/getEditsForFileRename_js_simple.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/autoImportSameNameDefaultExported.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/findAllRefsForDefaultExport08.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/renameForDefaultExport08.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/javaScriptModules17.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/getEditsForFileRename.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/completionsImport_reExportDefault.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/organizeImports12.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/findAllRefsModuleDotExports.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/javascriptModules22.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/findAllRefsJsDocImportTag2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/findAllRefsForDefaultExport02.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/getEditsForFileRename_directory.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/formattingOfExportDefault.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/importNameCodeFix_reExportDefault.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/importJsNodeModule4.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/codeFixInferFromUsageJSXElement.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/completionInNamedImportLocation.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/codeFixSplitTypeOnlyImport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/findAllRefsForDefaultExport09.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/findAllRefsNonexistentPropertyNoCrash1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/refactorConvertToEsModule_module_nodenext.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/refactorConvertToEsModule_export_object.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/completionsImport_default_fromMergedDeclarations.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/importNameCodeFix_reExport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/refactorConvertToEsModule_export_moduleDotExportsEqualsRequire.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/findAllRefsForDefaultExport_reExport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/completionsImportDefaultExportCrash1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/refactorConvertToEsModule_notAtTopLevel.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/jsxFindAllReferencesOnRuntimeImportWithPaths1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/codeFixAddMissingImportForReactJsx1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/completionsDefaultKeywordWhenDefaultExportAvailable.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/goToDefinitionImportedNames11.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/refactorConvertToEsModule_renameWithinTransformedExports.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/unusedImports7FS.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/importNameCodeFix_require_namedAndDefault.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/javaScriptModules13.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/extract-method-not-for-import.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/refactorConvertToEsModule_exportEqualsClass.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/findAllRefs_importType_js.4.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/moveToNewFile_defaultImport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/importNameCodeFixDefaultExport1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/jsFileImportNoTypes2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/completionsImportModuleAugmentationWithJS.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/importFixes_quotePreferenceDouble_importHelpers.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/jsdocDeprecated_suggestion20.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/completionsImport_tsx.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/renameModuleExportsProperties3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/codefixUnreferenceableDecoratorMetadata3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/importNameCodeFixDefaultExport3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/navigationItemsExportDefaultExpression.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/codeFixMissingTypeAnnotationOnExports32-inline-short-hand.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/completionsImport_default_reExport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/refactorConvertExport_ambientModule.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/completionsSpecialAssignmentNotContextuallyTyped.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/refactorConvertImport_namedToNamespace2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/navigationItemsExportDefaultExpression2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/refactorConvertExport_namedToDefaultInModuleAugmentation2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/moveToFile_expandSelectionRange14.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/renameForDefaultExport05.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/importNameCodeFixExistingImport4.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/goToDefinitionSignatureAlias_require.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/goToDefinitionJsModuleName.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/codeFixMissingTypeAnnotationOnExports31-inline-import-default.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/findAllRefs_importType_js.2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/server/pasteEdits_defaultExport1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/server/goToSource15_bundler.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/server/completionsImport_jsModuleExportsAssignment.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/server/pasteEdits_defaultExport2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/server/goToSource13_nodenext.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/server/goToSource7_conditionallyMinified.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/fourslash/server/importFixes_ambientCircularDefaultCrash.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/fourslash/server/completionsImport_defaultAndNamedConflict_server.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/narrowedImports.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/decoratorMetadataWithImportDeclarationNameCollision5.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitExpressionInExtends6.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitExpressionInExtends7.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitUnnessesaryTypeReferenceNotAdded.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/jsDeclarationEmitDoesNotRenameImport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/importHelpersWithImportOrExportDefaultNoTslib.1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es2015modulekind.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitDefaultExportWithTempVarName.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/newAbstractInstance2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/exportDefaultWithJSDoc1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es5andes6module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/exportDefaultProperty2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/exportDefaultInterfaceAndFunctionOverloads.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es6ImportDefaultBindingFollowedWithNamespaceBinding1WithExport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitDefaultExportWithStaticAssignment.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/parametersSyntaxErrorNoCrash2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitCastReusesTypeNode3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/systemModule11.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es6ImportDefaultBindingFollowedWithNamedImportDts1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationsIndirectGeneratedAliasReference.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitWithComposite.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/moduleAugmentationOfAlias.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/checkJsdocTypeTagOnExportAssignment5.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/defaultNamedExportWithType1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es2015modulekindWithES6Target.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/exportDefaultFunctionInNamespace.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/systemModule15.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/jsDeclarationEmitExportAssignedArray.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/compiler/es6ImportDefaultBindingFollowedWithNamedImportWithExport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es5-commonjs8.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/moduleResolution_classicPrefersTs.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/nodeNextCjsNamespaceImportDefault2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/impliedNodeFormatInterop1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es5-commonjs2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/checkJsdocTypeTagOnExportAssignment1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/moduleElementsInWrongContext3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/fillInMissingTypeArgsOnJSConstructCalls.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/requireOfJsonFileInJsFile.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/compiler/unusedImports_entireImportDeclaration.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitWithDefaultAsComputedName.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitDefaultExportWithTempVarNameWithBundling.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/esModuleInteropDefaultImports.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/allowSyntheticDefaultImportsCanPaintCrossModuleDeclaration.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/uniqueSymbolPropertyDeclarationEmit.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es6ExportDefaultFunctionDeclaration.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/jsxViaImport.2.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitPathMappingMonorepo2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/checkJsdocTypeTagOnExportAssignment2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitCastReusesTypeNode2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/exportDefaultStripsFreshness.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitWithDefaultAsComputedName2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/importsInAmbientModules3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/moduleElementsInWrongContext.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es6ImportDefaultBindingFollowedWithNamedImport1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/duplicatePackage_subModule.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/nodeModuleReexportFromDottedPath.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es6ImportDefaultBindingMergeErrors.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/exportDefaultTypeAndFunctionOverloads.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/moduleResolutionNoTsCJS.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitUnknownImport2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es5ExportDefaultExpression.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitCommonSourceDirectoryDoesNotContainAllFiles.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/exportDefaultParenthesizeES6.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/checkJsdocTypeTagOnExportAssignment8.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/exportDefaultInterfaceAndTwoFunctions.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/importNonExportedMember12.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/compiler/systemDefaultExportCommentValidity.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/sideEffectImports2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/compiler/es5-commonjs6.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/jsExportMemberMergedWithModuleAugmentation2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/compiler/es5-commonjs3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/defaultDeclarationEmitNamedCorrectly.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/jsDeclarationEmitExportAssignedFunctionWithExtraTypedefsMembers.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/compiler/declareExternalModuleWithExportAssignedFundule.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitToDeclarationDirWithCompositeOption.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/duplicateDefaultExport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/exportDefaultMarksIdentifierAsUsed.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitMethodDeclaration.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitDefaultExport3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/moduleResolutionNoTsESM.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/defaultNamedExportWithType3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es6ImportDefaultBinding.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/unusedImports11.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/defaultDeclarationEmitShadowedNamedCorrectly.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/systemModule3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/exportDefaultAsyncFunction2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es6ExportDefaultFunctionDeclaration2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/moduleExports1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/compiler/es5ExportDefaultFunctionDeclaration.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/exportAssignmentExpressionIsExpressionNode.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/unusedImports7.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es5-commonjs5.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es6ImportDefaultBindingFollowedWithNamespaceBinding1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/exportDefaultParenthesize.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/importHelpersWithImportOrExportDefaultNoTslib.3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/namespaceNotMergedWithFunctionDefaultExport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es5-commonjs7.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitAmdModuleDefault.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitTypeofDefaultExport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es6ExportDefaultClassDeclaration2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/exportDefaultTypeAndClass.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitExportAliasVisibiilityMarking.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/dynamicImportsDeclaration.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitPrefersPathKindBasedOnBundling2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/constEnumNoPreserveDeclarationReexport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitInferredDefaultExportType.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitMappedTypeDistributivityPreservesConstraints.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/allowImportClausesToMergeWithTypes.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/narrowingPastLastAssignmentInModule.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/pathMappingBasedModuleResolution_withExtension_MapedToNodeModules.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/compiler/ambientExportDefaultErrors.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/elidedJSImport2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitDefaultExport1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/keyofModuleObjectHasCorrectKeys.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es5ExportDefaultClassDeclaration2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/commonJsIsolatedModules.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitDefaultExport8.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/moduleElementsInWrongContext2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es5ExportDefaultClassDeclaration4.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/checkerInitializationCrash.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es5-commonjs4.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/esModuleInteropImportTSLibHasImport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/exportDefaultClassInNamespace.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/exportDefaultAlias_excludesEverything.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/checkJsTypeDefNoUnusedLocalMarked.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/compiler/exportDefaultWithJSDoc2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/checkJsdocTypeTagOnExportAssignment7.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/exportDefaultProperty.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/exportDefaultInterfaceClassAndValue.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es6ExportDefaultExpression.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/exportDefaultQualifiedNameNoError.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/jsxDeclarationsWithEsModuleInteropNoCrash.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/unusedImports12.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/tsxFragmentChildrenCheck.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/isolatedDeclarationErrorsDefault.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitAliasFromIndirectFile.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es6ImportDefaultBindingDts.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/jsExportAssignmentNonMutableLocation.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/compiler/systemDefaultImportCallable.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/defaultNamedExportWithType4.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/classMergedWithInterfaceMultipleBasesNoError.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es6UseOfTopLevelRequire.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/importHelpersCommonJSJavaScript.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/compiler/importHelpersNoEmitHelpersExportDefault.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/importWithTrailingSlash.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es6ImportDefaultBindingFollowedWithNamedImport1InEs5.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/requireAsFunctionInExternalModule.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/exportDefaultVariable.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitDefaultExport2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/jsxImportSourceNonPragmaComment.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/elidedJSImport1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/importHelpersWithImportOrExportDefaultNoTslib.2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/jsFileClassPropertyInitalizationInObjectLiteral.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitOutFileBundlePaths.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitToDeclarationDirWithoutCompositeAndDeclarationOptions.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/javascriptCommonjsModule.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/compiler/isolatedModulesExportDeclarationType.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es5ExportDefaultIdentifier.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/defaultNamedExportWithType2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es5ExportDefaultFunctionDeclaration4.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/exportsInAmbientModules2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/truthinessCallExpressionCoercion4.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/compiler/importsInAmbientModules2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitInferredTypeAlias3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitDefaultExport5.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/amdLikeInputDeclarationEmit.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/compiler/decoratorMetadataWithImportDeclarationNameCollision6.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/pushTypeGetTypeOfAlias.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/compiler/defaultDeclarationEmitDefaultImport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es6ExportDefaultIdentifier.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/decoratorMetadataWithImportDeclarationNameCollision7.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/importHelpersWithImportOrExportDefault.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/checkJsdocTypeTagOnExportAssignment4.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es5ExportDefaultFunctionDeclaration3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es5-system.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/exportDefaultDuplicateCrash.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es5-umd3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/constEnumPreserveEmitReexport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/jsdocImportTypeNodeNamespace.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitOfTypeofAliasedExport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/jsxImportInAttribute.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/jsExportMemberMergedWithModuleAugmentation.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitToDeclarationDirWithDeclarationOption.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/exportDefaultTypeClassAndValue.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/jsxPropsAsIdentifierNames.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/tsconfigMapOptionsAreCaseInsensitive.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/jsFileCompilationBindMultipleDefaultExports.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/exportDefaultClassAndValue.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es6ImportDefaultBindingAmd.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/checkJsxNotSetError.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/exportDefaultImportedType.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/exportAssignmentImportMergeNoCrash.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es6ImportDefaultBindingFollowedWithNamedImport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/jsDeclarationsWithDefaultAsNamespaceLikeMerge.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitMixinPrivateProtected.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/reexportDefaultIsCallable.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/jsExportMemberMergedWithModuleAugmentation3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/compiler/unusedImports6.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitDefaultExport7.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/modulePreserve4.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/reactTransitiveImportHasValidDeclaration.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es5ExportDefaultFunctionDeclaration2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/verbatimModuleSyntaxDefaultValue.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/moduleNodeDefaultImports.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitComputedNameConstEnumAlias.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/maxNodeModuleJsDepthDefaultsToZero.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/compiler/javascriptImportDefaultBadExport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/compiler/anonClassDeclarationEmitIsAnon.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es6ExportDefaultClassDeclaration.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitModuleWithScopeMarker.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es6ImportDefaultBindingWithExport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/ensureNoCrashExportAssignmentDefineProperrtyPotentialMerge.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/compiler/exportDefaultInterfaceClassAndFunctionOverloads.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/moduleNoneDynamicImport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/esModuleInteropNamedDefaultImports.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/exportDefaultForNonInstantiatedModule.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitCastReusesTypeNode4.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es6ImportDefaultBindingFollowedWithNamedImport1WithExport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es5-commonjs.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/reactImportDropped.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/jsFileCompilationRestParamJsDocFunction.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/defaultIsNotVisibleInLocalScope.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/modKeyword.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/compiler/systemModuleExportDefault.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/specedNoStackBlown.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitDefaultExport4.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/exportDefaultAsyncFunction.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/typeAliasExport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitObjectAssignedDefaultExport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es6ImportDefaultBindingFollowedWithNamespaceBinding1InEs5.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/constEnumNoEmitReexport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/exportDefaultMissingName.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitDefaultExport6.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/exportDefaultAbstractClass.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/typecheckIfCondition.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/compiler/duplicatePackage_packageIdIncludesSubModule.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/unmetTypeConstraintInJSDocImportCall.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/contextualExpressionTypecheckingDoesntBlowStack.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/exportDefaultInterface.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitCastReusesTypeNode1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/exportDefaultInterfaceAndValue.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/dynamicImportInDefaultExportExpression.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/selfReferentialDefaultNoStackOverflow.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/commonJsExportTypeDeclarationError.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/compiler/importElisionExportNonExportAndDefault.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/tsxDefaultImports.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/checkJsdocTypeTagOnExportAssignment3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/duplicatePackage.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es5ExportDefaultClassDeclaration.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitForDefaultExportClassExtendingExpression01.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/unusedImportWithSpread.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/moduleExportsTypeNoExcessPropertyCheckFromContainedLiteral.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/compiler/checkJsdocTypeTagOnExportAssignment6.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es6ImportDefaultBindingFollowedWithNamespaceBindingDts1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/es5ExportDefaultClassDeclaration3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/compiler/declarationEmitPrefersPathKindBasedOnBundling.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/dynamicImport/importCallExpressionNestedES20152.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/dynamicImport/importCallExpressionNestedES2015.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/dynamicImport/importCallExpressionNestedAMD2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/dynamicImport/importCallExpressionNestedUMD.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/dynamicImport/importCallExpressionNestedCJS2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/dynamicImport/importCallExpressionNestedSystem2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/dynamicImport/importCallExpressionNestedES20202.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/dynamicImport/importCallExpressionNestedCJS.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/dynamicImport/importCallExpressionNestedAMD.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/dynamicImport/importCallExpressionNestedSystem.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/dynamicImport/importCallExpressionNestedES2020.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/dynamicImport/importCallExpressionNestedUMD2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/salsa/globalMergeWithCommonJSAssignmentDeclaration.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/salsa/moduleExportAssignment3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/salsa/moduleExportAliasImported.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/salsa/moduleExportAlias3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/salsa/moduleExportAssignment2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/salsa/sourceFileMergeWithFunction.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/salsa/moduleExportAssignment4.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/salsa/moduleExportWithExportPropertyAssignment.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/salsa/typeFromPropertyAssignment5.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/salsa/moduleExportAlias4.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/salsa/moduleExportAlias2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/salsa/moduleExportAssignment7.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/salsa/typeFromPropertyAssignment37.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/salsa/commonJSAliasedExport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/salsa/binderUninitializedModuleExportsAssignment.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/salsa/conflictingCommonJSES2015Exports.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/salsa/moduleExportWithExportPropertyAssignment3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/salsa/exportDefaultInJsFile02.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/salsa/moduleExportWithExportPropertyAssignment2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/salsa/namespaceAssignmentToRequireAlias.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/salsa/typeFromPropertyAssignment17.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/salsa/moduleExportAliasUnknown.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/salsa/plainJSBinderErrors.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/salsa/moduleExportAssignment.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/salsa/constructorFunctions2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/salsa/typeFromPropertyAssignment19.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/salsa/moduleExportAssignment5.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/salsa/exportDefaultInJsFile01.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/salsa/plainJSGrammarErrors2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/salsa/moduleExportAlias.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/salsa/importAliasModuleExports.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/salsa/requireTwoPropertyAccesses.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/salsa/moduleExportPropertyAssignmentDefault.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/salsa/commonJSReexport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/salsa/moduleExportAliasExports.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/salsa/moduleExportAlias5.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/salsa/reExportJsFromTs.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/salsa/moduleExportWithExportPropertyAssignment4.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/declarationEmit/exportDefaultNamespace.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/declarationEmit/exportDefaultExpressionComments.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/nonjsExtensions/declarationFileForJsonImport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/nonjsExtensions/declarationFileForHtmlImport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/nonjsExtensions/declarationFileForTsJsImport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/nonjsExtensions/declarationFileForHtmlFileWithinDeclarationFile.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es2020/modules/exportAsNamespace4.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/statements/VariableStatements/usingDeclarations/usingDeclarationsWithLegacyClassDecorators.3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/statements/VariableStatements/usingDeclarations/usingDeclarationsWithLegacyClassDecorators.4.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/statements/VariableStatements/usingDeclarations/usingDeclarationsWithESClassDecorators.10.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/statements/VariableStatements/usingDeclarations/usingDeclarationsTopLevelOfModule.1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/statements/VariableStatements/usingDeclarations/usingDeclarationsWithESClassDecorators.4.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/statements/VariableStatements/usingDeclarations/usingDeclarationsWithLegacyClassDecorators.10.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/statements/VariableStatements/usingDeclarations/usingDeclarationsWithESClassDecorators.9.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/statements/VariableStatements/usingDeclarations/awaitUsingDeclarationsTopLevelOfModule.1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/statements/VariableStatements/usingDeclarations/usingDeclarationsWithLegacyClassDecorators.9.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/statements/VariableStatements/usingDeclarations/usingDeclarationsWithESClassDecorators.3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/importAttributes/importAttributes8.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/importAttributes/importAttributes9.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/importAttributes/importAttributes7.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/decorators/decoratorMetadata.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/decorators/class/decoratedClassFromExternalModule.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/esDecorators/classDeclaration/esDecorators-classDeclaration-exportModifier.2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/esDecorators/classDeclaration/esDecorators-classDeclaration-setFunctionName.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/esDecorators/classDeclaration/esDecorators-classDeclaration-exportModifier.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/esDecorators/classDeclaration/esDecorators-classDeclaration-missingEmitHelpers-classDecorator.2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/esDecorators/classExpression/esDecorators-classExpression-missingEmitHelpers-classDecorator.3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/esDecorators/classExpression/namedEvaluation/esDecorators-classExpression-namedEvaluation.8.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/parser/ecmascript5/RegressionTests/parser509693.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/parser/ecmascript5/ExportAssignments/parserExportAssignment9.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/typings/typingsSuggestion1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/typings/typingsSuggestion2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/enumTagOnExports2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/importTag3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/typedefCrossModule4.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/exportedEnumTypeAndValue.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/checkObjectDefineProperty.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/jsdocTypeReferenceToImportOfFunctionExpression.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/paramTagTypeResolution.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/typeTagModuleExports.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/typedefCrossModule.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/jsdocImportType2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/checkExportsObjectAssignPrototypeProperty.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/typedefCrossModule3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/jsdocTypeReferenceToImportOfClassExpression.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/jsdocImportType.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/callbackCrossModule.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/importTag16.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/exportedAliasedEnumTag.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/checkJsdocSatisfiesTag4.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/jsdocTypeReferenceExports.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/typedefCrossModule2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/importTag25.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsReferenceToClassInstanceCrossFile.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsReexportedCjsAlias.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsExportAssignedClassInstance1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsExportedClassAliases.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsFunctionWithDefaultAssignedMember.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsFunctionClassesCjsExportAssignment.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsParameterTagReusesInputNodeInEmit1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsClassStatic.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsExportSubAssignments.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsTypedefAndImportTypes.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsExportAssignedConstructorFunctionWithSub.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsModuleReferenceHasEmit.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsDefaultsErr.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsComputedNames.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsExportAssignmentExpressionPlusSecondary.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsExportAssignedClassExpressionShadowing.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsDefault.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsExportAssignedVisibility.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsTypeAliases.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsImportTypeBundled.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsTypeReferences2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsTypedefPropertyAndExportAssignment.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsPackageJson.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsTypedefAndLatebound.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsDocCommentsOnConsts.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsExportAssignmentWithKeywordName.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsReactComponents.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsFunctionPrototypeStatic.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsExportDoubleAssignmentInClosure.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsExportAssignedClassExpressionAnonymous.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsReexportAliases.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsTypeReferences.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsExportAssignedClassExpression.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsTypeReassignmentFromDeclaration.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsParameterTagReusesInputNodeInEmit2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsClassExtendsVisibility.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsTypeReassignmentFromDeclaration2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsThisTypes.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsExportFormsErr.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsReexportAliasesEsModuleInterop.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsCommonjsRelativePath.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsCrossfileMerge.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsExportForms.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsExportAssignedClassExpressionAnonymousWithSub.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsExportAssignedClassInstance2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsJson.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/jsdoc/declarations/jsDeclarationsExportAssignedClassInstance3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/classes/classDeclarations/classAbstractKeyword/classAbstractManyKeywords.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/classes/members/instanceAndStaticMembers/superInStaticMembers1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/classes/propertyMemberDeclarations/autoAccessorDisallowedModifiers.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/classDeclaration/exportDefaultClassWithStaticPropertyAssignmentsInES6.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/moduleExportsSystem/anonymousDefaultExportsSystem.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/moduleExportsSystem/defaultExportsGetExportedSystem.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/moduleExportsSystem/decoratedDefaultExportsGetExportedSystem.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/moduleExportsSystem/outFilerootDirModuleNamesSystem.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/modules/reExportDefaultExport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/modules/exportsAndImportsWithUnderscores3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/modules/exportStar-amd.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/modules/exportAndImport-es5-amd.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/modules/exportsAndImports4.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/modules/multipleDefaultExports01.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/modules/exportAndImport-es5.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/modules/multipleDefaultExports02.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/modules/exportsAndImportsWithUnderscores1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/modules/defaultExportsCannotMerge04.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/modules/defaultExportInAwaitExpression02.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/modules/multipleDefaultExports04.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/modules/defaultExportsCannotMerge01.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/modules/multipleDefaultExports03.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/modules/exportsAndImports4-amd.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/modules/defaultExportInAwaitExpression01.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/modules/exportStar.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/modules/exportBinding.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/modules/defaultExportsCannotMerge03.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/modules/exportsAndImportsWithUnderscores2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/modules/multipleDefaultExports05.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/modules/exportsAndImports4-es6.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/modules/defaultExportsCannotMerge02.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/modules/defaultExportWithOverloads01.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/decorators/class/decoratorOnClass4.es6.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/decorators/class/decoratorOnClass7.es6.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/decorators/class/decoratorOnClass8.es6.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/decorators/class/decoratorOnClass3.es6.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/decorators/class/accessor/decoratorOnClassAccessor1.es6.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/decorators/class/property/decoratorOnClassProperty1.es6.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/decorators/class/method/decoratorOnClassMethod1.es6.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/decorators/class/method/parameter/decoratorOnClassMethodParameter1.es6.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/moduleExportsUmd/defaultExportsGetExportedUmd.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/moduleExportsUmd/decoratedDefaultExportsGetExportedUmd.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/moduleExportsUmd/anonymousDefaultExportsUmd.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/moduleExportsAmd/anonymousDefaultExportsAmd.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/moduleExportsAmd/decoratedDefaultExportsGetExportedAmd.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/moduleExportsAmd/outFilerootDirModuleNamesAmd.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/moduleExportsAmd/defaultExportsGetExportedAmd.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/moduleExportsCommonjs/decoratedDefaultExportsGetExportedCommonjs.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/moduleExportsCommonjs/anonymousDefaultExportsCommonjs.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/es6/moduleExportsCommonjs/defaultExportsGetExportedCommonjs.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/jsx/tsxSpreadAttributesResolution14.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/jsx/tsxSpreadAttributesResolution15.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/jsx/tsxExternalModuleEmit2.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/jsx/tsxSpreadAttributesResolution13.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/jsx/tsxSpreadAttributesResolution16.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/jsx/inline/inlineJsxFactoryLocalTypeGlobalFallback.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/node/nodeModulesTripleSlashReferenceModeDeclarationEmit7.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/node/nodeModulesExportsBlocksTypesVersions.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/node/esmModuleExports2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/node/esmModuleExports3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/node/nodeModulesJson.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/node/nodeModulesTripleSlashReferenceModeDeclarationEmit6.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/node/nodeModulesCJSEmit1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/node/esmModuleExports1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/node/allowJs/nodeModulesAllowJsExportAssignment.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/moduleResolutionWithExtensions.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/verbatimModuleSyntaxNoElisionESM.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/multipleExportDefault2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/exportDefaultClassNameWithObject.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/multipleExportDefault1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/multipleExportDefault4.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/multipleExportDefault3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/multipleExportDefault5.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/exportNonInitializedVariablesInIfThenStatementNoCrash1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/exportAssignmentOfExportNamespaceWithDefault.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/multipleExportDefault6.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/verbatimModuleSyntaxRestrictionsCJS.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/topLevelAwaitErrors.8.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/typeOnly/importDefaultNamedType.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/typeOnly/exportDefault.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/typeOnly/filterNamespace_import.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/typeOnly/preserveValueImports.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/typeOnly/importsNotUsedAsValues_error.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/typeOnly/importClause_default.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/typeOnly/grammarErrors.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/typeOnly/importDefaultNamedType2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/esnext/esnextmodulekindWithES5Target2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/esnext/esnextmodulekindWithES5Target4.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/esnext/esnextmodulekindWithES5Target11.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/esnext/esnextmodulekindWithES5Target6.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/esnext/esnextmodulekindWithES2015Target.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/esnext/esnextmodulekindWithES5Target9.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/esnext/esnextmodulekindWithES5Target3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/esnext/esnextmodulekind.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/es6/es6modulekind.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/es6/es6modulekindWithES5Target9.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/es6/es6modulekindWithES5Target3.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/es6/es6modulekindWithES2015Target.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/es6/es6modulekindWithES5Target2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/es6/es6modulekindWithES5Target4.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/es6/es6modulekindWithES5Target6.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/externalModules/es6/es6modulekindWithES5Target11.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/moduleResolution/resolutionModeCache.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/moduleResolution/packageJsonMain.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/moduleResolution/declarationNotFoundPackageBundlesTypes.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/moduleResolution/customConditions.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/moduleResolution/extensionLoadingPriority.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/moduleResolution/nodeModulesAtTypesPriority.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/moduleResolution/packageJsonMain_isNonRecursive.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/moduleResolution/resolvesWithoutExportsDiagnostic1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/cases/conformance/moduleResolution/bundler/bundlerRelative1.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/expressions/typeSatisfaction/typeSatisfactionWithDefaultExport.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/ambient/ambientDeclarationsPatterns.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/importDefer/importDeferFromInvalid.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/importDefer/importDefaultBindingDefer.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/importDefer/importBindingDefer.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/importDefer/importDeferInvalidDefault.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/conformance/importDefer/importBindingDefer2.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/cases/transpile/declarationsSimple.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        }
+    ],
+    "main_entry": {
+        "path": "/tmp/repo_analyzer_1mbm70de/lib/typescript.js",
+        "type": "main",
+        "lang": "typescript",
+        "confidence": 0.9
+    },
+    "test_by_category": null
+}

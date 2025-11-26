@@ -6,7 +6,7 @@
       "package_managers": ["pip", "poetry", "pipenv"]
     },
     "typescript": {
-      "extensions": [".ts", ".tsx"],
+      "extensions": [".ts", ".tsx", ".js", ".jsx"],
       "config_files": ["tsconfig.json", "package.json"],
       "package_managers": ["npm", "yarn", "pnpm"]
     },

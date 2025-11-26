@@ -1,0 +1,491 @@
+{
+    "languages": [
+        "typescript"
+    ],
+    "frameworks": [
+        "vue"
+    ],
+    "frontend_frameworks": [
+        "vue"
+    ],
+    "backend_frameworks": [],
+    "package_manager": "npm",
+    "test_runner": [
+        "karma",
+        "vitest",
+        "cucumber",
+        "jasmine"
+    ],
+    "docker": false,
+    "docker_context": null,
+    "dockerfile_path": null,
+    "docker_by_category": null,
+    "kubernetes": false,
+    "terraform": false,
+    "databases": [],
+    "entry_points": [
+        {
+            "path": "src/platforms/web/compiler/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/platforms/web/compiler/modules/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/platforms/web/compiler/directives/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/platforms/web/util/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/platforms/web/runtime/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/platforms/web/runtime/components/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/platforms/web/runtime/modules/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/platforms/web/runtime/directives/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/compiler/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/compiler/directives/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/compiler/codegen/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/compiler/parser/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/core/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/core/global-api/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/core/observer/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/core/components/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/core/vdom/helpers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/core/vdom/modules/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/core/instance/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/core/instance/render-helpers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/core/util/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/v3/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/compiler-sfc/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/server-renderer/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/server-renderer/src/template-renderer/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/server-renderer/src/modules/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/server-renderer/src/directives/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/server-renderer/src/optimizing-compiler/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/server-renderer/src/webpack-plugin/server.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler-sfc/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/template-compiler/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/server-renderer/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/server-renderer/test/fixtures/app.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/classic/commits/app.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/classic/todomvc/app.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "examples/classic/firebase/app.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "benchmarks/dbmon/app.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "/tmp/repo_analyzer_u1_masvt/dist/vue.runtime.common.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "/tmp/repo_analyzer_u1_masvt/compiler-sfc/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "vitest.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/platforms/web/entry-runtime-with-compiler-esm.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/platforms/web/entry-runtime-esm.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/platforms/web/entry-runtime-with-compiler.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/platforms/web/entry-runtime.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/platforms/web/compiler/modules/class.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/platforms/web/compiler/modules/style.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/platforms/web/compiler/modules/index.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/platforms/web/compiler/directives/text.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/platforms/web/compiler/directives/model.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/platforms/web/compiler/directives/index.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/platforms/web/compiler/directives/html.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/platforms/web/runtime/components/index.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/platforms/web/runtime/components/transition-group.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/platforms/web/runtime/modules/class.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/platforms/web/runtime/modules/index.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/platforms/web/runtime/directives/show.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/platforms/web/runtime/directives/index.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/types/modules.d.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/compiler/directives/bind.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/compiler/directives/index.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/compiler/directives/on.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/compiler/parser/entity-decoder.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/core/index.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/core/config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/core/observer/dep.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/core/observer/watcher.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/core/components/index.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/core/vdom/vnode.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/core/vdom/modules/template-ref.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/core/vdom/modules/index.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/core/vdom/modules/directives.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/core/instance/index.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "types/index.d.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "types/test/es-module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/e2e/commits.mock.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/helpers/test-object-option.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        }
+    ],
+    "main_entry": {
+        "path": "/tmp/repo_analyzer_u1_masvt/dist/vue.runtime.common.js",
+        "type": "main",
+        "lang": "typescript",
+        "confidence": 0.9
+    },
+    "test_by_category": null
+}

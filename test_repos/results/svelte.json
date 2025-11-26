@@ -1,0 +1,190 @@
+{
+    "languages": [
+        "typescript"
+    ],
+    "frameworks": [],
+    "frontend_frameworks": [],
+    "backend_frameworks": [],
+    "package_manager": "npm",
+    "test_runner": [
+        "vitest"
+    ],
+    "docker": false,
+    "docker_context": null,
+    "dockerfile_path": null,
+    "docker_by_category": null,
+    "kubernetes": false,
+    "terraform": false,
+    "databases": [],
+    "entry_points": [
+        {
+            "path": "packages/svelte/src/easing/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/svelte/src/reactivity/window/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/svelte/src/server/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/svelte/src/compiler/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/svelte/src/compiler/preprocess/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/svelte/src/compiler/migrate/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/svelte/src/compiler/phases/1-parse/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/svelte/src/compiler/phases/3-transform/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/svelte/src/compiler/phases/3-transform/client/transform-template/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/svelte/src/compiler/phases/3-transform/css/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/svelte/src/compiler/phases/2-analyze/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/svelte/src/compiler/phases/2-analyze/visitors/shared/a11y/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/svelte/src/store/shared/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/svelte/src/motion/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/svelte/src/events/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/svelte/src/attachments/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/svelte/src/animate/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/svelte/src/internal/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/svelte/src/internal/server/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/svelte/src/internal/client/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/svelte/src/internal/flags/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/svelte/src/transition/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/svelte/scripts/process-messages/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "benchmarking/compare/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "benchmarking/benchmarks/reactivity/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "benchmarking/benchmarks/ssr/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "/tmp/repo_analyzer_lmjouall/playgrounds/sandbox/run.js",
+            "type": "script",
+            "lang": "typescript",
+            "confidence": 0.8
+        }
+    ],
+    "main_entry": {
+        "path": "packages/svelte/src/easing/index.js",
+        "type": "main",
+        "lang": "typescript",
+        "confidence": 0.7
+    },
+    "test_by_category": null
+}

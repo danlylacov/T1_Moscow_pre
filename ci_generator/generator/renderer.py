@@ -22,15 +22,44 @@ class PipelineRenderer:
 
         # search order for stage templates
         # tests вынесены в отдельную директорию "tests"
-        self.stage_dirs = ["tests", "python", "docker", "kubernetes", "shared"]
+        # языковые директории должны быть проверены перед общими
+        self.stage_dirs = ["tests", "python", "java", "go", "typescript", "docker", "kubernetes", "shared"]
 
-    def _find_stage_template(self, platform: str, stage: str, ext: str) -> str:
+    def _find_stage_template(self, platform: str, stage: str, ext: str, ctx: Dict = None) -> str:
         """
         Возвращает относительный путь шаблона (от templates_root) или None.
         ext: 'gitlab.j2' or 'jenkins.j2' suffix.
+        Сначала ищет в директории языка из ctx.language, затем в общих директориях.
         """
         base = os.path.join(platform, "stages")
+        
+        # Определяем приоритетный язык из контекста
+        language_dir = None
+        if ctx:
+            language = ctx.get("language", "").lower()
+            # Маппинг языков на директории
+            lang_to_dir = {
+                "python": "python",
+                "java": "java",
+                "kotlin": "java",  # Kotlin использует Java шаблоны
+                "go": "go",
+                "golang": "go",
+                "typescript": "typescript",
+                "javascript": "typescript",  # JavaScript использует TypeScript шаблоны
+            }
+            language_dir = lang_to_dir.get(language)
+        
+        # Сначала проверяем директорию языка, если она определена
+        if language_dir and language_dir in self.stage_dirs:
+            candidate = os.path.join(base, language_dir, f"{stage}.{ext}")
+            if os.path.exists(os.path.join(self.templates_root, candidate)):
+                return candidate
+        
+        # Затем проверяем остальные директории в порядке приоритета
         for d in self.stage_dirs:
+            # Пропускаем уже проверенную директорию языка
+            if d == language_dir:
+                continue
             candidate = os.path.join(base, d, f"{stage}.{ext}")
             if os.path.exists(os.path.join(self.templates_root, candidate)):
                 return candidate
@@ -44,7 +73,7 @@ class PipelineRenderer:
 
         # append each stage template content
         for s in stages:
-            tpl_path = self._find_stage_template("gitlab", s, "gitlab.j2")
+            tpl_path = self._find_stage_template("gitlab", s, "gitlab.j2", ctx)
             if tpl_path:
                 tpl = self.env.get_template(tpl_path)
                 parts.append(tpl.render(ctx=ctx))
@@ -61,7 +90,7 @@ class PipelineRenderer:
 
         # include each stage snippet
         for s in stages:
-            tpl_path = self._find_stage_template("jenkins", s, "jenkins.j2")
+            tpl_path = self._find_stage_template("jenkins", s, "jenkins.j2", ctx)
             if tpl_path:
                 tpl = self.env.get_template(tpl_path)
                 parts.append(tpl.render(ctx=ctx))

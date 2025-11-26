@@ -1,6 +1,7 @@
 type_check:
   stage: type_check
   image: {% if ctx.build_tool == 'maven' %}maven:{{ ctx.java_version }}-eclipse-temurin{% else %}gradle:{{ ctx.java_version }}-jdk{% endif %}
+
   script:
     {% if ctx.build_tool == 'maven' %}
     - mvn compile

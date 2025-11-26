@@ -1,0 +1,304 @@
+{
+    "languages": [
+        "typescript"
+    ],
+    "frameworks": [],
+    "frontend_frameworks": [],
+    "backend_frameworks": [],
+    "package_manager": "npm",
+    "test_runner": [
+        "vitest"
+    ],
+    "docker": false,
+    "docker_context": null,
+    "dockerfile_path": null,
+    "docker_by_category": null,
+    "kubernetes": false,
+    "terraform": false,
+    "databases": [],
+    "entry_points": [
+        {
+            "path": "packages/file-storage/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/fetch-router/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/fetch-router/demos/bun/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/tar-parser/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/fetch-proxy/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/node-fetch-server/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/async-context-middleware/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/interaction/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/html-template/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/headers/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/lazy-file/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/form-data-middleware/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/session/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/route-pattern/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/logger-middleware/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/multipart-parser/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/multipart-parser/demos/cf-workers/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/cookie/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/session-middleware/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/method-override-middleware/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/form-data-parser/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/fs/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/static-middleware/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "demos/bookstore/server.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "demos/unpkg/server.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/fetch-router/demos/node/server.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/multipart-parser/demos/bun/server.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/multipart-parser/demos/deno/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/node-fetch-server/demos/http2/server.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/multipart-parser/demos/node/server.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/form-data-parser/demos/node/server.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/static-middleware/demos/list-files/server.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "/tmp/repo_analyzer_kmrpdzhh/demos/bookstore/watch",
+            "type": "script",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "/tmp/repo_analyzer_kmrpdzhh/demos/bookstore/server.ts",
+            "type": "script",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "/tmp/repo_analyzer_kmrpdzhh/demos/unpkg/watch",
+            "type": "script",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "/tmp/repo_analyzer_kmrpdzhh/demos/unpkg/server.ts",
+            "type": "script",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "demos/bookstore/app/cart.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "demos/bookstore/app/checkout.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "demos/bookstore/app/books.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "demos/bookstore/app/account.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "demos/bookstore/app/admin.books.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "demos/bookstore/app/fragments.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "demos/bookstore/app/auth.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "demos/bookstore/app/admin.users.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "demos/bookstore/app/admin.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "demos/bookstore/app/admin.orders.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        }
+    ],
+    "main_entry": {
+        "path": "packages/file-storage/src/index.ts",
+        "type": "main",
+        "lang": "typescript",
+        "confidence": 0.7
+    },
+    "test_by_category": null
+}

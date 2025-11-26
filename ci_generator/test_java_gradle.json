@@ -1,0 +1,48 @@
+{
+  "analysis": {
+    "languages": ["java"],
+    "frameworks": ["spring-boot"],
+    "frontend_frameworks": [],
+    "backend_frameworks": ["spring-boot"],
+    "package_manager": "gradle",
+    "test_runner": "junit",
+    "docker": true,
+    "kubernetes": false,
+    "terraform": false,
+    "databases": ["postgresql"],
+    "entry_points": [
+      {
+        "path": "src/main/java/com/example/Application.java",
+        "type": "main",
+        "lang": "java",
+        "confidence": 0.9
+      }
+    ],
+    "main_entry": {
+      "path": "src/main/java/com/example/Application.java",
+      "type": "main",
+      "lang": "java",
+      "confidence": 0.9
+    }
+  },
+  "user_settings": {
+    "platform": "gitlab",
+    "triggers": {
+      "on_push": ["main"],
+      "on_merge_request": true,
+      "on_tags": "",
+      "schedule": "",
+      "manual": false
+    },
+    "stages": [],
+    "docker_registry": "registry.example.com/team",
+    "docker_image": "java-gradle-app",
+    "docker_context": ".",
+    "dockerfile_path": "Dockerfile",
+    "variables": {},
+    "project_name": "java-gradle-app",
+    "java_version": "21",
+    "docker_tag": "$CI_COMMIT_SHORT_SHA"
+  }
+}
+

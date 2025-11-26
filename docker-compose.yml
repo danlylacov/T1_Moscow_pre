@@ -68,6 +68,7 @@ services:
       - DATABASE_URL=postgresql+psycopg2://postgres:postgres@postgres:5432/self_deploy
       - ANALYZER_URL=http://stack_recognize:8000/analyze
       - PIPELINE_GENERATOR_URL=http://ci_generator:8000/generate
+      - DROP_TABLES=true  # Установите в true для пересоздания таблиц при старте
     volumes:
       - ./core-service:/app
     depends_on:

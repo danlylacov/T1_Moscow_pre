@@ -1,0 +1,170 @@
+{
+    "languages": [
+        "typescript"
+    ],
+    "frameworks": [
+        "nest"
+    ],
+    "frontend_frameworks": [],
+    "backend_frameworks": [
+        "nest"
+    ],
+    "package_manager": "npm",
+    "test_runner": [
+        "vitest"
+    ],
+    "docker": false,
+    "docker_context": null,
+    "dockerfile_path": null,
+    "docker_by_category": null,
+    "kubernetes": false,
+    "terraform": false,
+    "databases": [],
+    "entry_points": [
+        {
+            "path": "lib/configuration/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "lib/runners/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "lib/ui/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "lib/readers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "lib/schematics/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "lib/package-managers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "actions/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "commands/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/lib/compiler/hooks/fixtures/aliased-imports/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/lib/compiler/hooks/fixtures/type-imports/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/lib/compiler/hooks/fixtures/unused-imports/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/lib/schematics/fixtures/package/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "/tmp/repo_analyzer_5zzwrcqo/bin/nest.js",
+            "type": "script",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "test/lib/configuration/nest-configuration.loader.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "test/lib/schematics/nest.collection.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "test/lib/package-managers/yarn.package-manager.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "test/lib/package-managers/npm.package-manager.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "test/actions/info.action.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "lib/configuration/defaults.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "lib/utils/os-info.utils.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "lib/utils/local-binaries.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "lib/schematics/collection.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "actions/info.action.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        }
+    ],
+    "main_entry": {
+        "path": "lib/configuration/index.ts",
+        "type": "main",
+        "lang": "typescript",
+        "confidence": 0.7
+    },
+    "test_by_category": null
+}

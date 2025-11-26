@@ -8,6 +8,9 @@ from typing import List, Dict
 
 # import plugins (абсолютные импорты от корня проекта)
 from plugins.languages import python as python_plugin
+from plugins.languages import java as java_plugin
+from plugins.languages import go as go_plugin
+from plugins.languages import typescript as typescript_plugin
 from plugins.technologies import docker as docker_plugin
 from plugins.technologies import kubernetes as k8s_plugin
 from plugins.tests import pytest as pytest_tests_plugin
@@ -37,9 +40,15 @@ def select_stages(analysis: Dict, user_settings: Dict) -> List[str]:
 
     stages = []
 
-    # shared / pre-checks always optionally present (plugin)
+    # language plugins
     if python_plugin.enabled(analysis):
         stages += python_plugin.get_stages(analysis, user_settings)
+    if java_plugin.enabled(analysis):
+        stages += java_plugin.get_stages(analysis, user_settings)
+    if go_plugin.enabled(analysis):
+        stages += go_plugin.get_stages(analysis, user_settings)
+    if typescript_plugin.enabled(analysis):
+        stages += typescript_plugin.get_stages(analysis, user_settings)
     # tests (зависят только от test_runner, а не от языка)
     if pytest_tests_plugin.enabled(analysis):
         stages += pytest_tests_plugin.get_stages(analysis, user_settings)

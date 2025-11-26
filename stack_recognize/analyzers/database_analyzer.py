@@ -96,10 +96,11 @@ class DatabaseAnalyzer:
                                'sqlite3' in pattern or 'redis.NewClient' in pattern:
                                 continue
                         elif file_lang == 'go':
-                            # Для Go ищем Go-специфичные паттерны
+                            # Для Go ищем Go-специфичные паттерны (xorm, database/sql, драйверы)
+                            # Разрешаем паттерны с xorm, database/sql, github.com, но блокируем Python/TS паттерны
                             if 'psycopg2' in pattern or 'pymysql' in pattern or 'mysqldb' in pattern or \
                                'pymongo' in pattern or 'cx_Oracle' in pattern or 'pymssql' in pattern or \
-                               'sqlite3' in pattern or 'require(' in pattern or 'mongoose' in pattern:
+                               'require(' in pattern or 'mongoose' in pattern or 'import sqlite3' in pattern:
                                 continue
                         elif file_lang == 'java':
                             # Для Java ищем Java-специфичные паттерны (пока нет специфичных, пропускаем Python/TS паттерны)

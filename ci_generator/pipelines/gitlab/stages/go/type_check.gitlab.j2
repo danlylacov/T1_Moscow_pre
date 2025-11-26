@@ -1,12 +1,7 @@
-test:
-  stage: test
-  image: golang:{{ ctx.go_version }}
+type_check:
+  stage: type_check
+  image: golang:{{ ctx.go_version | default('1.21') }}
   script:
     - go mod download || true
-    - go test -v -race -coverprofile=coverage.out ./... || true
-    - go tool cover -html=coverage.out -o coverage.html || true
-  coverage: '/coverage: \d+.\d+% of statements/'
-  artifacts:
-    paths:
-      - coverage.out
-      - coverage.html
+    - go vet ./... || true
+    - go build -o /dev/null ./... || true

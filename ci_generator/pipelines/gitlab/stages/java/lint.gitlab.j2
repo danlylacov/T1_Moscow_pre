@@ -1,6 +1,7 @@
 lint:
   stage: lint
   image: {% if ctx.build_tool == 'maven' %}maven:{{ ctx.java_version }}-eclipse-temurin{% else %}gradle:{{ ctx.java_version }}-jdk{% endif %}
+
   script:
     {% if ctx.build_tool == 'maven' %}
     - mvn checkstyle:check -Dcheckstyle.failOnViolation=false || true
@@ -11,6 +12,12 @@ lint:
     {% endif %}
   artifacts:
     paths:
+      {% if ctx.build_tool == 'maven' %}
+      - target/spotbugsXml.xml
+      {% elif ctx.build_tool == 'gradle' %}
+      - build/reports/
+      {% else %}
       - target/spotbugsXml.xml
       - build/reports/
+      {% endif %}
     when: always

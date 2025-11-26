@@ -18,6 +18,8 @@ def get_language_by_extension(extension: str) -> Optional[str]:
         '.pyi': 'python',
         '.ts': 'typescript',
         '.tsx': 'typescript',
+        '.js': 'typescript',  # JavaScript файлы определяются как TypeScript
+        '.jsx': 'typescript',  # JSX файлы определяются как TypeScript
         '.java': 'java',
         '.kt': 'java',  # Kotlin объединен с Java
         '.kts': 'java',
@@ -45,12 +47,13 @@ def detect_language_from_command(command: str) -> str:
 def get_language_extensions() -> dict:
     """Получить словарь расширений файлов по языкам.
     
-    Поддерживаются только 4 языка: Python, TypeScript, Java/Kotlin, Go.
+    Поддерживаются только 4 языка: Python, TypeScript/JavaScript, Java/Kotlin, Go.
+    JavaScript файлы (.js, .jsx) определяются как TypeScript.
     """
     return {
         # Поддерживаемые языки
         'python': ['.py', '.pyw', '.pyx', '.pxd', '.pyi'],
-        'typescript': ['.ts', '.tsx'],
+        'typescript': ['.ts', '.tsx', '.js', '.jsx'],  # JavaScript файлы определяются как TypeScript
         'java': ['.java', '.kt', '.kts', '.jar', '.war', '.class'],
         'go': ['.go'],
     }

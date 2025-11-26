@@ -1,0 +1,1324 @@
+{
+    "languages": [
+        "typescript"
+    ],
+    "frameworks": [
+        "react",
+        "express",
+        "nextjs"
+    ],
+    "frontend_frameworks": [
+        "react",
+        "nextjs"
+    ],
+    "backend_frameworks": [
+        "express"
+    ],
+    "package_manager": "yarn",
+    "test_runner": [
+        "playwright",
+        "cucumber",
+        "vitest",
+        "jest"
+    ],
+    "docker": false,
+    "docker_context": null,
+    "dockerfile_path": null,
+    "docker_by_category": null,
+    "kubernetes": false,
+    "terraform": false,
+    "databases": [],
+    "entry_points": [
+        {
+            "path": "compiler/apps/playground/components/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/apps/playground/hooks/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/apps/playground/lib/stores/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/packages/react-compiler-healthcheck/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/packages/react-forgive/server/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/packages/react-forgive/server/src/compiler/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/packages/babel-plugin-react-compiler/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/packages/babel-plugin-react-compiler/src/Validation/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/packages/babel-plugin-react-compiler/src/SSA/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/packages/babel-plugin-react-compiler/src/TypeInference/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/packages/babel-plugin-react-compiler/src/HIR/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/packages/babel-plugin-react-compiler/src/Entrypoint/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/packages/babel-plugin-react-compiler/src/ReactiveScopes/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/packages/babel-plugin-react-compiler/src/Inference/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/packages/babel-plugin-react-compiler/src/Transform/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/packages/babel-plugin-react-compiler/src/Optimization/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/packages/eslint-plugin-react-compiler/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/packages/react-compiler-runtime/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/packages/react-mcp-server/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/packages/react-mcp-server/src/compiler/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/packages/snap/src/sprout/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/eslint-plugin-react-hooks/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/packages/snap/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/nesting/src/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/nesting/src/modern/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/eslint-v8/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/view-transition/src/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/view-transition/server/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/flight/src/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/fizz/src/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/dom/src/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/dom/src/components/fixtures/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/dom/src/components/fixtures/textareas/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/dom/src/components/fixtures/media-events/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/dom/src/components/fixtures/selects/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/dom/src/components/fixtures/date-inputs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/dom/src/components/fixtures/number-inputs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/dom/src/components/fixtures/error-handling/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/dom/src/components/fixtures/range-inputs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/dom/src/components/fixtures/selection-events/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/dom/src/components/fixtures/password-inputs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/dom/src/components/fixtures/buttons/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/dom/src/components/fixtures/mouse-events/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/dom/src/components/fixtures/suspense/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/dom/src/components/fixtures/event-pooling/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/dom/src/components/fixtures/pointer-events/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/dom/src/components/fixtures/form-state/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/dom/src/components/fixtures/progress/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/dom/src/components/fixtures/email-inputs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/dom/src/components/fixtures/hydration/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/dom/src/components/fixtures/input-change-events/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/dom/src/components/fixtures/text-inputs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/dom/src/components/fixtures/fragment-refs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/dom/src/components/fixtures/custom-elements/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/concurrent/time-slicing/src/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/fiber-debugger/src/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/eslint-v7/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/expiration/src/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/owner-stacks/src/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/flight-esm/src/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/ssr2/src/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/attribute-behavior/src/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/ssr/src/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/ssr/server/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/eslint-v6/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/eslint-v9/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-server-dom-turbopack/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-server-dom-turbopack/npm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-server-dom-webpack/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-server-dom-webpack/npm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-dom/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-dom/npm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-server/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-server/npm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/dom-event-testing-library/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-timeline/src/import-worker/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-timeline/src/view-base/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-timeline/src/view-base/vertical-scroll-overflow/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-timeline/src/view-base/resizable/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-timeline/src/content-views/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-art/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-art/npm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-suspense-test-utils/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-suspense-test-utils/npm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/use-sync-external-store/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/use-sync-external-store/shim/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/use-sync-external-store/npm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/use-sync-external-store/npm/shim/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/use-subscription/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/use-subscription/npm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shared/src/devtools/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shared/src/devtools/views/ErrorBoundary/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shared/src/devtools/views/Components/NativeStyleEditor/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shared/src/hooks/parseHookNames/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shared/src/hooks/__tests__/__source__/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/fb-sources-extended/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/fb-sources-extended/index-map/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/index-map/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/react-sources-extended/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/react-sources-extended/index-map/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/fb-sources-extended/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/fb-sources-extended/index-map/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/index-map/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/react-sources-extended/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/react-sources-extended/index-map/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/bundle/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/no-columns/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shared/src/backend/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shared/src/backend/utils/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shared/src/backend/views/Highlighter/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shared/src/backend/views/TraceUpdates/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-extensions/src/background/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-extensions/src/main/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-test-renderer/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-test-renderer/npm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-native-renderer/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-debug-tools/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-debug-tools/npm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-markup/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-markup/npm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-noop-renderer/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-noop-renderer/npm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shell/src/perf-regression/apps/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shell/src/app/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shell/src/app/Toggle/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shell/src/app/InlineWarnings/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shell/src/app/PartiallyStrictApp/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shell/src/app/DeeplyNestedComponents/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shell/src/app/Segments/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shell/src/app/TraceUpdatesTest/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shell/src/app/Hydration/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shell/src/app/ToDoList/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shell/src/app/Iframe/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shell/src/app/InspectableElements/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shell/src/app/EditableProps/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shell/src/app/ErrorBoundaries/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shell/src/app/SuspenseTree/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shell/src/app/ElementTypes/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shell/src/app/ReactNativeWeb/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/jest-react/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/jest-react/npm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-cache/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-cache/npm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-is/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-is/npm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react/npm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/internal-test-utils/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/eslint-plugin-react-hooks/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/eslint-plugin-react-hooks/npm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/scheduler/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/scheduler/npm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-server-dom-esm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-server-dom-esm/npm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-reconciler/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-reconciler/npm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-server-dom-parcel/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-server-dom-parcel/npm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "scripts/rollup/validate/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "scripts/perf-counters/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "scripts/prettier/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "scripts/eslint-rules/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "scripts/eslint/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "scripts/tasks/generate-changelog/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/devtools/scheduling-profiler/app.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/art/app.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools/app.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shell/src/e2e/app.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shell/src/e2e-regression/app.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-devtools-shell/src/perf-regression/app.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/view-transition/loader/server.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/fizz/server/server.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/devtools/regression/server.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/ssr2/server/server.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-server-dom-turbopack/server.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-server-dom-turbopack/npm/server.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-server-dom-webpack/server.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-server-dom-webpack/npm/server.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-dom/server.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-dom/npm/server.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-noop-renderer/server.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-noop-renderer/npm/server.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-server-dom-esm/server.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-server-dom-esm/npm/server.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-server-dom-parcel/server.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/react-server-dom-parcel/npm/server.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "scripts/bench/server.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "/tmp/repo_analyzer_pamw7svx/fixtures/view-transition/--experimental-loader",
+            "type": "script",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "/tmp/repo_analyzer_pamw7svx/fixtures/flight/scripts/build.js",
+            "type": "script",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "/tmp/repo_analyzer_pamw7svx/fixtures/flight-parcel/dist/server.js",
+            "type": "script",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "/tmp/repo_analyzer_pamw7svx/fixtures/ssr/server",
+            "type": "script",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "/tmp/repo_analyzer_pamw7svx/scripts/perf-counters/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "/tmp/repo_analyzer_pamw7svx/scripts/bench/runner.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "/tmp/repo_analyzer_pamw7svx/scripts/bench/runner.js",
+            "type": "script",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "pages/index.ts",
+            "type": "nextjs",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "fixtures/flight-parcel/src/server.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "fixtures/eslint-v9/eslint.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/apps/playground/components/Logo.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/apps/playground/components/AccordionWindow.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/apps/playground/components/TabbedWindow.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/apps/playground/components/Header.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/apps/playground/components/Editor/ConfigEditor.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/apps/playground/components/Editor/EditorImpl.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/apps/playground/components/Editor/Input.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/apps/playground/components/Editor/Output.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/apps/playground/components/Editor/index.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/apps/playground/hooks/useMountEffect.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/apps/playground/lib/defaultStore.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/apps/playground/lib/createContext.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/apps/playground/__tests__/e2e/page.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/apps/playground/app/page.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "compiler/apps/playground/app/layout.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        }
+    ],
+    "main_entry": {
+        "path": "/tmp/repo_analyzer_pamw7svx/scripts/perf-counters/index.js",
+        "type": "main",
+        "lang": "typescript",
+        "confidence": 0.9
+    },
+    "test_by_category": null
+}

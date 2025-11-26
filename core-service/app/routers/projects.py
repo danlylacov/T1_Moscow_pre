@@ -1,4 +1,5 @@
 import os
+import traceback
 
 import httpx
 from fastapi import APIRouter, Depends, HTTPException
@@ -31,6 +32,11 @@ async def fetch_analysis(repo_url: str, token: str) -> ProjectAnalysis:
         ) from exc
 
     data = response.json()
+    
+    # Нормализуем данные: конвертируем test_runner из списка в строку, если необходимо
+    if "test_runner" in data and isinstance(data["test_runner"], list):
+        data["test_runner"] = data["test_runner"][0] if data["test_runner"] else None
+    
     try:
         return ProjectAnalysis.model_validate(data)
     except Exception as exc:  # валидация структуры
@@ -49,13 +55,24 @@ async def add_project(payload: ProjectCreateRequest, db: Session = Depends(get_d
     - name — название проекта
     - url — ссылка на репозиторий
     - clone_token — токен для клонирования
-    - user_id — id пользователя-владельца
     Анализ репозитория (стек, entrypoints и т.д.) вычисляется автоматически через
     внешний сервис ANALYZER_URL и сохраняется вместе с проектом.
     """
-    analysis = await fetch_analysis(str(payload.url), str(payload.clone_token))
-    project_create = ProjectCreate(**payload.model_dump(), analysis=analysis)
-    return storage.create_project(db, project_create)
+    try:
+        analysis = await fetch_analysis(str(payload.url), str(payload.clone_token))
+        project_create = ProjectCreate(**payload.model_dump(), analysis=analysis)
+        return storage.create_project(db, project_create)
+    except HTTPException:
+        # Пробрасываем HTTP исключения как есть
+        raise
+    except Exception as exc:
+        # Логируем полную ошибку для отладки
+        error_trace = traceback.format_exc()
+        print(f"Error in add_project: {exc}\n{error_trace}")
+        raise HTTPException(
+            status_code=500,
+            detail=f"Внутренняя ошибка сервера при создании проекта: {str(exc)}",
+        ) from exc
 
 
 @router.get("", response_model=list[Project])

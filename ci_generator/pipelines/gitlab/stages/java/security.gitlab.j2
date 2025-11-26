@@ -1,0 +1,23 @@
+security:
+  stage: security
+  image: {% if ctx.build_tool == 'maven' %}maven:{{ ctx.java_version }}-eclipse-temurin{% else %}gradle:{{ ctx.java_version }}-jdk{% endif %}
+
+  script:
+    {% if ctx.build_tool == 'maven' %}
+    - mvn org.owasp:dependency-check-maven:check || true
+    - mvn com.github.spotbugs:spotbugs-maven-plugin:check || true
+    {% elif ctx.build_tool == 'gradle' %}
+    - ./gradlew dependencyCheckAnalyze || true
+    - ./gradlew spotbugsMain || true
+    {% endif %}
+  artifacts:
+    paths:
+      {% if ctx.build_tool == 'maven' %}
+      - target/dependency-check-report.html
+      - target/spotbugsXml.xml
+      {% elif ctx.build_tool == 'gradle' %}
+      - build/reports/dependency-check-report.html
+      - build/reports/spotbugs/
+      {% endif %}
+    expire_in: 1 week
+

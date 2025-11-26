@@ -29,7 +29,7 @@ from __future__ import annotations
 
 import logging
 from pathlib import Path
-from typing import List, Optional
+from typing import List, Optional, Dict
 
 from fastapi import FastAPI, HTTPException, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
@@ -134,11 +134,13 @@ class AnalysisResponse(BaseModel):
     docker: bool = False
     docker_context: Optional[str] = None
     dockerfile_path: Optional[str] = None
+    docker_by_category: Optional[Dict[str, List[str]]] = None  # Для монорепозиториев
     kubernetes: bool = False
     terraform: bool = False
     databases: List[str] = []
     entry_points: List[EntryPointOut] = []
     main_entry: Optional[MainEntryOut] = None
+    test_by_category: Optional[Dict[str, List[str]]] = None  # Для монорепозиториев
 
 
 # --------- Вспомогательные функции ---------
@@ -201,7 +203,8 @@ def _stack_to_response(stack: ProjectStack) -> AnalysisResponse:
     """Конвертация ProjectStack в pydantic-модель ответа."""
     entry_points_out = [_serialize_entry_point(ep) for ep in stack.entry_points]
 
-    docker_context, dockerfile_path = _extract_docker_paths(stack)
+    docker_context, dockerfile_path, docker_by_category = _extract_docker_paths(stack)
+    test_by_category = _extract_test_by_category(stack)
 
     # Фильтрация языков: только поддерживаемые 4 языка
     # Принудительно фильтруем, чтобы исключить любые неразрешенные языки
@@ -223,28 +226,33 @@ def _stack_to_response(stack: ProjectStack) -> AnalysisResponse:
         docker=stack.docker,
         docker_context=docker_context,
         dockerfile_path=dockerfile_path,
+        docker_by_category=docker_by_category,
         kubernetes=stack.kubernetes,
         terraform=stack.terraform,
         databases=stack.databases,
         entry_points=entry_points_out,
         main_entry=_serialize_main_entry(stack.main_entry_point),
+        test_by_category=test_by_category,
     )
 
 
 # --------- Маршруты FastAPI ---------
 
 
-def _extract_docker_paths(stack: ProjectStack) -> tuple[Optional[str], Optional[str]]:
+def _extract_docker_paths(stack: ProjectStack) -> tuple[Optional[str], Optional[str], Optional[Dict[str, List[str]]]]:
     """Определить docker_context и dockerfile_path из обнаруженных файлов.
 
     dockerfile_path — относительный путь до Dockerfile (включая имя файла).
     docker_context — директория, в которой лежит Dockerfile.
+    docker_by_category — словарь с Dockerfile по категориям (для монорепозиториев).
     
     Если найдено несколько Dockerfile, используется основной (из ключа 'docker').
     """
     docker_files = stack.files_detected.get("docker") if hasattr(stack, "files_detected") else None
+    docker_by_category = stack.files_detected.get("docker_by_category") if hasattr(stack, "files_detected") else None
+    
     if not docker_files:
-        return None, None
+        return None, None, docker_by_category
 
     # docker_files уже содержит только основной Dockerfile (выбранный по приоритету)
     dockerfile_rel: Optional[str] = None
@@ -255,14 +263,19 @@ def _extract_docker_paths(stack: ProjectStack) -> tuple[Optional[str], Optional[
         dockerfile_rel = docker_files
 
     if dockerfile_rel is None:
-        return None, None
+        return None, None, docker_by_category
 
     dockerfile_path = dockerfile_rel
     context_path = str(Path(dockerfile_rel).parent)
     if context_path == ".":
         context_path = ""
 
-    return context_path, dockerfile_path
+    return context_path, dockerfile_path, docker_by_category
+
+
+def _extract_test_by_category(stack: ProjectStack) -> Optional[Dict[str, List[str]]]:
+    """Извлечь информацию о тестах по категориям для монорепозиториев."""
+    return stack.files_detected.get("test_by_category") if hasattr(stack, "files_detected") else None
 
 
 @app.post("/analyze", response_model=AnalysisResponse)

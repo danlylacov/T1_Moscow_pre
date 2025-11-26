@@ -1,0 +1,58 @@
+{
+    "languages": [
+        "python"
+    ],
+    "frameworks": [
+        "flask"
+    ],
+    "frontend_frameworks": [],
+    "backend_frameworks": [
+        "flask"
+    ],
+    "package_manager": "poetry",
+    "test_runner": [
+        "pytest"
+    ],
+    "docker": false,
+    "docker_context": null,
+    "dockerfile_path": null,
+    "docker_by_category": null,
+    "kubernetes": false,
+    "terraform": false,
+    "databases": [
+        "sqlite"
+    ],
+    "entry_points": [
+        {
+            "path": "src/flask/app.py",
+            "type": "main",
+            "lang": "python",
+            "confidence": 0.7
+        },
+        {
+            "path": "src/flask/sansio/app.py",
+            "type": "main",
+            "lang": "python",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/test_apps/cliapp/app.py",
+            "type": "main",
+            "lang": "python",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/test_apps/helloworld/wsgi.py",
+            "type": "main",
+            "lang": "python",
+            "confidence": 0.7
+        }
+    ],
+    "main_entry": {
+        "path": "src/flask/app.py",
+        "type": "main",
+        "lang": "python",
+        "confidence": 0.7
+    },
+    "test_by_category": null
+}

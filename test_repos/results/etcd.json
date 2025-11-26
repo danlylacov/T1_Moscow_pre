@@ -1,0 +1,552 @@
+{
+    "languages": [
+        "go"
+    ],
+    "frameworks": [
+        "gin"
+    ],
+    "frontend_frameworks": [],
+    "backend_frameworks": [
+        "gin"
+    ],
+    "package_manager": "go mod",
+    "test_runner": [
+        "go-testing",
+        "cucumber"
+    ],
+    "docker": true,
+    "docker_context": "",
+    "dockerfile_path": "Dockerfile",
+    "docker_by_category": {
+        "backend": [
+            "tests/antithesis/server/Dockerfile"
+        ],
+        "root": [
+            "Dockerfile"
+        ],
+        "other": [
+            "tests/antithesis/config/Dockerfile",
+            "tests/antithesis/test-template/Dockerfile"
+        ]
+    },
+    "kubernetes": true,
+    "terraform": false,
+    "databases": [
+        "sqlite"
+    ],
+    "entry_points": [
+        {
+            "path": "server/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "server/etcdmain/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "etcdutl/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "contrib/raftexample/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "etcdctl/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/antithesis/test-template/robustness/finally/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/antithesis/test-template/robustness/traffic/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "tests/antithesis/test-template/entrypoint/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "tools/etcd-dump-logs/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "tools/testgrid-analysis/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "tools/proto-annotations/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "tools/etcd-dump-metrics/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "tools/rw-heatmaps/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "tools/etcd-dump-db/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "tools/benchmark/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "tools/testgrid-analysis/cmd/github.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "tools/testgrid-analysis/cmd/root.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "tools/testgrid-analysis/cmd/data.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "tools/testgrid-analysis/cmd/flaky.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "tools/proto-annotations/cmd/etcd_version.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "tools/proto-annotations/cmd/root.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "tools/rw-heatmaps/cmd/root.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "tools/benchmark/cmd/watch.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "tools/benchmark/cmd/put.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "tools/benchmark/cmd/txn_mixed.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "tools/benchmark/cmd/watch_get.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "tools/benchmark/cmd/mvcc.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "tools/benchmark/cmd/util.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "tools/benchmark/cmd/root.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "tools/benchmark/cmd/doc.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "tools/benchmark/cmd/txn_put.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "tools/benchmark/cmd/mvcc-put.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "tools/benchmark/cmd/watch_latency.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "tools/benchmark/cmd/lease.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "tools/benchmark/cmd/range.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "tools/benchmark/cmd/stm.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "dummy.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "server/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "server/etcdserver/server_access_control.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "server/embed/doc.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "etcdutl/ctl.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "etcdutl/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "contrib/lock/storage/storage.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "contrib/lock/client/client.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "contrib/raftexample/listener.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "contrib/raftexample/kvstore_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "contrib/raftexample/raft_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "contrib/raftexample/raft.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "contrib/raftexample/httpapi.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "contrib/raftexample/raftexample_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "contrib/raftexample/kvstore.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "contrib/raftexample/doc.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "contrib/raftexample/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "etcdctl/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "tests/antithesis/test-template/robustness/finally/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "tests/antithesis/test-template/robustness/traffic/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "tests/antithesis/test-template/entrypoint/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "tools/etcd-dump-logs/raw_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "tools/etcd-dump-logs/raw.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "tools/etcd-dump-logs/doc.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "tools/etcd-dump-logs/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "tools/etcd-dump-logs/etcd-dump-log_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "tools/testgrid-analysis/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "tools/proto-annotations/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "tools/etcd-dump-metrics/etcd.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "tools/etcd-dump-metrics/install_linux.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "tools/etcd-dump-metrics/utils.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "tools/etcd-dump-metrics/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "tools/etcd-dump-metrics/install_windows.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "tools/etcd-dump-metrics/metrics.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "tools/etcd-dump-metrics/install_darwin.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "tools/rw-heatmaps/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "tools/etcd-dump-db/scan.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "tools/etcd-dump-db/backend.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "tools/etcd-dump-db/utils.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "tools/etcd-dump-db/doc.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "tools/etcd-dump-db/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "tools/etcd-dump-db/meta.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "tools/etcd-dump-db/page.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "tools/local-tester/bridge/bridge.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "tools/local-tester/bridge/dispatch.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "tools/benchmark/doc.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "tools/benchmark/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        }
+    ],
+    "main_entry": {
+        "path": "server/main.go",
+        "type": "main",
+        "lang": "go",
+        "confidence": 0.7
+    },
+    "test_by_category": {
+        "frontend": [
+            "go-testing",
+            "cucumber"
+        ],
+        "backend": [
+            "go-testing"
+        ]
+    }
+}

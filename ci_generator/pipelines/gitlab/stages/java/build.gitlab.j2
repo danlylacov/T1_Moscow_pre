@@ -1,6 +1,7 @@
 build:
   stage: build
   image: {% if ctx.build_tool == 'maven' %}maven:{{ ctx.java_version }}-eclipse-temurin{% else %}gradle:{{ ctx.java_version }}-jdk{% endif %}
+
   script:
     {% if ctx.build_tool == 'maven' %}
     - mvn clean package -DskipTests
@@ -9,6 +10,12 @@ build:
     {% endif %}
   artifacts:
     paths:
+      {% if ctx.build_tool == 'maven' %}
+      - 'target/*.jar'
+      {% elif ctx.build_tool == 'gradle' %}
+      - 'build/libs/*.jar'
+      {% else %}
       - 'target/*.jar'
       - 'build/libs/*.jar'
+      {% endif %}
     expire_in: 1 week

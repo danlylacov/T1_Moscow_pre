@@ -1,0 +1,774 @@
+{
+    "languages": [
+        "typescript"
+    ],
+    "frameworks": [
+        "react",
+        "nextjs"
+    ],
+    "frontend_frameworks": [
+        "react",
+        "nextjs"
+    ],
+    "backend_frameworks": [],
+    "package_manager": "npm",
+    "test_runner": [
+        "jest",
+        "vitest",
+        "cucumber"
+    ],
+    "docker": false,
+    "docker_context": null,
+    "dockerfile_path": null,
+    "docker_by_category": null,
+    "kubernetes": false,
+    "terraform": false,
+    "databases": [],
+    "entry_points": [
+        {
+            "path": "libs/legacy-core/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/legacy-core/src/lib/command/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/legacy-core/src/lib/collect-updates/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/legacy-core/src/lib/collect-updates/__mocks__/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/legacy-core/src/lib/symlink-binary/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/legacy-core/src/lib/package-graph/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/nx-plugin/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/e2e-utils/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/test-helpers/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/test-helpers/src/lib/git/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/test-helpers/src/lib/npm/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/test-helpers/src/lib/serializers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/test-helpers/__mocks__/@lerna/legacy-core/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/test-helpers/__mocks__/@lerna/core/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/core/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/core/src/lib/corepack/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/core/src/lib/command/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/core/src/lib/conventional-commits/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/core/src/lib/project/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/core/src/lib/collect-updates/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/core/src/lib/npmlog/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/core/src/lib/npmlog/gauge/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/core/src/lib/cycles/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/core/src/lib/scm-clients/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/core/src/lib/npm-conf/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/core/src/lib/npm-conf/config-chain/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/commands/clean/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/commands/import/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/commands/run/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/commands/list/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/commands/create/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/commands/diff/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/commands/changed/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/commands/version/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/commands/info/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/commands/publish/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/commands/init/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/commands/exec/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/child-process/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/legacy-structure/__mocks__/@lerna/legacy-core/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/legacy-structure/__mocks__/@lerna/core/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/legacy-structure/commands/create/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/lerna/src/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/lerna/src/utils/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/lerna/src/commands/clean/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/lerna/src/commands/import/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/lerna/src/commands/run/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/lerna/src/commands/list/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/lerna/src/commands/watch/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/lerna/src/commands/repair/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/lerna/src/commands/diff/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/lerna/src/commands/add-caching/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/lerna/src/commands/changed/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/lerna/src/commands/version/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/lerna/src/commands/info/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/lerna/src/commands/publish/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/lerna/src/commands/init/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/lerna/src/commands/exec/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "__fixtures__/pack-directory/packages/d/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "__fixtures__/pack-directory/packages/a/src/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "jest.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "e2e/clean/jest.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "e2e/run/task-runner/jest.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "e2e/run/legacy-task-runner/jest.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "e2e/list/jest.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "e2e/watch/jest.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "e2e/repair/jest.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "e2e/create/jest.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "e2e/diff/jest.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "e2e/changed/jest.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "e2e/version/jest.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "e2e/info/jest.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "e2e/publish/jest.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "e2e/init/jest.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "e2e/exec/jest.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/legacy-core/jest.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/nx-plugin/jest.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/nx-plugin/src/generators/e2e-project/generator.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/e2e-utils/jest.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/test-helpers/jest.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/test-helpers/__mocks__/@lerna/legacy-core/index.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "libs/test-helpers/__mocks__/@lerna/core/index.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "libs/core/jest.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/core/src/lib/npmlog/gauge/theme-set.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "libs/core/src/lib/npmlog/gauge/template-item.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "libs/core/src/lib/npmlog/gauge/plumbing.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "libs/core/src/lib/npmlog/gauge/has-color.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "libs/core/src/lib/npmlog/gauge/progress-bar.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "libs/core/src/lib/npmlog/gauge/process.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "libs/core/src/lib/npmlog/gauge/base-theme.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "libs/core/src/lib/npmlog/gauge/wide-truncate.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "libs/core/src/lib/npmlog/gauge/render-template.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "libs/core/src/lib/npmlog/gauge/set-interval.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "libs/core/src/lib/npmlog/gauge/themes.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "libs/core/src/lib/npmlog/gauge/set-immediate.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "libs/core/src/lib/npmlog/gauge/spin.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "libs/core/src/lib/npmlog/are-we-there-yet/tests/test-event.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/core/src/lib/npm-conf/index.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "libs/core/src/lib/npm-conf/config-chain/proto-list.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "libs/core/src/lib/npm-conf/config-chain/index.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "libs/commands/clean/jest.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/commands/clean/src/index.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "libs/commands/import/jest.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/commands/run/jest.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/commands/list/jest.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/commands/create/src/index.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "libs/commands/diff/jest.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/commands/changed/jest.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/commands/version/jest.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/commands/info/jest.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/commands/init/jest.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/commands/exec/jest.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/child-process/jest.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "libs/child-process/src/forked-strong-log-transformer.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "integration/jest.config.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "website/src/components/publish-with-lerna.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "website/src/components/hero-lerna.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "website/src/components/powered-by-nx.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "website/src/components/hero-upgrade.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "website/src/components/modern-lerna.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "website/src/components/how-to-upgrade.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "website/src/pages/upgrade.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "website/src/pages/index.tsx",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        }
+    ],
+    "main_entry": {
+        "path": "libs/legacy-core/src/index.ts",
+        "type": "main",
+        "lang": "typescript",
+        "confidence": 0.7
+    },
+    "test_by_category": null
+}

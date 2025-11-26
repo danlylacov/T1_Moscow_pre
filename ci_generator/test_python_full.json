@@ -1,0 +1,48 @@
+{
+  "analysis": {
+    "languages": ["python"],
+    "frameworks": ["django"],
+    "frontend_frameworks": [],
+    "backend_frameworks": ["django"],
+    "package_manager": "pip",
+    "test_runner": "pytest",
+    "docker": true,
+    "kubernetes": true,
+    "terraform": false,
+    "databases": ["postgresql"],
+    "entry_points": [
+      {
+        "path": "app/main.py",
+        "type": "main",
+        "lang": "python",
+        "confidence": 0.9
+      }
+    ],
+    "main_entry": {
+      "path": "app/main.py",
+      "type": "main",
+      "lang": "python",
+      "confidence": 0.9
+    }
+  },
+  "user_settings": {
+    "platform": "gitlab",
+    "triggers": {
+      "on_push": ["main", "develop"],
+      "on_merge_request": true,
+      "on_tags": "v*",
+      "schedule": "",
+      "manual": false
+    },
+    "stages": [],
+    "docker_registry": "registry.example.com/team",
+    "docker_image": "python-app",
+    "docker_context": ".",
+    "dockerfile_path": "Dockerfile",
+    "variables": {},
+    "project_name": "python-app",
+    "python_version": "3.11",
+    "docker_tag": "$CI_COMMIT_SHORT_SHA"
+  }
+}
+

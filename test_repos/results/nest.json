@@ -1,0 +1,5235 @@
+{
+    "languages": [
+        "typescript"
+    ],
+    "frameworks": [
+        "express",
+        "nest",
+        "nestjs"
+    ],
+    "frontend_frameworks": [],
+    "backend_frameworks": [
+        "express",
+        "nest"
+    ],
+    "package_manager": "npm",
+    "test_runner": [
+        "vitest",
+        "cucumber",
+        "jest"
+    ],
+    "docker": true,
+    "docker_context": null,
+    "dockerfile_path": null,
+    "docker_by_category": null,
+    "kubernetes": false,
+    "terraform": false,
+    "databases": [
+        "mongodb"
+    ],
+    "entry_points": [
+        {
+            "path": "packages/platform-express/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/platform-express/interfaces/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/platform-express/adapters/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/platform-express/multer/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/platform-express/multer/interfaces/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/platform-express/multer/interceptors/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/platform-socket.io/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/platform-socket.io/adapters/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/platform-ws/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/platform-ws/adapters/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/testing/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/testing/interfaces/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/platform-fastify/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/platform-fastify/interfaces/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/platform-fastify/interfaces/external/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/platform-fastify/decorators/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/platform-fastify/adapters/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/pipes/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/helpers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/helpers/interfaces/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/middleware/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/interceptors/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/hooks/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/adapters/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/exceptions/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/inspector/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/services/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/discovery/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/errors/exceptions/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/injector/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/injector/internal-core-module/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/injector/inquirer/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/router/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/router/interfaces/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/router/request/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/router/utils/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/repl/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/repl/native-functions/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/core/guards/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/common/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/common/interfaces/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/common/interfaces/middleware/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/common/interfaces/hooks/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/common/interfaces/http/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/common/interfaces/modules/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/common/interfaces/exceptions/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/common/interfaces/controllers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/common/file-stream/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/common/file-stream/interfaces/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/common/pipes/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/common/pipes/file/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/common/pipes/file/interfaces/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/common/decorators/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/common/decorators/http/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/common/decorators/modules/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/common/decorators/core/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/common/utils/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/common/exceptions/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/common/enums/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/common/services/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/common/services/utils/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/common/module-utils/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/common/module-utils/interfaces/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/common/module-utils/utils/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/common/serializer/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/common/serializer/decorators/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/microservices/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/microservices/interfaces/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/microservices/module/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/microservices/module/interfaces/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/microservices/helpers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/microservices/record-builders/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/microservices/deserializers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/microservices/server/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/microservices/client/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/microservices/ctx-host/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/microservices/decorators/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/microservices/utils/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/microservices/exceptions/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/microservices/enums/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/microservices/events/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/microservices/serializers/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/websockets/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/websockets/interfaces/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/websockets/interfaces/hooks/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/websockets/decorators/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/websockets/adapters/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/websockets/utils/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/websockets/exceptions/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/websockets/errors/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/25-dynamic-modules/src/config/interfaces/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "packages/microservices/server/server.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "integration/graphql-code-first/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "integration/versioning/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "integration/mongoose/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "integration/typeorm/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "integration/lazy-modules/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "integration/microservices/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "integration/graphql-schema-first/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "integration/scopes/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/03-microservices/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/12-graphql-schema-first/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/11-swagger/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/29-file-upload/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/15-mvc/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/34-using-esm-packages/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/06-mongoose/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/16-gateways-ws/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/35-use-esm-package-after-node22/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/28-sse/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/18-context/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/01-cats-app/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/25-dynamic-modules/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/26-queues/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/14-mongoose-base/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/32-graphql-federation-schema-first/users-application/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/32-graphql-federation-schema-first/gateway/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/32-graphql-federation-schema-first/posts-application/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/20-cache/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/08-webpack/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/21-serializer/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/17-mvc-fastify/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/23-graphql-code-first/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/10-fastify/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/31-graphql-federation-code-first/users-application/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/31-graphql-federation-code-first/gateway/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/31-graphql-federation-code-first/posts-application/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/04-grpc/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/02-gateways/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/13-mongo-typeorm/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/19-auth-jwt/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/30-event-emitter/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/07-sequelize/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/33-graphql-mercurius/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/24-serve-static/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/05-sql-typeorm/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/22-graphql-prisma/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/27-scheduling/src/main.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/09-babel-example/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "sample/09-babel-example/src/main.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "/tmp/repo_analyzer_znd34c2h/sample/35-use-esm-package-after-node22/--experimental-require-module\"",
+            "type": "script",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "/tmp/repo_analyzer_znd34c2h/sample/08-webpack/dist/main",
+            "type": "script",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "/tmp/repo_analyzer_znd34c2h/sample/09-babel-example/index.js",
+            "type": "script",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/cors/src/app.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/cors/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/cors/e2e/fastify.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/cors/e2e/express.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "integration/graphql-code-first/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/graphql-code-first/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "integration/graphql-code-first/src/recipes/recipes.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/graphql-code-first/src/recipes/recipes.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/graphql-code-first/src/recipes/recipes.resolver.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/graphql-code-first/src/recipes/dto/recipes.args.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/graphql-code-first/src/recipes/dto/new-recipe.input.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/graphql-code-first/src/recipes/models/recipe.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/graphql-code-first/src/common/interceptors/data.interceptor.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/graphql-code-first/src/common/filters/unauthorized.filter.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/graphql-code-first/src/common/scalars/date.scalar.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/graphql-code-first/src/common/guards/auth.guard.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/graphql-code-first/e2e/pipes.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/graphql-code-first/e2e/guards-filters.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/graphql-code-first/e2e/code-first.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/versioning/src/middleware.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/versioning/src/no-versioning.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/versioning/src/neutral-middleware.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/versioning/src/app-v1.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/versioning/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/versioning/src/app-v2.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/versioning/src/override-partial.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/versioning/src/multiple-middleware.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/versioning/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "integration/versioning/src/override.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/versioning/src/neutral.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/versioning/src/multiple.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/versioning/e2e/header-versioning-fastify.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/versioning/e2e/uri-versioning.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/versioning/e2e/uri-versioning-fastify.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/versioning/e2e/header-versioning.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/versioning/e2e/media-type-versioning.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/versioning/e2e/media-type-versioning-fastify.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/versioning/e2e/custom-versioning.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "integration/versioning/e2e/default-versioning.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/versioning/e2e/custom-versioning-fastify.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/mongoose/src/async-options.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/mongoose/src/async-class-options.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/mongoose/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/mongoose/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "integration/mongoose/src/async-existing-options.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/mongoose/src/cats/cats.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/mongoose/src/cats/cats.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/mongoose/src/cats/cats.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/mongoose/e2e/async-options.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/mongoose/e2e/mongoose.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/mongoose/e2e/async-class-options.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/mongoose/e2e/async-existing-options.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/typeorm/src/async-options.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/typeorm/src/database.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/typeorm/src/app-async.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/typeorm/src/async-class-options.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/typeorm/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/typeorm/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "integration/typeorm/src/async-existing-options.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/typeorm/src/photo/photo.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/typeorm/src/photo/photo.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/typeorm/src/photo/photo.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/typeorm/e2e/typeorm.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/typeorm/e2e/typeorm-async-options.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/typeorm/e2e/typeorm-async.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/typeorm/e2e/typeorm-async-class.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/typeorm/e2e/typeorm-async-existing.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/nest-application/global-prefix/src/app.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/nest-application/global-prefix/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/nest-application/global-prefix/e2e/global-prefix.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/nest-application/get-url/src/app.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/nest-application/get-url/src/app.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/nest-application/get-url/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/nest-application/get-url/e2e/fastify.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "integration/nest-application/get-url/e2e/express.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "integration/nest-application/listen/src/app.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/nest-application/listen/src/app.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/nest-application/listen/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/nest-application/listen/e2e/fastify.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "integration/nest-application/listen/e2e/express.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "integration/nest-application/raw-body/src/fastify.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/nest-application/raw-body/src/express.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "integration/nest-application/raw-body/src/express.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "integration/nest-application/raw-body/src/fastify.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/nest-application/raw-body/e2e/fastify.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/nest-application/raw-body/e2e/express.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "integration/nest-application/app-locals/src/app.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "integration/nest-application/app-locals/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/nest-application/app-locals/e2e/express.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "integration/nest-application/sse/src/app.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/nest-application/sse/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/nest-application/sse/e2e/fastify.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "integration/nest-application/sse/e2e/express.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "integration/nest-application/use-body-parser/src/app.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/nest-application/use-body-parser/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/nest-application/use-body-parser/e2e/fastify.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/nest-application/use-body-parser/e2e/express.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "integration/hooks/src/enable-shutdown-hooks-main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "integration/hooks/e2e/before-app-shutdown.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hooks/e2e/on-app-boostrap.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hooks/e2e/on-module-destroy.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hooks/e2e/on-module-init.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hooks/e2e/lifecycle-hook-order.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hooks/e2e/on-app-shutdown.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/app-v1.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/app-v2.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/defaults/defaults.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/defaults/defaults.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/defaults/core.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/users/users.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/users/users.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/users/users.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/users/dto/update-user.dto.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/dogs/dogs.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/dogs/dogs.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/dogs/dogs.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/dogs/dto/update-dog.dto.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/external-svc/external-svc.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/external-svc/external-svc.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/external-svc/external-svc.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/external-svc/dto/update-external-svc.dto.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/circular-hello/hello.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/circular-hello/hello.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/circular-hello/hello.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/circular-hello/users/users.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/circular-hello/users/user-by-id.pipe.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/circular-hello/interceptors/logging.interceptor.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/circular-hello/guards/request-scoped.guard.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/database/database.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/database/database.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/database/database.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/database/dto/update-database.dto.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/properties/properties.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/properties/properties.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/properties/dependency.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/circular-modules/circular.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/circular-modules/circular.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/circular-modules/input.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/circular-modules/input.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/durable/durable-context-id.strategy.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "integration/inspector/src/durable/durable.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/durable/durable.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/durable/durable.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/request-chain/request-chain.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/request-chain/request-chain.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/request-chain/request-chain.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/request-chain/interceptors/logging.interceptor.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/request-chain/helper/helper.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/request-chain/helper/helper.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/core/core.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/core/interceptors/logging.interceptor.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/core/interceptors/transform.interceptor.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/common/pipes/parse-int.pipe.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/common/middleware/logger.middleware.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/common/interceptors/timeout.interceptor.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/common/filters/http-exception.filter.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/common/guards/roles.guard.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/chat/chat.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/chat/chat.gateway.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/chat/chat.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/chat/dto/update-chat.dto.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/cats/cats.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/cats/cats.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/src/cats/cats.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/inspector/e2e/graph-inspector.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/src/host/host.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/src/host/host.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/src/host/host.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/src/host/users/users.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/src/host/users/user-by-id.pipe.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/src/host-array/host-array.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/src/host-array/host-array.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/src/host-array/host-array.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/src/host-array/users/users.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/src/host-array/users/user-by-id.pipe.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/src/hello/hello.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/src/hello/hello.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/src/hello/hello.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/src/hello/users/users.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/src/hello/users/user-by-id.pipe.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/src/errors/errors.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/e2e/exclude-middleware.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/e2e/express-multiple.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "integration/hello-world/e2e/middleware-execute-order.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/e2e/middleware-with-versioning.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/e2e/middleware-run-match-route.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/e2e/interceptors.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/e2e/router-module-middleware.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/e2e/middleware-class.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "integration/hello-world/e2e/fastify-adapter.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/e2e/force-console.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/e2e/local-pipes.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/e2e/middleware-fastify.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/e2e/router-module.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/e2e/hello-world.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/e2e/guards.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/e2e/exclude-middleware-fastify.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/e2e/express-instance.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "integration/hello-world/e2e/fastify-multiple.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/e2e/middleware.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/e2e/exceptions.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/hello-world/e2e/fastify-middleware-before-init.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/auto-mock/src/bar.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/auto-mock/src/foo.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/auto-mock/test/bar.service.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/discovery/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/discovery/src/webhooks.explorer.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/discovery/src/my-webhook/my-webhook.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/discovery/src/decorators/webhook.decorators.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/discovery/src/decorators/non-applied.decorator.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/discovery/e2e/discover-by-meta.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/lazy-modules/src/lazy.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/lazy-modules/src/request.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/lazy-modules/src/transient.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/lazy-modules/src/request.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/lazy-modules/src/lazy.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/lazy-modules/src/eager.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/lazy-modules/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/lazy-modules/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "integration/lazy-modules/src/transient.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/lazy-modules/src/global.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/lazy-modules/e2e/lazy-import-request-providers.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/lazy-modules/e2e/lazy-import-global-modules.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/lazy-modules/e2e/lazy-import-transient-providers.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/module-utils/src/integration.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/module-utils/src/integration.module-definition.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/module-utils/test/integration-module.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/src/app.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/src/disconnected.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "integration/microservices/src/grpc-advanced/advanced.grpc.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/src/kafka-concurrent/kafka-concurrent.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/src/kafka-concurrent/kafka-concurrent.messages.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/src/tcp-tls/app.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/src/tcp-tls/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/src/nats/nats.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/src/nats/nats.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/src/nats/nats-broadcast.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/src/kafka/kafka.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/src/kafka/kafka.messages.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/src/grpc/grpc.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/src/mqtt/mqtt.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/src/mqtt/mqtt-broadcast.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/src/redis/redis-broadcast.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/src/redis/redis.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/src/rmq/fanout-exchange-consumer-rmq.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/src/rmq/rmq-broadcast.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/src/rmq/topic-exchange-rmq.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/src/rmq/rmq.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/src/rmq/fanout-exchange-producer-rmq.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/e2e/disconnected-client.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/e2e/sum-mqtt.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/e2e/sum-nats.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/e2e/math-grpc.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/e2e/sum-rpc-tls.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/e2e/concurrent-kafka.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/e2e/sum-rpc.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/e2e/fanout-exchange-rmq.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/e2e/sum-kafka.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/e2e/orders-grpc.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "integration/microservices/e2e/sum-rmq.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/e2e/sum-redis.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/e2e/broadcast-nats.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/e2e/broadcast-mqtt.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/e2e/topic-exchange-rmq.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/e2e/broadcast-redis.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/e2e/sum-rpc-async.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/microservices/e2e/mqtt-record-builder.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/graphql-schema-first/src/async-options-existing.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/graphql-schema-first/src/async-options.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/graphql-schema-first/src/async-options-class.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/graphql-schema-first/src/config.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/graphql-schema-first/src/config.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/graphql-schema-first/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/graphql-schema-first/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "integration/graphql-schema-first/src/common/scalars/date.scalar.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/graphql-schema-first/src/cats/cats.resolvers.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/graphql-schema-first/src/cats/cats-request-scoped.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/graphql-schema-first/src/cats/cats.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/graphql-schema-first/src/cats/cats.guard.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/graphql-schema-first/src/cats/cats.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/graphql-schema-first/e2e/graphql-async-existing.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/graphql-schema-first/e2e/graphql-async.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/graphql-schema-first/e2e/graphql-async-class.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/graphql-schema-first/e2e/graphql-request-scoped.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/graphql-schema-first/e2e/graphql.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/self-injection/self-injection-provider.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/defaults/defaults.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/defaults/defaults.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/defaults/core.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/circular-structure-dynamic-module/circular.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/circular-structure-dynamic-module/input.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/dynamic/dynamic.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/multiple-providers/multiple-providers.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/multiple-providers/a.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/multiple-providers/b.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/multiple-providers/c.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/scoped/scoped.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/scoped/transient2.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/scoped/scoped.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/scoped/transient.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/scoped/transient3.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/scoped/scoped.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/properties/properties.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/properties/properties.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/properties/dependency.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/exports/exports.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/exports/exports.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/circular-modules/circular.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/circular-modules/circular.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/circular-modules/input.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/circular-modules/input.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/circular/circular.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/circular/circular.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/circular/input.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/circular-properties/circular.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/circular-properties/circular-properties.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/circular-properties/input-properties.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/circular-properties/input.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/inject/inject.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/inject/inject-same-name.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/inject/inject.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/inject/core.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/src/core-injectables/core-injectables.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/e2e/default-values.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/e2e/scoped-instances.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/e2e/circular-custom-providers.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/e2e/circular-modules.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/e2e/injector.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/e2e/introspection.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/e2e/optional-factory-provider-dep.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/e2e/circular.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/e2e/multiple-providers.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/e2e/core-injectables.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/e2e/circular-property-injection.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/e2e/property-injection.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/e2e/circular-structure-dynamic-modules.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/injector/e2e/many-global-modules.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "integration/scopes/src/circular-transient/hello.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/circular-transient/hello.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/circular-transient/test.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/circular-transient/hello.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/circular-transient/users/users.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/circular-transient/users/user-by-id.pipe.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/circular-transient/interceptors/logging.interceptor.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/circular-transient/guards/request-scoped.guard.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/nested-transient/second-request.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/nested-transient/nested-transient.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/nested-transient/transient-logger.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/nested-transient/nested-transient.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/nested-transient/first-request.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/nested-transient/nested-transient.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/circular-hello/hello.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/circular-hello/hello.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/circular-hello/hello.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/circular-hello/users/users.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/circular-hello/users/user-by-id.pipe.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/circular-hello/interceptors/logging.interceptor.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/circular-hello/guards/request-scoped.guard.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/msvc/hello.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/msvc/http.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/msvc/hello.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/msvc/hello.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/msvc/users/users.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/msvc/interceptors/logging.interceptor.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/msvc/guards/request-scoped.guard.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/resolve-scoped/logger.provider.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/resolve-scoped/request-logger.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/resolve-scoped/logger.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/transient/hello.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/transient/hello.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/transient/test.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/transient/hello.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/transient/users/users.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/transient/users/user-by-id.pipe.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/transient/interceptors/logging.interceptor.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/transient/guards/request-scoped.guard.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/durable/durable.guard.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/durable/durable-context-id.strategy.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "integration/scopes/src/durable/durable.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/durable/non-durable.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/durable/durable.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/durable/durable.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/request-chain/request-chain.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/request-chain/request-chain.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/request-chain/request-chain.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/request-chain/interceptors/logging.interceptor.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/request-chain/helper/helper.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/request-chain/helper/helper.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/hello/hello.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/hello/hello.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/hello/hello.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/hello/users/users.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/hello/users/user-by-id.pipe.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/hello/interceptors/logging.interceptor.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/hello/guards/request-scoped.guard.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/inject-inquirer/hello.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/inject-inquirer/hello.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/inject-inquirer/hello-request/hello-request.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/inject-inquirer/hello-request/request-logger.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/inject-inquirer/hello-transient/transient-logger.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/src/inject-inquirer/hello-transient/hello-transient.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/e2e/circular-transient-scope.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/e2e/request-modules-scope.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/e2e/msvc-request-scope.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/e2e/transient-scope.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/e2e/request-scope.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/e2e/durable-providers.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/e2e/circular-request-scope.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/e2e/inject-inquirer.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/scopes/e2e/resolve-scoped.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/websockets/src/request.filter.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/websockets/src/server.gateway.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/websockets/src/app.gateway.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/websockets/src/ws-path.gateway.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/websockets/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/websockets/src/example-path.gateway.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/websockets/src/ack.gateway.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/websockets/src/error.gateway.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/websockets/src/namespace.gateway.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/websockets/src/core.gateway.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/websockets/src/ws-path2.gateway.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/websockets/src/request.interceptor.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/websockets/e2e/gateway.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "integration/websockets/e2e/ws-gateway.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "integration/websockets/e2e/error-gateway.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "integration/websockets/e2e/gateway-ack.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "integration/testing-module-override/e2e/modules-override.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/testing-module-override/circular-dependency/a.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/testing-module-override/circular-dependency/b.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/send-files/src/app.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/send-files/src/app.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/send-files/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/send-files/e2e/utils.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/send-files/e2e/fastify.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/send-files/e2e/express.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/repl/src/long-living-app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/repl/src/repl.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/repl/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/repl/src/users/users.repository.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/repl/src/users/users.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/repl/src/users/users.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/repl/src/users/users.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/repl/src/users/dto/update-user.dto.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/repl/src/database/database.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/repl/src/database/database.connection.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/repl/e2e/repl.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/03-microservices/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/03-microservices/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/03-microservices/src/common/strategies/nats.strategy.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/03-microservices/src/common/interceptors/logging.interceptor.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/03-microservices/src/common/filters/rpc-exception.filter.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/03-microservices/src/math/math.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/03-microservices/src/math/math.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/12-graphql-schema-first/generate-typings.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/12-graphql-schema-first/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/12-graphql-schema-first/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/12-graphql-schema-first/src/common/plugins/logging.plugin.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/12-graphql-schema-first/src/common/scalars/date.scalar.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/12-graphql-schema-first/src/owners/owners.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/12-graphql-schema-first/src/owners/owners.service.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/12-graphql-schema-first/src/owners/owners.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/12-graphql-schema-first/src/cats/cats.resolver.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/12-graphql-schema-first/src/cats/cats.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/12-graphql-schema-first/src/cats/cats.guard.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/12-graphql-schema-first/src/cats/cat-owner.resolver.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/12-graphql-schema-first/src/cats/cats.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/12-graphql-schema-first/src/cats/cats.service.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/12-graphql-schema-first/src/cats/cats.resolver.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/12-graphql-schema-first/src/cats/cat-owner.resolver.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/12-graphql-schema-first/e2e/cats/cats.e2e-spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/11-swagger/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/11-swagger/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/11-swagger/src/cats/cats.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/11-swagger/src/cats/cats.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/11-swagger/src/cats/cats.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/11-swagger/src/cats/entities/cat.entity.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/29-file-upload/src/app.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/29-file-upload/src/app.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "sample/29-file-upload/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/29-file-upload/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/29-file-upload/e2e/app/app.e2e-spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/15-mvc/src/app.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/15-mvc/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/15-mvc/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/34-using-esm-packages/src/superjson.provider.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/34-using-esm-packages/src/app.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/34-using-esm-packages/src/app.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/34-using-esm-packages/src/import-esm-package.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "sample/34-using-esm-packages/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/34-using-esm-packages/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/34-using-esm-packages/src/app.controller.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/34-using-esm-packages/test/app.e2e-spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/06-mongoose/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/06-mongoose/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/06-mongoose/src/cats/cats.controller.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/06-mongoose/src/cats/cats.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/06-mongoose/src/cats/cats.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/06-mongoose/src/cats/cats.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/06-mongoose/src/cats/cats.service.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/06-mongoose/src/cats/schemas/cat.schema.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/16-gateways-ws/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/16-gateways-ws/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/16-gateways-ws/src/events/events.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/16-gateways-ws/src/events/events.gateway.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/35-use-esm-package-after-node22/src/app.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/35-use-esm-package-after-node22/src/app.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/35-use-esm-package-after-node22/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/35-use-esm-package-after-node22/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/28-sse/src/app.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "sample/28-sse/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/28-sse/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/18-context/src/app.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/18-context/src/my-dynamic.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/18-context/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/18-context/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/01-cats-app/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/01-cats-app/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/01-cats-app/src/core/core.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/01-cats-app/src/core/interceptors/logging.interceptor.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/01-cats-app/src/core/interceptors/transform.interceptor.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/01-cats-app/src/common/pipes/validation.pipe.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/01-cats-app/src/common/pipes/parse-int.pipe.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/01-cats-app/src/common/middleware/logger.middleware.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/01-cats-app/src/common/interceptors/exception.interceptor.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/01-cats-app/src/common/interceptors/timeout.interceptor.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/01-cats-app/src/common/decorators/roles.decorator.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/01-cats-app/src/common/filters/http-exception.filter.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/01-cats-app/src/common/guards/roles.guard.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/01-cats-app/src/cats/cats.controller.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/01-cats-app/src/cats/cats.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/01-cats-app/src/cats/cats.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/01-cats-app/src/cats/cats.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/01-cats-app/src/cats/cats.service.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/01-cats-app/e2e/cats/cats.e2e-spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/25-dynamic-modules/src/app.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/25-dynamic-modules/src/app.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/25-dynamic-modules/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/25-dynamic-modules/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/25-dynamic-modules/src/app.controller.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/25-dynamic-modules/src/config/config.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/25-dynamic-modules/src/config/config.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/25-dynamic-modules/src/config/config.service.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/26-queues/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/26-queues/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/26-queues/src/audio/audio.processor.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/26-queues/src/audio/audio.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/26-queues/src/audio/audio.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/14-mongoose-base/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/14-mongoose-base/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/14-mongoose-base/src/database/database.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/14-mongoose-base/src/cats/cats.controller.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/14-mongoose-base/src/cats/cats.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/14-mongoose-base/src/cats/cats.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/14-mongoose-base/src/cats/cats.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/14-mongoose-base/src/cats/cats.service.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/32-graphql-federation-schema-first/users-application/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/32-graphql-federation-schema-first/users-application/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/32-graphql-federation-schema-first/users-application/src/users/users.resolver.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/32-graphql-federation-schema-first/users-application/src/users/users.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/32-graphql-federation-schema-first/users-application/src/users/users.resolver.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/32-graphql-federation-schema-first/users-application/src/users/users.service.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/32-graphql-federation-schema-first/users-application/src/users/users.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/32-graphql-federation-schema-first/users-application/src/users/models/user.model.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/32-graphql-federation-schema-first/gateway/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/32-graphql-federation-schema-first/gateway/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/32-graphql-federation-schema-first/posts-application/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/32-graphql-federation-schema-first/posts-application/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/32-graphql-federation-schema-first/posts-application/src/posts/users.resolver.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/32-graphql-federation-schema-first/posts-application/src/posts/posts.resolver.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/32-graphql-federation-schema-first/posts-application/src/posts/posts.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/32-graphql-federation-schema-first/posts-application/src/posts/posts.resolver.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/32-graphql-federation-schema-first/posts-application/src/posts/users.resolver.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/32-graphql-federation-schema-first/posts-application/src/posts/posts.service.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/32-graphql-federation-schema-first/posts-application/src/posts/posts.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/32-graphql-federation-schema-first/posts-application/src/posts/posts.interfaces.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/32-graphql-federation-schema-first/posts-application/src/posts/models/user.model.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/32-graphql-federation-schema-first/posts-application/src/posts/models/post.model.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/20-cache/src/app.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/20-cache/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/20-cache/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/20-cache/src/common/http-cache.interceptor.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/08-webpack/src/app.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/08-webpack/src/app.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/08-webpack/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/08-webpack/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/21-serializer/src/app.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/21-serializer/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/21-serializer/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/17-mvc-fastify/src/app.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/17-mvc-fastify/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/17-mvc-fastify/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/23-graphql-code-first/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/23-graphql-code-first/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/23-graphql-code-first/src/recipes/recipes.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/23-graphql-code-first/src/recipes/recipes.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/23-graphql-code-first/src/recipes/recipes.resolver.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/23-graphql-code-first/src/recipes/dto/recipes.args.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/23-graphql-code-first/src/recipes/dto/new-recipe.input.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/23-graphql-code-first/src/recipes/models/recipe.model.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/23-graphql-code-first/src/common/plugins/logging.plugin.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/23-graphql-code-first/src/common/plugins/complexity.plugin.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/23-graphql-code-first/src/common/scalars/date.scalar.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/10-fastify/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/10-fastify/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/10-fastify/src/core/core.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/10-fastify/src/core/interceptors/logging.interceptor.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/10-fastify/src/core/interceptors/transform.interceptor.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/10-fastify/src/common/pipes/validation.pipe.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/10-fastify/src/common/pipes/parse-int.pipe.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/10-fastify/src/common/middleware/logger.middleware.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/10-fastify/src/common/interceptors/exception.interceptor.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/10-fastify/src/common/decorators/roles.decorator.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/10-fastify/src/common/guards/roles.guard.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/10-fastify/src/cats/cats.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/10-fastify/src/cats/cats.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/10-fastify/src/cats/cats.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/31-graphql-federation-code-first/users-application/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/31-graphql-federation-code-first/users-application/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/31-graphql-federation-code-first/users-application/src/users/users.resolver.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/31-graphql-federation-code-first/users-application/src/users/users.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/31-graphql-federation-code-first/users-application/src/users/users.resolver.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/31-graphql-federation-code-first/users-application/src/users/users.service.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/31-graphql-federation-code-first/users-application/src/users/users.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/31-graphql-federation-code-first/users-application/src/users/models/user.model.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/31-graphql-federation-code-first/gateway/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/31-graphql-federation-code-first/gateway/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/31-graphql-federation-code-first/posts-application/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/31-graphql-federation-code-first/posts-application/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/31-graphql-federation-code-first/posts-application/src/posts/users.resolver.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/31-graphql-federation-code-first/posts-application/src/posts/posts.resolver.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/31-graphql-federation-code-first/posts-application/src/posts/posts.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/31-graphql-federation-code-first/posts-application/src/posts/posts.resolver.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/31-graphql-federation-code-first/posts-application/src/posts/users.resolver.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/31-graphql-federation-code-first/posts-application/src/posts/posts.service.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/31-graphql-federation-code-first/posts-application/src/posts/posts.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/31-graphql-federation-code-first/posts-application/src/posts/models/user.model.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/31-graphql-federation-code-first/posts-application/src/posts/models/post.model.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/04-grpc/src/grpc-client.options.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/04-grpc/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/04-grpc/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/04-grpc/src/hero/hero.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/04-grpc/src/hero/hero.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/02-gateways/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/02-gateways/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/02-gateways/src/adapters/redis-io.adapter.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/02-gateways/src/events/events.gateway.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/02-gateways/src/events/events.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/02-gateways/src/events/events.gateway.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/02-gateways/e2e/events-gateway/gateway.e2e-spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/13-mongo-typeorm/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/13-mongo-typeorm/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/13-mongo-typeorm/src/photo/photo.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/13-mongo-typeorm/src/photo/photo.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/13-mongo-typeorm/src/photo/photo.controller.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/13-mongo-typeorm/src/photo/photo.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/13-mongo-typeorm/src/photo/photo.service.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/19-auth-jwt/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/19-auth-jwt/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/19-auth-jwt/src/users/users.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/19-auth-jwt/src/users/users.service.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/19-auth-jwt/src/users/users.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/19-auth-jwt/src/auth/auth.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/19-auth-jwt/src/auth/auth.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/19-auth-jwt/src/auth/auth.guard.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.6
+        },
+        {
+            "path": "sample/19-auth-jwt/src/auth/auth.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/19-auth-jwt/src/auth/decorators/public.decorator.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/19-auth-jwt/e2e/app/app.e2e-spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/30-event-emitter/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/30-event-emitter/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/30-event-emitter/src/orders/orders.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/30-event-emitter/src/orders/orders.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/30-event-emitter/src/orders/orders.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/30-event-emitter/src/orders/listeners/order-created.listener.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/30-event-emitter/test/app.e2e-spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/07-sequelize/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/07-sequelize/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/07-sequelize/src/users/users.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/07-sequelize/src/users/users.service.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/07-sequelize/src/users/users.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/07-sequelize/src/users/users.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/07-sequelize/src/users/users.controller.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/33-graphql-mercurius/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/33-graphql-mercurius/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/33-graphql-mercurius/src/recipes/recipes.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/33-graphql-mercurius/src/recipes/recipes.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/33-graphql-mercurius/src/recipes/recipes.resolver.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/33-graphql-mercurius/src/recipes/dto/recipes.args.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/33-graphql-mercurius/src/recipes/dto/new-recipe.input.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/33-graphql-mercurius/src/recipes/models/recipe.model.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/33-graphql-mercurius/src/common/scalars/date.scalar.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/24-serve-static/src/app.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/24-serve-static/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/24-serve-static/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/05-sql-typeorm/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/05-sql-typeorm/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/05-sql-typeorm/src/users/users.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/05-sql-typeorm/src/users/users.service.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/05-sql-typeorm/src/users/users.controller.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/05-sql-typeorm/src/users/users.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/05-sql-typeorm/src/users/users.controller.spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/05-sql-typeorm/test/users/users.e2e-spec.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/22-graphql-prisma/generate-typings.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/22-graphql-prisma/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/22-graphql-prisma/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/22-graphql-prisma/src/prisma/prisma.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/22-graphql-prisma/src/prisma/prisma.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/22-graphql-prisma/src/posts/posts.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/22-graphql-prisma/src/posts/posts.resolvers.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/22-graphql-prisma/src/posts/posts.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/27-scheduling/src/app.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/27-scheduling/src/main.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "sample/27-scheduling/src/tasks/tasks.module.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "sample/27-scheduling/src/tasks/tasks.service.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tools/gulp/tasks/move.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tools/benchmarks/check-benchmarks.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        }
+    ],
+    "main_entry": {
+        "path": "packages/platform-express/index.ts",
+        "type": "main",
+        "lang": "typescript",
+        "confidence": 0.7
+    },
+    "test_by_category": null
+}

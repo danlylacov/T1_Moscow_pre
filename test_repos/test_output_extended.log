@@ -1,0 +1,522 @@
+=== Комплексное тестирование API анализатора стека ===
+Всего репозиториев: 51
+Результаты сохраняются в: /home/daniil/Рабочий стол/T1/test_repos/results
+
+----------------------------------------
+[1/51] Тестирую: https://github.com/pallets/flask
+----------------------------------------
+✅ Успешно
+   Languages: python
+   Frameworks: flask
+   Package Manager: poetry
+   Docker: False
+   Entry Points: 4
+
+----------------------------------------
+[2/51] Тестирую: https://github.com/tiangolo/fastapi
+----------------------------------------
+✅ Успешно
+   Languages: python, typescript
+   Frameworks: flask, fastapi
+   Package Manager: poetry
+   Docker: False
+   Entry Points: 743
+
+----------------------------------------
+[3/51] Тестирую: https://github.com/django/django
+----------------------------------------
+✅ Успешно
+   Languages: typescript, python
+   Frameworks: django
+   Package Manager: npm
+   Docker: False
+   Entry Points: 2042
+
+----------------------------------------
+[4/51] Тестирую: https://github.com/pytest-dev/pytest
+----------------------------------------
+✅ Успешно
+   Languages: python
+   Frameworks: None
+   Package Manager: poetry
+   Docker: False
+   Entry Points: 8
+
+----------------------------------------
+[5/51] Тестирую: https://github.com/psf/requests
+----------------------------------------
+✅ Успешно
+   Languages: python
+   Frameworks: None
+   Package Manager: setuptools
+   Docker: False
+   Entry Points: 1
+
+----------------------------------------
+[6/51] Тестирую: https://github.com/pandas-dev/pandas
+----------------------------------------
+✅ Успешно
+   Languages: python
+   Frameworks: None
+   Package Manager: setuptools
+   Docker: True
+   Entry Points: 1
+
+----------------------------------------
+[7/51] Тестирую: https://github.com/expressjs/express
+----------------------------------------
+✅ Успешно
+   Languages: typescript
+   Frameworks: express
+   Package Manager: npm
+   Docker: False
+   Entry Points: 32
+
+----------------------------------------
+[8/51] Тестирую: https://github.com/nestjs/nest
+----------------------------------------
+✅ Успешно
+   Languages: typescript
+   Frameworks: express, nest, nestjs
+   Package Manager: npm
+   Docker: True
+   Entry Points: 866
+
+----------------------------------------
+[9/51] Тестирую: https://github.com/facebook/react
+----------------------------------------
+✅ Успешно
+   Languages: typescript
+   Frameworks: react, express, nextjs
+   Package Manager: yarn
+   Docker: False
+   Entry Points: 214
+
+----------------------------------------
+[10/51] Тестирую: https://github.com/vuejs/vue
+----------------------------------------
+✅ Успешно
+   Languages: typescript
+   Frameworks: vue
+   Package Manager: npm
+   Docker: False
+   Entry Points: 76
+
+----------------------------------------
+[11/51] Тестирую: https://github.com/angular/angular
+----------------------------------------
+✅ Успешно
+   Languages: typescript
+   Frameworks: angular, express
+   Package Manager: npm
+   Docker: False
+   Entry Points: 717
+
+----------------------------------------
+[12/51] Тестирую: https://github.com/vercel/next.js
+----------------------------------------
+✅ Успешно
+   Languages: typescript, python
+   Frameworks: react, nextjs, express, vue
+   Package Manager: npm
+   Docker: True
+   Entry Points: 5821
+
+----------------------------------------
+[13/51] Тестирую: https://github.com/nodejs/node
+----------------------------------------
+✅ Успешно
+   Languages: python, typescript
+   Frameworks: express
+   Package Manager: npm
+   Docker: True
+   Entry Points: 414
+
+----------------------------------------
+[14/51] Тестирую: https://github.com/microsoft/TypeScript
+----------------------------------------
+✅ Успешно
+   Languages: typescript
+   Frameworks: express, nextjs, vue, angular, react
+   Package Manager: npm
+   Docker: False
+   Entry Points: 814
+
+----------------------------------------
+[15/51] Тестирую: https://github.com/spring-projects/spring-boot
+----------------------------------------
+✅ Успешно
+   Languages: java, typescript
+   Frameworks: spring-boot
+   Package Manager: npm
+   Docker: True
+   Entry Points: 5266
+
+----------------------------------------
+[16/51] Тестирую: https://github.com/quarkusio/quarkus
+----------------------------------------
+✅ Успешно
+   Languages: java, typescript, python
+   Frameworks: quarkus, vertx, spring
+   Package Manager: maven
+   Docker: True
+   Entry Points: 29736
+
+----------------------------------------
+[17/51] Тестирую: https://github.com/micronaut-projects/micronaut-core
+----------------------------------------
+✅ Успешно
+   Languages: java
+   Frameworks: micronaut, spring, vertx
+   Package Manager: gradle
+   Docker: False
+   Entry Points: 7484
+
+----------------------------------------
+[18/51] Тестирую: https://github.com/apache/kafka
+----------------------------------------
+✅ Успешно
+   Languages: java, python, typescript
+   Frameworks: spring
+   Package Manager: gradle
+   Docker: True
+   Entry Points: 3568
+
+----------------------------------------
+[19/51] Тестирую: https://github.com/gin-gonic/gin
+----------------------------------------
+✅ Успешно
+   Languages: go
+   Frameworks: gin
+   Package Manager: go mod
+   Docker: False
+   Entry Points: 6
+
+----------------------------------------
+[20/51] Тестирую: https://github.com/golang/go
+----------------------------------------
+✅ Успешно
+   Languages: go, python, typescript
+   Frameworks: gin, echo
+   Package Manager: go mod
+   Docker: True
+   Entry Points: 5384
+
+----------------------------------------
+[21/51] Тестирую: https://github.com/kubernetes/kubernetes
+----------------------------------------
+✅ Успешно
+   Languages: python, go
+   Frameworks: gin
+   Package Manager: go mod
+   Docker: True
+   Entry Points: 1596
+
+----------------------------------------
+[22/51] Тестирую: https://github.com/docker/docker
+----------------------------------------
+✅ Успешно
+   Languages: go, python
+   Frameworks: gin, echo
+   Package Manager: go mod
+   Docker: True
+   Entry Points: 209
+
+----------------------------------------
+[23/51] Тестирую: https://github.com/etcd-io/etcd
+----------------------------------------
+✅ Успешно
+   Languages: go
+   Frameworks: gin
+   Package Manager: go mod
+   Docker: True
+   Entry Points: 83
+
+----------------------------------------
+[24/51] Тестирую: https://github.com/microsoft/vscode
+----------------------------------------
+✅ Успешно
+   Languages: typescript, python, go, java
+   Frameworks: express, nextjs, nest, angular
+   Package Manager: npm
+   Docker: True
+   Entry Points: 183
+
+----------------------------------------
+[25/51] Тестирую: https://github.com/facebook/react-native
+----------------------------------------
+✅ Успешно
+   Languages: java, typescript
+   Frameworks: react, express
+   Package Manager: npm
+   Docker: False
+   Entry Points: 105
+
+----------------------------------------
+[26/51] Тестирую: https://github.com/microsoft/playwright
+----------------------------------------
+✅ Успешно
+   Languages: typescript, python, java
+   Frameworks: react, vue
+   Package Manager: npm
+   Docker: True
+   Entry Points: 140
+
+----------------------------------------
+[27/51] Тестирую: https://github.com/vercel/turbo
+----------------------------------------
+✅ Успешно
+   Languages: typescript
+   Frameworks: nextjs, react, nest, vue, angular, express, nestjs
+   Package Manager: npm
+   Docker: True
+   Entry Points: 240
+
+----------------------------------------
+[28/51] Тестирую: https://github.com/nrwl/nx
+----------------------------------------
+✅ Успешно
+   Languages: typescript, java
+   Frameworks: react, angular, nextjs, express, nest, vue
+   Package Manager: npm
+   Docker: False
+   Entry Points: 409
+
+----------------------------------------
+[29/51] Тестирую: https://github.com/lerna/lerna
+----------------------------------------
+✅ Успешно
+   Languages: typescript
+   Frameworks: react, nextjs
+   Package Manager: npm
+   Docker: False
+   Entry Points: 123
+
+----------------------------------------
+[30/51] Тестирую: https://github.com/facebook/jest
+----------------------------------------
+✅ Успешно
+   Languages: typescript
+   Frameworks: react, angular, nextjs
+   Package Manager: yarn
+   Docker: False
+   Entry Points: 211
+
+----------------------------------------
+[31/51] Тестирую: https://github.com/microsoft/TypeScript
+----------------------------------------
+✅ Успешно
+   Languages: typescript
+   Frameworks: express, nextjs, vue, angular, react
+   Package Manager: npm
+   Docker: False
+   Entry Points: 814
+
+----------------------------------------
+[32/51] Тестирую: https://github.com/vercel/next.js
+----------------------------------------
+✅ Успешно
+   Languages: typescript, python
+   Frameworks: react, nextjs, express, vue
+   Package Manager: npm
+   Docker: True
+   Entry Points: 5821
+
+----------------------------------------
+[33/51] Тестирую: https://github.com/remix-run/remix
+----------------------------------------
+✅ Успешно
+   Languages: typescript
+   Frameworks: None
+   Package Manager: npm
+   Docker: False
+   Entry Points: 46
+
+----------------------------------------
+[34/51] Тестирую: https://github.com/sveltejs/svelte
+----------------------------------------
+✅ Успешно
+   Languages: typescript
+   Frameworks: None
+   Package Manager: npm
+   Docker: False
+   Entry Points: 27
+
+----------------------------------------
+[35/51] Тестирую: https://github.com/preactjs/preact
+----------------------------------------
+✅ Успешно
+   Languages: typescript
+   Frameworks: react
+   Package Manager: npm
+   Docker: False
+   Entry Points: 19
+
+----------------------------------------
+[36/51] Тестирую: https://github.com/microsoft/vscode-python
+----------------------------------------
+✅ Успешно
+   Languages: python, typescript
+   Frameworks: django, flask
+   Package Manager: npm
+   Docker: False
+   Entry Points: 41
+
+----------------------------------------
+[37/51] Тестирую: https://github.com/microsoft/TypeScript-React-Starter
+----------------------------------------
+✅ Успешно
+   Languages: typescript
+   Frameworks: react
+   Package Manager: yarn
+   Docker: False
+   Entry Points: 5
+
+----------------------------------------
+[38/51] Тестирую: https://github.com/angular/angular-cli
+----------------------------------------
+✅ Успешно
+   Languages: typescript
+   Frameworks: angular, express
+   Package Manager: npm
+   Docker: False
+   Entry Points: 314
+
+----------------------------------------
+[39/51] Тестирую: https://github.com/facebook/create-react-app
+----------------------------------------
+✅ Успешно
+   Languages: typescript
+   Frameworks: react
+   Package Manager: npm
+   Docker: False
+   Entry Points: 23
+
+----------------------------------------
+[40/51] Тестирую: https://github.com/vuejs/vue-cli
+----------------------------------------
+✅ Успешно
+   Languages: typescript
+   Frameworks: None
+   Package Manager: yarn
+   Docker: False
+   Entry Points: 57
+
+----------------------------------------
+[41/51] Тестирую: https://github.com/nestjs/nest-cli
+----------------------------------------
+✅ Успешно
+   Languages: typescript
+   Frameworks: nest
+   Package Manager: npm
+   Docker: False
+   Entry Points: 23
+
+----------------------------------------
+[42/51] Тестирую: https://github.com/grafana/grafana
+----------------------------------------
+✅ Успешно
+   Languages: typescript, go
+   Frameworks: react, gin, nextjs, express
+   Package Manager: npm
+   Docker: True
+   Entry Points: 637
+
+----------------------------------------
+[43/51] Тестирую: https://github.com/gitpod-io/gitpod
+----------------------------------------
+✅ Успешно
+   Languages: go, typescript, java
+   Frameworks: react, express, spring, gin
+   Package Manager: npm
+   Docker: True
+   Entry Points: 577
+
+----------------------------------------
+[44/51] Тестирую: https://github.com/mattermost/mattermost-server
+----------------------------------------
+✅ Успешно
+   Languages: go, typescript
+   Frameworks: react, express, gin, echo
+   Package Manager: npm
+   Docker: True
+   Entry Points: 1703
+
+----------------------------------------
+[45/51] Тестирую: https://github.com/outline/outline
+----------------------------------------
+✅ Успешно
+   Languages: typescript
+   Frameworks: react, express
+   Package Manager: yarn
+   Docker: True
+   Entry Points: 727
+
+----------------------------------------
+[46/51] Тестирую: https://github.com/strapi/strapi
+----------------------------------------
+✅ Успешно
+   Languages: typescript
+   Frameworks: react, nextjs
+   Package Manager: yarn
+   Docker: True
+   Entry Points: 496
+
+----------------------------------------
+[47/51] Тестирую: https://github.com/medusajs/medusa
+----------------------------------------
+✅ Успешно
+   Languages: typescript
+   Frameworks: react, express, nextjs
+   Package Manager: npm
+   Docker: False
+   Entry Points: 1585
+
+----------------------------------------
+[48/51] Тестирую: https://github.com/appwrite/appwrite
+----------------------------------------
+✅ Успешно
+   Languages: typescript
+   Frameworks: None
+   Package Manager: npm
+   Docker: True
+   Entry Points: 17
+
+----------------------------------------
+[49/51] Тестирую: https://github.com/amplication/amplication
+----------------------------------------
+✅ Успешно
+   Languages: typescript
+   Frameworks: react, express, nest
+   Package Manager: npm
+   Docker: True
+   Entry Points: 225
+
+----------------------------------------
+[50/51] Тестирую: https://github.com/novuhq/novu
+----------------------------------------
+✅ Успешно
+   Languages: typescript, python
+   Frameworks: react, nest, nextjs, express, nestjs, vue, angular
+   Package Manager: npm
+   Docker: True
+   Entry Points: 1786
+
+----------------------------------------
+[51/51] Тестирую: https://github.com/supabase/supabase
+----------------------------------------
+✅ Успешно
+   Languages: typescript, java, python
+   Frameworks: vue, react, nextjs, angular
+   Package Manager: npm
+   Docker: True
+   Entry Points: 1209
+
+========================================
+=== ИТОГИ ТЕСТИРОВАНИЯ ===
+========================================
+Всего репозиториев: 51
+Успешно: 51
+Ошибок: 0
+
+Результаты сохранены в: /home/daniil/Рабочий стол/T1/test_repos/results

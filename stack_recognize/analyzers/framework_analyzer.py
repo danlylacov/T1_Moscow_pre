@@ -78,8 +78,8 @@ class FrameworkAnalyzer:
 
     def _analyze_by_content(self, repo_path: Path, stack: ProjectStack):
         """Анализ фреймворков по содержимому файлов."""
-        # Только расширения поддерживаемых языков: Python, TypeScript, Java/Kotlin, Go
-        code_extensions = ['.py', '.pyw', '.ts', '.tsx', '.java', '.kt', '.kts', '.go']
+        # Только расширения поддерживаемых языков: Python, TypeScript/JavaScript, Java/Kotlin, Go
+        code_extensions = ['.py', '.pyw', '.ts', '.tsx', '.js', '.jsx', '.java', '.kt', '.kts', '.go']
 
         # Используем оптимизированную функцию для получения только релевантных файлов
         # Ограничиваем размер файлов до 200KB для анализа фреймворков
@@ -152,6 +152,25 @@ class FrameworkAnalyzer:
                                 break
                         if found_flask:
                             break
+                        continue
+                    
+                    # Специальная логика для Vue: не путать createApp с createApplication
+                    if framework == 'vue':
+                        # Для Vue требуем более строгие признаки, чтобы не путать с Express createApplication
+                        vue_strict_patterns = [r'Vue\.createApp\(', r'from [\'"]vue[\'"]', r'import.*vue', r'createApp\(.*vue']
+                        found_vue = False
+                        for pattern in vue_strict_patterns:
+                            if re.search(pattern, content, re.IGNORECASE):
+                                found_vue = True
+                                stack.frameworks.append(framework)
+                                logger.info(f"Обнаружен фреймворк {framework} в файле {file_rel} по строгому паттерну: {pattern}")
+                                break
+                        if found_vue:
+                            break
+                        # Если найден createApplication (Express), не добавлять Vue
+                        if re.search(r'createApplication', content, re.IGNORECASE):
+                            logger.debug(f"Пропущен Vue в файле {file_rel}, так как найден createApplication (Express)")
+                            continue
                         continue
                     
                     # Специальная логика для Django: если уже определен Flask,

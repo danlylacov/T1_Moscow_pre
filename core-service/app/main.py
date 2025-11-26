@@ -1,6 +1,8 @@
+import os
+
 from fastapi import FastAPI
 
-from app.routers import projects, users, pipelines
+from app.routers import projects, pipelines
 from app.database import Base, engine
 
 
@@ -15,10 +17,14 @@ app = FastAPI(
 def on_startup() -> None:
     # Создаём таблицы, если их ещё нет.
     # В проде лучше использовать Alembic миграции.
+    # Для разработки можно пересоздать таблицы, установив DROP_TABLES=true
+    drop_tables = os.getenv("DROP_TABLES", "false").lower() == "true"
+    if drop_tables:
+        print("Dropping all tables...")
+        Base.metadata.drop_all(bind=engine)
     Base.metadata.create_all(bind=engine)
 
 
-app.include_router(users.router, prefix="/users", tags=["users"])
 app.include_router(projects.router, prefix="/projects", tags=["projects"])
 app.include_router(pipelines.router, prefix="/pipelines", tags=["pipelines"])
 

@@ -1,0 +1,2522 @@
+{
+    "languages": [
+        "python",
+        "typescript"
+    ],
+    "frameworks": [
+        "express"
+    ],
+    "frontend_frameworks": [],
+    "backend_frameworks": [
+        "express"
+    ],
+    "package_manager": "npm",
+    "test_runner": [
+        "pytest",
+        "vitest",
+        "cucumber",
+        "unittest",
+        "mocha",
+        "selenium"
+    ],
+    "docker": true,
+    "docker_context": "deps/openssl/config",
+    "dockerfile_path": "deps/openssl/config/Dockerfile",
+    "docker_by_category": null,
+    "kubernetes": false,
+    "terraform": false,
+    "databases": [],
+    "entry_points": [
+        {
+            "path": "deps/v8/tools/run.py",
+            "type": "main",
+            "lang": "python",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/test-runner/source-maps/line-lengths/index.ts",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/minimatch/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/minimatch/dist/commonjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/minimatch/dist/esm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/amaro/dist/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/promise-retry/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/text-table/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/cross-spawn/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/cross-spawn/node_modules/isexe/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/env-paths/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/package-json-from-dist/dist/commonjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/package-json-from-dist/dist/esm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/shebang-regex/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/cmd-shim/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/proggy/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/libnpmpack/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/tar/node_modules/yallist/dist/commonjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/tar/node_modules/yallist/dist/esm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/tar/dist/commonjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/tar/dist/esm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/ci-info/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/libnpmsearch/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/ansi-styles/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/fs-minipass/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/archy/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/wrap-ansi-cjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/wrap-ansi-cjs/node_modules/ansi-styles/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/balanced-match/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@sigstore/verify/dist/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@sigstore/verify/dist/key/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@sigstore/verify/dist/timestamp/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@sigstore/verify/dist/bundle/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@sigstore/verify/dist/tlog/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@sigstore/verify/dist/trust/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@sigstore/sign/node_modules/proc-log/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@sigstore/sign/dist/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@sigstore/sign/dist/bundler/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@sigstore/sign/dist/signer/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@sigstore/sign/dist/signer/fulcio/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@sigstore/sign/dist/identity/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@sigstore/sign/dist/witness/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@sigstore/sign/dist/witness/tsa/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@sigstore/sign/dist/witness/tlog/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@sigstore/sign/dist/util/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@sigstore/bundle/dist/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@sigstore/protobuf-specs/dist/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@sigstore/protobuf-specs/dist/rekor/v2/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@sigstore/core/dist/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@sigstore/core/dist/x509/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@sigstore/core/dist/rfc3161/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@sigstore/core/dist/asn1/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@sigstore/tuf/dist/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/string-width/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/postcss-selector-parser/dist/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/postcss-selector-parser/dist/selectors/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/postcss-selector-parser/dist/util/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/make-fetch-happen/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/make-fetch-happen/lib/cache/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/npm-bundled/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/lru-cache/dist/commonjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/lru-cache/dist/esm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/negotiator/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/npm-profile/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/ms/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/ip-regex/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/strip-ansi/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/treeverse/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/http-cache-semantics/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/common-ancestor-path/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/brace-expansion/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/aproba/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/minimatch/dist/commonjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/minimatch/dist/esm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/pacote/bin/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/pacote/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/chalk/source/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/chalk/source/vendor/ansi-styles/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/chalk/source/vendor/supports-color/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/https-proxy-agent/dist/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/strip-ansi-cjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/semver/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/semver/classes/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/cli-columns/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/supports-color/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/promise-all-reject-late/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/promise-all-reject-late/test/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/ignore-walk/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/iconv-lite/encodings/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/iconv-lite/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/cacache/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/minipass-sized/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/minipass-sized/node_modules/minipass/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/libnpmexec/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/path-scurry/dist/commonjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/path-scurry/dist/esm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/jackspeak/dist/commonjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/jackspeak/dist/esm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/promzard/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/isexe/dist/mjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/isexe/dist/cjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/is-cidr/dist/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/foreground-child/dist/commonjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/foreground-child/dist/esm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/npm-registry-fetch/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/abbrev/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/libnpmteam/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/sigstore/dist/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/validate-npm-package-name/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/err-code/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/binary-extensions/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/tiny-relative-date/src/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/tiny-relative-date/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/color-name/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/qrcode-terminal/vendor/QRCode/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/minipass-flush/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/minipass-flush/node_modules/minipass/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/minipass-collect/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@npmcli/package-json/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@npmcli/agent/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@npmcli/config/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@npmcli/config/lib/definitions/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@npmcli/name-from-folder/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@npmcli/promise-spawn/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@npmcli/arborist/bin/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@npmcli/arborist/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@npmcli/arborist/lib/arborist/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@npmcli/git/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@npmcli/query/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@npmcli/redact/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@npmcli/metavuln-calculator/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@npmcli/node-gyp/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@npmcli/fs/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@npmcli/fs/lib/cp/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@npmcli/map-workspaces/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@npmcli/installed-package-contents/bin/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@npmcli/installed-package-contents/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/read-cmd-shim/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/tinyglobby/node_modules/picomatch/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/agent-base/dist/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/diff/libcjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/diff/libesm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/p-map/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/bin-links/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/libnpmfund/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/socks/build/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/libnpmpublish/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/path-key/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/npm-pick-manifest/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/json-stringify-nice/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/promise-call-limit/dist/commonjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/promise-call-limit/dist/esm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/ssri/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/minipass-fetch/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/cidr-regex/dist/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/retry/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/color-convert/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/proc-log/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/libnpmaccess/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/spdx-correct/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/spdx-correct/node_modules/spdx-expression-parse/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/tuf-js/dist/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/npm-audit-report/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/minipass-pipeline/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/minipass-pipeline/node_modules/minipass/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/mute-stream/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/string-width-cjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/wrap-ansi/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/wrap-ansi/node_modules/string-width/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/wrap-ansi/node_modules/strip-ansi/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/wrap-ansi/node_modules/emoji-regex/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/wrap-ansi/node_modules/emoji-regex/es2015/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/wrap-ansi/node_modules/ansi-regex/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/which/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/hosted-git-info/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/unique-filename/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/libnpmorg/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/libnpmdiff/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/libnpmversion/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/emoji-regex/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/emoji-regex/es2015/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/ansi-regex/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@isaacs/fs-minipass/dist/commonjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@isaacs/fs-minipass/dist/esm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@isaacs/balanced-match/dist/commonjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@isaacs/balanced-match/dist/esm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@isaacs/brace-expansion/dist/commonjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@isaacs/brace-expansion/dist/esm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@isaacs/cliui/node_modules/string-width/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@isaacs/cliui/node_modules/strip-ansi/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@isaacs/cliui/node_modules/emoji-regex/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@isaacs/cliui/node_modules/emoji-regex/es2015/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@isaacs/cliui/node_modules/ansi-regex/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@isaacs/cliui/build/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@isaacs/string-locale-compare/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/npm-install-checks/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/glob/dist/commonjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/glob/dist/esm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/is-fullwidth-code-point/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/write-file-atomic/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/npm-normalize-package-bin/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/npm-packlist/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/spdx-expression-parse/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/walk-up-path/dist/commonjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/walk-up-path/dist/esm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/socks-proxy-agent/dist/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/debug/src/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/parse-conflict-json/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/minipass/dist/commonjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/minipass/dist/esm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@tufjs/canonical-json/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@tufjs/models/node_modules/minimatch/dist/commonjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@tufjs/models/node_modules/minimatch/dist/esm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@tufjs/models/dist/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@tufjs/models/dist/utils/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/validate-npm-package-license/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/validate-npm-package-license/node_modules/spdx-expression-parse/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/http-proxy-agent/dist/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/json-parse-even-better-errors/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/unique-slug/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/minizlib/dist/commonjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/minizlib/dist/esm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/shebang-command/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/npm-user-validate/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/chownr/dist/commonjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/chownr/dist/esm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/signal-exit/dist/mjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/signal-exit/dist/cjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/workspaces/config/node_modules/nopt/node_modules/abbrev/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/workspaces/arborist/node_modules/nopt/node_modules/abbrev/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/workspaces/libnpmdiff/node_modules/npm-bundled/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/workspaces/libnpmdiff/node_modules/@npmcli/installed-package-contents/bin/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/workspaces/libnpmdiff/node_modules/@npmcli/installed-package-contents/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/workspaces/libnpmdiff/node_modules/npm-normalize-package-bin/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/test/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/docs/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/undici/src/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/undici/src/lib/web/fetch/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/undici/src/lib/web/webidl/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/undici/src/lib/web/cookies/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/undici/src/lib/api/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/module-load-order/file3/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/module-load-order/file6/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/module-load-order/file5/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/module-load-order/file2/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/module-load-order/file4/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/es-module-specifiers/node_modules/no-main-field/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/b/package/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/json-with-directory-name-module/module-stub/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/node_modules/type-main/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/node_modules/default_index/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/node_modules/some_module/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/node_modules/some_module/folder%25with percentage#/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/node_modules/no_exports/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/node_modules/no_index/lib/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/node_modules/baz/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/node_modules/@nodejsscope/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/node_modules/@nodejsscope/pkg/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/node_modules/#cjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/node_modules/pkgexports/subpath/dir2/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/node_modules/pkgexports/trailing-pattern-slash/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/repl-folder-extensions/foo.js/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/module-require/relative/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/module-require/parent/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/module-require/child/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/require-empty-main/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/nested-index/one/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/nested-index/two/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/nested-index/three/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/module-require-symlink/node_modules/dep2/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/module-require-symlink/node_modules/bar/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/module-require-symlink/node_modules/dep1/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/module-require-symlink/node_modules/dep1/node_modules/bar/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/packages/root-types-field/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/packages/unrecognised-export-keys/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/packages/main-index/package-main-module/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/packages/missing-main/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/packages/nested/sub-pkg-cjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/packages/nested/sub-pkg-esm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/packages/index/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/test-runner/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/test-runner/flag-propagation/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/test-runner/source-maps/line-lengths/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/test-runner/source-maps/invalid-json/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/test-runner/source-maps/missing-sources/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/test-runner/node_modules/reporter-cjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/copy/utf/\u65b0\u5efa\u6587\u4ef6\u5939/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/copy/kitchen-sink/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/copy/kitchen-sink/a/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/copy/kitchen-sink/a/c/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/copy/kitchen-sink/a/c/d/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/copy/kitchen-sink/a/b/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/test-init-index/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/postject-copy/node_modules/commander/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/resolve-paths/defined/node_modules/dep/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/resolve-paths/default/node_modules/dep/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/permission/loader/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/internal-modules/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/debugger/cjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/self_ref_module/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/GH-54265/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/es-modules/legacy-main-resolver/index-js/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/es-modules/package-type-module/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/es-modules/package-without-pjson/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/es-modules/package-ends-node_modules/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/es-modules/package-without-type/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/es-modules/module-counter-by-type/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/es-modules/test_node_modules/node_modules/esm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/es-modules/test_node_modules/node_modules/require-esm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/es-modules/test_node_modules/node_modules/import-require-esm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/es-modules/package-cjs-named-error/node_modules/deep-fail/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/es-modules/package-type-commonjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/es-modules/folder%25with percentage#/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/warning_node_modules/node_modules/new-buffer-esm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/warning_node_modules/node_modules/new-buffer-cjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/inspect-worker/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/common/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "benchmark/napi/buffer/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "benchmark/napi/string/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "benchmark/napi/create_object_with_properties/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "benchmark/napi/type-tag-check/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "benchmark/napi/type-tag/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "benchmark/napi/function_call/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "benchmark/napi/ref/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "benchmark/napi/define_properties/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "benchmark/napi/property_keys/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "benchmark/napi/function_args/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/clustered-server/app.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/module-hooks/sync-and-async/app.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/@npmcli/redact/lib/server.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/snapshot/server.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/qrcode-terminal/test/main.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/npm/node_modules/qrcode-terminal/lib/main.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/node_modules/pkgexports-sugar/main.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/node_modules/pkgexports-sugar-fail/main.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/node_modules/pkgexports-sugar2/main.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/packages/cjs-main-no-index/main.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/inspector-instrumentation-breakpoint/main.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/es-modules/deprecated-folders-ignore/main.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/es-modules/self-deprecated-folders/main.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "/tmp/repo_analyzer_slwpb5vb/deps/minimatch/dist/commonjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "/tmp/repo_analyzer_slwpb5vb/deps/amaro/dist/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "/tmp/repo_analyzer_slwpb5vb/deps/v8/tools/clusterfuzz/js_fuzzer/run.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "/tmp/repo_analyzer_slwpb5vb/deps/npm/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "/tmp/repo_analyzer_slwpb5vb/deps/cjs-module-lexer/src/lexer.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "/tmp/repo_analyzer_slwpb5vb/deps/acorn/acorn-walk/dist/walk.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "/tmp/repo_analyzer_slwpb5vb/deps/acorn/acorn/dist/acorn.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "/tmp/repo_analyzer_slwpb5vb/deps/undici/src/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "/tmp/repo_analyzer_slwpb5vb/test/fixtures/require-bin/lib/req.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "/tmp/repo_analyzer_slwpb5vb/test/fixtures/0-dns/createCert.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "/tmp/repo_analyzer_slwpb5vb/test/fixtures/json-with-directory-name-module/module-stub/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "/tmp/repo_analyzer_slwpb5vb/test/fixtures/package-main-enoent/fhqwhgads.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "/tmp/repo_analyzer_slwpb5vb/test/fixtures/x509-escaping/createCert.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "/tmp/repo_analyzer_slwpb5vb/test/fixtures/postject-copy/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "/tmp/repo_analyzer_slwpb5vb/test/fixtures/self_ref_module/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "/tmp/repo_analyzer_slwpb5vb/test/fixtures/es-modules/package-type-module/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "/tmp/repo_analyzer_slwpb5vb/test/fixtures/es-modules/package-without-type/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "/tmp/repo_analyzer_slwpb5vb/test/fixtures/es-modules/pjson-main/main.mjs",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "/tmp/repo_analyzer_slwpb5vb/test/fixtures/es-modules/module-counter-by-type/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "/tmp/repo_analyzer_slwpb5vb/test/fixtures/es-modules/package-cjs-named-error/index.mjs",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "/tmp/repo_analyzer_slwpb5vb/test/fixtures/es-modules/package-type-commonjs/index.js",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "/tmp/repo_analyzer_slwpb5vb/test/fixtures/module-extension-over-directory/inner/package.json",
+            "type": "main",
+            "lang": "typescript",
+            "confidence": 0.9
+        },
+        {
+            "path": "deps/inspector_protocol/convert_protocol_to_json.py",
+            "type": "main",
+            "lang": "python",
+            "confidence": 0.9
+        },
+        {
+            "path": "deps/v8/test/benchmarks/csuite/csuite.py",
+            "type": "main",
+            "lang": "python",
+            "confidence": 0.9
+        },
+        {
+            "path": "deps/v8/test/debugging/wasm/gdb-server/trap.py",
+            "type": "main",
+            "lang": "python",
+            "confidence": 0.9
+        },
+        {
+            "path": "deps/v8/tools/run-tests.py",
+            "type": "main",
+            "lang": "python",
+            "confidence": 0.9
+        },
+        {
+            "path": "deps/v8/tools/gc-nvp-to-csv.py",
+            "type": "main",
+            "lang": "python",
+            "confidence": 0.9
+        },
+        {
+            "path": "deps/v8/tools/turbolizer-perf.py",
+            "type": "main",
+            "lang": "python",
+            "confidence": 0.9
+        },
+        {
+            "path": "deps/v8/tools/dump-cpp.py",
+            "type": "main",
+            "lang": "python",
+            "confidence": 0.9
+        },
+        {
+            "path": "deps/v8/tools/run-num-fuzzer.py",
+            "type": "main",
+            "lang": "python",
+            "confidence": 0.9
+        },
+        {
+            "path": "deps/v8/tools/update-object-macros-undef.py",
+            "type": "main",
+            "lang": "python",
+            "confidence": 0.9
+        },
+        {
+            "path": "deps/v8/tools/snapshot/asm_to_inline_asm.py",
+            "type": "main",
+            "lang": "python",
+            "confidence": 0.9
+        },
+        {
+            "path": "deps/v8/tools/clusterfuzz/js_fuzzer/foozzie_launcher.py",
+            "type": "main",
+            "lang": "python",
+            "confidence": 0.9
+        },
+        {
+            "path": "deps/v8/tools/testrunner/testproc/fuzzer_test.py",
+            "type": "main",
+            "lang": "python",
+            "confidence": 0.9
+        },
+        {
+            "path": "deps/v8/third_party/inspector_protocol/convert_protocol_to_json.py",
+            "type": "main",
+            "lang": "python",
+            "confidence": 0.9
+        },
+        {
+            "path": "deps/zlib/google/test/data/create_symlink_test_zips.py",
+            "type": "main",
+            "lang": "python",
+            "confidence": 0.9
+        },
+        {
+            "path": "deps/undici/src/index.d.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/undici/src/types/interceptors.d.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/undici/src/types/mock-client.d.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/undici/src/types/retry-agent.d.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/undici/src/types/dispatcher.d.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/undici/src/types/balanced-pool.d.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/undici/src/types/mock-agent.d.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/undici/src/types/proxy-agent.d.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/undici/src/types/agent.d.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/undici/src/types/mock-errors.d.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/undici/src/types/client-stats.d.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/undici/src/types/readable.d.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/undici/src/types/env-http-proxy-agent.d.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/undici/src/types/pool.d.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/undici/src/types/connector.d.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/undici/src/types/errors.d.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/undici/src/types/mock-pool.d.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/undici/src/types/cache-interceptor.d.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/undici/src/types/index.d.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/undici/src/types/pool-stats.d.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "deps/undici/src/types/retry-handler.d.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.7
+        },
+        {
+            "path": "test/fixtures/source-map/no-throw.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "test/fixtures/typescript/ts/test-commonjs-parsing.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "test/fixtures/typescript/ts/commonjs-logger.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "test/fixtures/typescript/ts/test-require.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "test/fixtures/typescript/cts/test-commonjs-export.ts",
+            "type": "app",
+            "lang": "typescript",
+            "confidence": 0.8
+        },
+        {
+            "path": "tools/compress_json.py",
+            "type": "main",
+            "lang": "python",
+            "confidence": 0.9
+        },
+        {
+            "path": "tools/checkimports.py",
+            "type": "main",
+            "lang": "python",
+            "confidence": 0.9
+        },
+        {
+            "path": "tools/pseudo-tty.py",
+            "type": "main",
+            "lang": "python",
+            "confidence": 0.9
+        },
+        {
+            "path": "tools/getmoduleversion.py",
+            "type": "main",
+            "lang": "python",
+            "confidence": 0.9
+        },
+        {
+            "path": "tools/getnapibuildversion.py",
+            "type": "main",
+            "lang": "python",
+            "confidence": 0.9
+        },
+        {
+            "path": "tools/mkssldef.py",
+            "type": "main",
+            "lang": "python",
+            "confidence": 0.9
+        },
+        {
+            "path": "tools/search_files.py",
+            "type": "main",
+            "lang": "python",
+            "confidence": 0.9
+        },
+        {
+            "path": "tools/gyp/gyp_main.py",
+            "type": "main",
+            "lang": "python",
+            "confidence": 0.9
+        },
+        {
+            "path": "tools/gyp/pylib/gyp/generator/msvs_test.py",
+            "type": "main",
+            "lang": "python",
+            "confidence": 0.9
+        },
+        {
+            "path": "tools/gyp/pylib/gyp/generator/xcode_test.py",
+            "type": "main",
+            "lang": "python",
+            "confidence": 0.9
+        },
+        {
+            "path": "tools/v8_gypfiles/GN-scraper.py",
+            "type": "main",
+            "lang": "python",
+            "confidence": 0.9
+        }
+    ],
+    "main_entry": {
+        "path": "/tmp/repo_analyzer_slwpb5vb/deps/minimatch/dist/commonjs/index.js",
+        "type": "main",
+        "lang": "typescript",
+        "confidence": 0.9
+    },
+    "test_by_category": null
+}

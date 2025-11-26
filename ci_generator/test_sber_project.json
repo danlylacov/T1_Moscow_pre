@@ -1,0 +1,51 @@
+{
+  "analysis": {
+    "languages": ["python"],
+    "frameworks": ["fastapi"],
+    "frontend_frameworks": [],
+    "backend_frameworks": ["fastapi"],
+    "package_manager": "pip",
+    "test_runner": "pytest",
+    "docker": true,
+    "docker_context": "",
+    "dockerfile_path": "Dockerfile",
+    "kubernetes": false,
+    "terraform": false,
+    "databases": [],
+    "entry_points": [
+      {
+        "path": "app/main.py",
+        "type": "main",
+        "lang": "python",
+        "confidence": 0.7
+      },
+      {
+        "path": "context:",
+        "type": "docker-compose",
+        "lang": null,
+        "confidence": 0.7
+      }
+    ],
+    "main_entry": {
+      "path": "app/main.py",
+      "type": "main",
+      "lang": "python",
+      "confidence": 0.7
+    }
+  },
+  "user_settings": {
+    "project_name": "sber",
+    "docker_registry": "registry.example.com/team",
+    "docker_image": "sber-app",
+    "docker_context": ".",
+    "dockerfile_path": "Dockerfile",
+    "python_version": "3.11",
+    "triggers": {
+      "on_push": ["main", "develop"],
+      "on_merge_request": true,
+      "on_tags": "v*"
+    },
+    "variables": {}
+  }
+}
+

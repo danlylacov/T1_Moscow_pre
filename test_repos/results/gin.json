@@ -1,0 +1,68 @@
+{
+    "languages": [
+        "go"
+    ],
+    "frameworks": [
+        "gin"
+    ],
+    "frontend_frameworks": [],
+    "backend_frameworks": [
+        "gin"
+    ],
+    "package_manager": "go mod",
+    "test_runner": [
+        "go-testing"
+    ],
+    "docker": false,
+    "docker_context": null,
+    "dockerfile_path": null,
+    "docker_by_category": null,
+    "kubernetes": false,
+    "terraform": false,
+    "databases": [],
+    "entry_points": [
+        {
+            "path": "mode.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "debug.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "utils.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "doc.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "logger.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "ginS/gins.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        }
+    ],
+    "main_entry": {
+        "path": "doc.go",
+        "type": "app",
+        "lang": "go",
+        "confidence": 1.0
+    },
+    "test_by_category": null
+}

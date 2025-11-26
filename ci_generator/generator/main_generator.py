@@ -39,9 +39,61 @@ def main(argv=None):
 
     stages = select_stages(analysis, user_settings)
 
+    # Определяем build_tool для Java на основе package_manager
+    build_tool = None
+    if "java" in analysis.get("languages", []):
+        package_manager = analysis.get("package_manager", "").lower()
+        if package_manager in ["maven", "gradle"]:
+            build_tool = package_manager
+        elif package_manager == "ant":
+            build_tool = "ant"
+        else:
+            # По умолчанию для Java используем maven
+            build_tool = user_settings.get("build_tool", "maven")
+
+    # Определяем основной язык программирования
+    languages = [l.lower() for l in analysis.get("languages", [])]
+    main_languages = ["python", "java", "kotlin", "go", "golang", "typescript", "javascript"]
+    language = None
+    for lang in languages:
+        if lang in main_languages:
+            language = lang
+            break
+    # Если язык не найден, берем первый из списка или используем python по умолчанию
+    if not language and languages:
+        language = languages[0]
+    elif not language:
+        language = "python"
+
+    # Добавляем версии только для используемого языка
     ctx = {
+        "language": language,
         "project_name": user_settings.get("project_name", "myapp"),
-        "python_version": user_settings.get("python_version", analysis.get("python_version", "3.11")),
+        "build_tool": build_tool or user_settings.get("build_tool"),
+    }
+    
+    # Добавляем версию только для используемого языка
+    if language == "python":
+        ctx["python_version"] = user_settings.get("python_version", analysis.get("python_version", "3.11"))
+    elif language in ["java", "kotlin"]:
+        ctx["java_version"] = user_settings.get("java_version", analysis.get("java_version", "17"))
+    elif language in ["go", "golang"]:
+        ctx["go_version"] = user_settings.get("go_version", analysis.get("go_version", "1.21"))
+    elif language in ["typescript", "javascript"]:
+        ctx["node_version"] = user_settings.get("node_version", analysis.get("node_version", "18"))
+    
+    # Добавляем build_image для Java/Kotlin
+    if language in ["java", "kotlin"]:
+        ctx["build_image"] = user_settings.get("build_image") or (
+            f"maven:{user_settings.get('java_version', analysis.get('java_version', '17'))}-eclipse-temurin" 
+            if language in ["java", "kotlin"] and (build_tool or user_settings.get("build_tool") or "maven") == "maven"
+            else f"gradle:{user_settings.get('java_version', analysis.get('java_version', '17'))}-jdk"
+            if language in ["java", "kotlin"] and (build_tool or user_settings.get("build_tool")) == "gradle"
+            else None
+        )
+    
+    # Добавляем остальные общие поля
+    ctx.update({
         "registry": user_settings.get("docker_registry", analysis.get("docker_registry", "$CI_REGISTRY")),
         "tag": user_settings.get("docker_tag", "$CI_COMMIT_SHORT_SHA"),
         "variables": user_settings.get("variables", {}),
@@ -51,7 +103,7 @@ def main(argv=None):
         "dockerfile_path": (analysis.get("dockerfile_path") or "Dockerfile") if analysis.get("docker") else "Dockerfile",
         "analysis": analysis,
         "user_settings": user_settings,
-    }
+    })
 
     base_dir = Path(__file__).resolve().parents[1] / "pipelines"
 

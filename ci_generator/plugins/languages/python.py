@@ -34,5 +34,8 @@ def get_stages(analysis: dict, user_settings: dict):
     if not _has_supported_migration_framework(analysis):
         if "migration" in enabled_stages:
             enabled_stages.remove("migration")
+    # Если есть docker_build, то build (создание Python пакета) не нужен
+    if analysis.get("docker") and "build" in enabled_stages:
+        enabled_stages.remove("build")
 
     return enabled_stages

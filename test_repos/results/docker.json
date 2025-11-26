@@ -1,0 +1,1318 @@
+{
+    "languages": [
+        "go",
+        "python"
+    ],
+    "frameworks": [
+        "gin",
+        "echo"
+    ],
+    "frontend_frameworks": [],
+    "backend_frameworks": [
+        "gin",
+        "echo"
+    ],
+    "package_manager": "go mod",
+    "test_runner": [
+        "go-testing"
+    ],
+    "docker": true,
+    "docker_context": "",
+    "dockerfile_path": "Dockerfile.simple",
+    "docker_by_category": {
+        "frontend": [
+            "daemon/libnetwork/cmd/diagnostic/Dockerfile.client"
+        ],
+        "root": [
+            "Dockerfile.simple",
+            "Dockerfile",
+            "Dockerfile.windows"
+        ],
+        "other": [
+            "cmd/dockerd/winresources/Dockerfile",
+            "daemon/libnetwork/cmd/ssd/Dockerfile",
+            "daemon/libnetwork/cmd/networkdb-test/Dockerfile",
+            "daemon/libnetwork/cmd/diagnostic/Dockerfile.dind",
+            "daemon/libnetwork/support/Dockerfile",
+            "contrib/busybox/Dockerfile",
+            "contrib/nnp-test/Dockerfile",
+            "contrib/syscall-test/Dockerfile"
+        ]
+    },
+    "kubernetes": true,
+    "terraform": false,
+    "databases": [
+        "sqlite"
+    ],
+    "entry_points": [
+        {
+            "path": "vendor/google.golang.org/protobuf/cmd/protoc-gen-go/internal_gengo/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "vendor/github.com/cilium/ebpf/internal/testutils/fdtrace/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "vendor/github.com/golang/protobuf/protoc-gen-go/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "vendor/github.com/gogo/protobuf/protoc-gen-gogo/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "vendor/github.com/gogo/protobuf/protoc-gen-gogofaster/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "vendor/github.com/gogo/protobuf/protoc-gen-gogoslick/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "integration/plugin/volumes/cmd/dummy/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "integration/plugin/logging/cmd/discard/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "integration/plugin/logging/cmd/close_on_start/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "integration/plugin/logging/cmd/dummy/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "cmd/dockerd/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "daemon/libnetwork/cmd/diagnostic/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "daemon/command/trap/testfiles/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "pkg/plugins/pluginrpc-gen/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "contrib/apparmor/main.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "cmd/dockerd/main_windows.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "cmd/dockerd/winresources/winresources.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "cmd/docker-proxy/main_linux.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "cmd/docker-proxy/udp_proxy_linux.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "cmd/docker-proxy/udp_proxy_linux_test.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "cmd/docker-proxy/network_proxy_linux_test.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "cmd/docker-proxy/sctp_proxy_linux.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "cmd/docker-proxy/proxy_linux.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "cmd/docker-proxy/tcp_proxy_linux.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "vendor/google.golang.org/protobuf/cmd/protoc-gen-go/internal_gengo/reflect.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "vendor/google.golang.org/protobuf/cmd/protoc-gen-go/internal_gengo/opaque.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "vendor/google.golang.org/protobuf/cmd/protoc-gen-go/internal_gengo/init_opaque.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "vendor/google.golang.org/protobuf/cmd/protoc-gen-go/internal_gengo/well_known_types.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "vendor/google.golang.org/protobuf/cmd/protoc-gen-go/internal_gengo/init.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "vendor/github.com/containerd/containerd/v2/cmd/containerd/server/config/config.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "vendor/github.com/moby/buildkit/cmd/buildkitd/config/gcpolicy_unix.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "vendor/github.com/moby/buildkit/cmd/buildkitd/config/load.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "vendor/github.com/moby/buildkit/cmd/buildkitd/config/gcpolicy_windows.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "vendor/github.com/moby/buildkit/cmd/buildkitd/config/config.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "vendor/github.com/moby/buildkit/cmd/buildkitd/config/gcpolicy.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "vendor/github.com/Microsoft/hcsshim/cmd/containerd-shim-runhcs-v1/options/doc.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "vendor/github.com/Microsoft/hcsshim/cmd/containerd-shim-runhcs-v1/options/runhcs.pb.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "integration/plugin/logging/cmd/discard/driver.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "integration/plugin/logging/cmd/discard/main_test.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "daemon/libnetwork/cmd/networkdb-test/testMain.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "daemon/libnetwork/cmd/networkdb-test/dummyclient/dummyClient.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "daemon/libnetwork/cmd/networkdb-test/dbserver/ndbServer.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "daemon/libnetwork/cmd/networkdb-test/dbclient/ndbClient.go",
+            "type": "main",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "client/plugin_upgrade.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "client/client.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "client/plugin_inspect.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "client/plugin_inspect_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "client/plugin_push.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "client/plugin_install.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "client/plugin_list.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "api/types/plugin/plugin_responses.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "api/types/plugin/plugin.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "api/types/plugin/mount.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "api/types/swarm/runtime.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "integration/plugin/volumes/mounts_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "integration/plugin/volumes/helpers_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "integration/plugin/volumes/cmd/dummy/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "integration/plugin/logging/helpers_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "integration/plugin/logging/cmd/discard/driver.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/plugin/logging/cmd/discard/main_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration/plugin/logging/cmd/discard/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "integration/plugin/logging/cmd/close_on_start/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "integration/plugin/logging/cmd/dummy/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "integration/service/plugin_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "cmd/dockerd/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "cmd/dockerd/main_windows.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "cmd/docker-proxy/main_linux.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "cmd/docker-proxy/udp_proxy_linux.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "cmd/docker-proxy/udp_proxy_linux_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "cmd/docker-proxy/network_proxy_linux_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "cmd/docker-proxy/sctp_proxy_linux.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "cmd/docker-proxy/proxy_linux.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "cmd/docker-proxy/tcp_proxy_linux.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "daemon/libnetwork/cmd/networkdb-test/testMain.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "daemon/libnetwork/cmd/diagnostic/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "daemon/command/trap/testfiles/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "daemon/server/router/plugin/backend.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "daemon/pkg/plugin/manager_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "daemon/pkg/plugin/backend_linux.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "daemon/pkg/plugin/fetch_linux.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "daemon/pkg/plugin/events.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "daemon/pkg/plugin/store_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "daemon/pkg/plugin/backend_unsupported.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "daemon/pkg/plugin/v2/plugin_linux.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "daemon/pkg/plugin/v2/plugin.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "daemon/cluster/convert/pluginadapter.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "daemon/cluster/controllers/plugin/controller.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "daemon/cluster/executor/container/executor.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "daemon/cluster/internal/runtime/gen.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "daemon/cluster/internal/runtime/plugin.pb.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "daemon/internal/metrics/plugin_unix.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "daemon/internal/metrics/plugin_unsupported.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "daemon/internal/libcontainerd/supervisor/remote_daemon_options.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "pkg/authorization/middleware.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "pkg/authorization/authz_unix_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "pkg/authorization/middleware_unix_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "pkg/authorization/api.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "pkg/plugins/plugins.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "pkg/plugins/discovery_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "pkg/plugins/client.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "pkg/plugins/discovery_unix_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "pkg/plugins/pluginrpc-gen/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "pkg/plugins/pluginrpc-gen/template.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "pkg/plugins/pluginrpc-gen/template_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "pkg/plugins/pluginrpc-gen/parser_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "pkg/plugins/pluginrpc-gen/parser.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_hub_pull_suite_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_health_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_history_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_commit_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_api_build_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_images_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_api_stats_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_api_swarm_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/daemon_swarm_hack_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_api_exec_resize_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_userns_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_volume_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_save_load_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_exec_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_cp_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_plugins_logdriver_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/events_utils_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_exec_unix_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_swarm_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_registry_user_agent_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_update_unix_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_info_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_logs_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_links_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/check_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_api_attach_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_v2_only_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/utils_unix_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_stats_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_login_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_restart_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_cp_from_container_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_network_unix_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_attach_unix_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_network_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_api_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_api_inspect_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_pull_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_api_swarm_node_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_push_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_api_exec_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_prune_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_create_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_service_health_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_api_swarm_service_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/requirements_windows_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_cp_to_container_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_api_network_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_service_scale_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_cp_utils_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_api_logs_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_run_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_api_containers_windows_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/test_vars_unix_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/requirements_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_port_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_api_build_windows_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_proxy_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_save_load_unix_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/utils_windows_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_update_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_prune_unix_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_sni_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_logout_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_netmode_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/benchmark_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_start_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_by_digest_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_api_containers_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/fixtures_linux_daemon_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/test_vars_windows_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/utils_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_service_logs_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_daemon_plugins_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_top_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_import_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_cp_to_container_unix_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_build_unix_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_rmi_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_plugins_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/test_vars_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_events_unix_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_events_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_external_volume_driver_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_service_create_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_pull_local_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_attach_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_daemon_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_inspect_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_api_images_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_info_unix_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_swarm_unix_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_run_unix_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_search_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_cli_ps_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_utils_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/requirements_unix_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "integration-cli/docker_api_containers_unix_test.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "contrib/apparmor/main.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "contrib/apparmor/template.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.8
+        },
+        {
+            "path": "internal/testutil/fixtures/plugin/basic/basic.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        },
+        {
+            "path": "internal/testutil/daemon/plugin.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 0.7
+        },
+        {
+            "path": "internal/testutil/fakestorage/fixtures.go",
+            "type": "app",
+            "lang": "go",
+            "confidence": 1.0
+        }
+    ],
+    "main_entry": {
+        "path": "vendor/google.golang.org/protobuf/cmd/protoc-gen-go/internal_gengo/main.go",
+        "type": "main",
+        "lang": "go",
+        "confidence": 0.7
+    },
+    "test_by_category": {
+        "frontend": [
+            "go-testing"
+        ],
+        "backend": [
+            "go-testing",
+            "rspec"
+        ]
+    }
+}

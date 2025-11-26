@@ -1,25 +1,7 @@
 from datetime import datetime
-from typing import Any, List, Literal, Optional
+from typing import Any, List, Literal, Optional, Union
 
-from pydantic import BaseModel, HttpUrl, Field
-
-
-# ---------- Пользователь ----------
-
-
-class UserBase(BaseModel):
-    username: str = Field(..., description="Логин пользователя")
-
-
-class UserCreate(UserBase):
-    password: str = Field(..., min_length=4, description="Пароль в открытом виде (НЕ для продакшена)")
-
-
-class User(UserBase):
-    id: int
-
-    class Config:
-        from_attributes = True
+from pydantic import BaseModel, HttpUrl, Field, field_validator
 
 
 # ---------- Проект и анализ репозитория ----------
@@ -48,12 +30,25 @@ class ProjectAnalysis(BaseModel):
     entry_points: List[EntryPoint] = []
     main_entry: Optional[EntryPoint] = None
 
+    @field_validator("test_runner", mode="before")
+    @classmethod
+    def convert_test_runner_to_string(cls, v: Any) -> Optional[str]:
+        """Конвертирует test_runner из списка в строку, если необходимо."""
+        if v is None:
+            return None
+        if isinstance(v, list):
+            # Берем первый элемент списка, если список не пустой
+            return v[0] if v else None
+        if isinstance(v, str):
+            return v
+        # Если это другой тип, конвертируем в строку
+        return str(v) if v else None
+
 
 class ProjectBase(BaseModel):
     name: str = Field(..., description="Название проекта в Self-Deploy")
     url: HttpUrl = Field(..., description="URL Git-репозитория")
     clone_token: str = Field(..., description="Токен для клонирования репозитория")
-    user_id: int = Field(..., description="ID владельца проекта")
 
 
 class ProjectCreate(ProjectBase):
@@ -79,7 +74,6 @@ class Project(ProjectBase):
 
 
 class PipelineGenerationBase(BaseModel):
-    user_id: int
     project_id: Optional[int] = None
     uml: str = Field(..., description="Готовый пайплайн в UML-представлении или другом форматировании")
 
@@ -114,6 +108,8 @@ class UserSettings(BaseModel):
     stages: List[str] = []
     docker_registry: str | None = ""
     docker_image: str | None = ""
+    docker_context: str | None = None
+    dockerfile_path: str | None = None
     variables: dict = {}
     project_name: str | None = ""
     python_version: str | None = ""
@@ -127,9 +123,19 @@ class PipelineGenerationRequest(BaseModel):
     - user_settings: пользовательские настройки генерации
     """
 
-    user_id: int
     project_id: int
     user_settings: UserSettings
+
+
+class PipelineGenerateFromRepoRequest(BaseModel):
+    """
+    Вход для генерации пайплайна напрямую из репозитория:
+    - repo_url: URL Git-репозитория
+    - token: токен для клонирования репозитория
+    """
+
+    repo_url: HttpUrl = Field(..., description="URL Git-репозитория")
+    token: str = Field(..., description="Токен для клонирования репозитория")
 
 
 

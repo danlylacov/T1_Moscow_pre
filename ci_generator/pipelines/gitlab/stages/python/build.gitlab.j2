@@ -5,5 +5,7 @@ build:
     - pip install build || true
     - python -m build || true
   artifacts:
+    when: on_success
     paths:
       - dist/
+    expire_in: 1 hour

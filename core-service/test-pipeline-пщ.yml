@@ -1,0 +1,103 @@
+# Generated GitLab CI (auto)
+stages:
+  - pre_checks
+  - lint
+  - type_check
+  - security
+  - docker_build
+  - docker_push
+  - cleanup
+
+# Triggers (from user_settings.triggers)
+workflow:
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main" && $CI_PIPELINE_SOURCE == "push"'
+    - if: '$CI_COMMIT_BRANCH == "master" && $CI_PIPELINE_SOURCE == "push"'
+
+
+
+
+
+# Common variables
+variables:
+  DOCKER_IMAGE: "$CI_REGISTRY_IMAGE"
+  DOCKER_TAG: "$CI_COMMIT_SHORT_SHA"
+  GO_VERSION: "1.21"
+
+  # Required CI/CD variables for this pipeline (configure in GitLab settings)
+  # CI_REGISTRY: GitLab container registry URL (usually predefined)
+  # CI_REGISTRY_USER: registry username for docker login
+  # CI_REGISTRY_PASSWORD: registry password/token for docker login
+  # KUBECONFIG_CONTENT: base64-encoded kubeconfig for Kubernetes deploy
+
+# User variables (inlined - prefer CI platform variables for secrets)
+
+pre_checks:
+  stage: pre_checks
+  image: golang:1.21
+  script:
+    - go version
+    - echo "Basic repo checks (lint config, presence of tests, dockerfile...)"
+
+lint:
+  stage: lint
+  image: golangci/golangci-lint:v1.56.2
+  script:
+    - golangci-lint run --out-format code-climate:gl-code-quality-report.json,line-number || true
+    - golangci-lint run || true
+  artifacts:
+    reports:
+      codequality: gl-code-quality-report.json
+    paths:
+      - gl-code-quality-report.json
+type_check:
+  stage: type_check
+  image: golang:1.21
+  script:
+    - go mod download || true
+    - go vet ./... || true
+    - go build -o /dev/null ./... || true
+security:
+  stage: security
+  image: golang:1.21
+  script:
+    - go install github.com/securego/gosec/v2/cmd/gosec@latest || true
+    - gosec -fmt json -out gosec-report.json ./... || true
+  artifacts:
+    paths:
+      - gosec-report.json
+    expire_in: 1 week
+
+docker_build:
+  stage: docker_build
+  image: docker:24
+  services:
+    - docker:24-dind
+  variables:
+    DOCKER_HOST: tcp://docker:2375
+  script:
+    - docker build -f Dockerfile -t $DOCKER_IMAGE:$DOCKER_TAG .
+    - docker save -o image.tar $DOCKER_IMAGE:$DOCKER_TAG || true
+  artifacts:
+    paths:
+      - image.tar
+docker_push:
+  stage: docker_push
+  image: docker:24
+  services:
+    - docker:24-dind
+  variables:
+    DOCKER_HOST: tcp://docker:2375
+  dependencies:
+    - docker_build
+  script:
+    - docker load -i image.tar || true
+    - echo "$CI_REGISTRY_PASSWORD" | docker login -u "$CI_REGISTRY_USER" $CI_REGISTRY --password-stdin
+    - docker push $DOCKER_IMAGE:$DOCKER_TAG
+cleanup:
+  stage: cleanup
+  image: docker:24
+  services:
+    - docker:24-dind
+  script:
+    - docker system prune -f || true

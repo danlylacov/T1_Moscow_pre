@@ -34,7 +34,7 @@ workflow:
 
 # Common variables
 variables:
-  DOCKER_IMAGE: "{{ ctx.registry }}/{{ ctx.project_name }}"
+  DOCKER_IMAGE: "$CI_REGISTRY_IMAGE"
   DOCKER_TAG: "{{ ctx.tag }}"
 {% if ctx.python_version %}  PYTHON_VERSION: "{{ ctx.python_version }}"
 {% endif %}{% if ctx.java_version %}  JAVA_VERSION: "{{ ctx.java_version }}"

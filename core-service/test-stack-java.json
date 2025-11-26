@@ -1,0 +1,35 @@
+{
+  "languages": [
+    "java",
+    "python"
+  ],
+  "frameworks": [
+    "spring-boot"
+  ],
+  "frontend_frameworks": [],
+  "backend_frameworks": [
+    "spring-boot"
+  ],
+  "package_manager": "maven",
+  "test_runner": [
+    "junit"
+  ],
+  "docker": true,
+  "docker_context": "api-gateway",
+  "dockerfile_path": "api-gateway/Dockerfile",
+  "dockerfile_paths": [
+    "api-gateway/Dockerfile",
+    "tg_bot/Dockerfile",
+    "api-T-connector/Dockerfile",
+    "company-info/Dockerfile",
+    "definition-of-anomaly/Dockerfile"
+  ],
+  "kubernetes": false,
+  "terraform": false,
+  "databases": [],
+  "cloud_platforms": [],
+  "build_tools": [
+    "maven"
+  ],
+  "cicd": []
+}

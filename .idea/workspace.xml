@@ -4,53 +4,257 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e953365b-53c0-4573-a5ac-54477af08a0a" name="Changes" comment="edit stack recognize">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="e953365b-53c0-4573-a5ac-54477af08a0a" name="Changes" comment="add">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci_generator/fastapi_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/ci_generator/fastapi_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.docker.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai_agent/fff.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci_generator/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci_generator/check_issues.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci_generator/example_request.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci_generator/example_request_minimal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci_generator/example_request_nodejs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci_generator/fastapi_app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci_generator/final_check_report.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci_generator/final_validation_report.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ci_generator/generator/main_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/ci_generator/generator/main_generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci_generator/generator/renderer.py" beforeDir="false" afterPath="$PROJECT_DIR$/ci_generator/generator/renderer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci_generator/generator/stage_selector.py" beforeDir="false" afterPath="$PROJECT_DIR$/ci_generator/generator/stage_selector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci_generator/input.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/base_header.j2" beforeDir="false" afterPath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/base_header.j2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/docker/docker_build.gitlab.j2" beforeDir="false" afterPath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/docker/docker_build.gitlab.j2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/docker/docker_push.gitlab.j2" beforeDir="false" afterPath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/docker/docker_push.gitlab.j2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/go/migration.gitlab.j2" beforeDir="false" afterPath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/go/migration.gitlab.j2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/go/sonarcube.gitlab.j2" beforeDir="false" afterPath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/go/sonarcube.gitlab.j2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/go/test.gitlab.j2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/go/type_check.gitlab.j2" beforeDir="false" afterPath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/go/type_check.gitlab.j2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/java/build.gitlab.j2" beforeDir="false" afterPath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/java/build.gitlab.j2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/java/lint.gitlab.j2" beforeDir="false" afterPath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/java/lint.gitlab.j2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/java/migration.gitlab.j2" beforeDir="false" afterPath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/java/migration.gitlab.j2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/java/test.gitlab.j2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/java/security.gitlab.j2" beforeDir="false" afterPath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/java/security.gitlab.j2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/java/type_check.gitlab.j2" beforeDir="false" afterPath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/java/type_check.gitlab.j2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/kubernetes/post_deploy.gitlab.j2" beforeDir="false" afterPath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/kubernetes/post_deploy.gitlab.j2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/python/build.gitlab.j2" beforeDir="false" afterPath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/python/build.gitlab.j2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/python/lint.gitlab.j2" beforeDir="false" afterPath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/python/lint.gitlab.j2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/python/migration.gitlab.j2" beforeDir="false" afterPath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/python/migration.gitlab.j2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/python/sonarcube.gitlab.j2" beforeDir="false" afterPath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/python/sonarcube.gitlab.j2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/shared/pre_checks.gitlab.j2" beforeDir="false" afterPath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/shared/pre_checks.gitlab.j2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/tests/test.gitlab.j2" beforeDir="false" afterPath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/tests/test.gitlab.j2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/typescript/migration.gitlab.j2" beforeDir="false" afterPath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/typescript/migration.gitlab.j2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/typescript/test.gitlab.j2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/typescript/type_check.gitlab.j2" beforeDir="false" afterPath="$PROJECT_DIR$/ci_generator/pipelines/gitlab/stages/typescript/type_check.gitlab.j2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci_generator/plugins/languages/python.py" beforeDir="false" afterPath="$PROJECT_DIR$/ci_generator/plugins/languages/python.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cicd_stack/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cicd_stack/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/app/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/app/routers/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/app/routers/pipelines.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/app/routers/projects.py" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/app/routers/projects.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/app/routers/users.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci_generator/run_ci.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci_generator/run_docker.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci_generator/test_go_full.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci_generator/test_java_full.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci_generator/test_java_gradle.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci_generator/test_output_go.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci_generator/test_output_java.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci_generator/test_output_java_gradle.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci_generator/test_output_python.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci_generator/test_output_sber.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci_generator/test_output_typescript.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci_generator/test_python_full.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci_generator/test_report.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci_generator/test_sber_project.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci_generator/test_typescript_full.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci_generator/validation_report.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/app/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/app/routers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/app/routers/pipelines.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/app/routers/projects.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/core-service/app/schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/app/schemas.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/app/storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/app/storage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stack_recognize/analyzers/database_analyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/stack_recognize/analyzers/database_analyzer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stack_recognize/analyzers/devops_analyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/stack_recognize/analyzers/devops_analyzer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stack_recognize/analyzers/framework_analyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/stack_recognize/analyzers/framework_analyzer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stack_recognize/analyzers/language_analyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/stack_recognize/analyzers/language_analyzer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stack_recognize/analyzers/test_analyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/stack_recognize/analyzers/test_analyzer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stack_recognize/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/stack_recognize/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stack_recognize/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/stack_recognize/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stack_recognize/detect_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/stack_recognize/detect_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stack_recognize/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/stack_recognize/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/readme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/self_deploy.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/t.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(auth)/_components/user-auth-form.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(auth)/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(auth)/login/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(auth)/register/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(dashboard)/_components/sidebar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(dashboard)/dashboard/_components/ai-insights.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(dashboard)/dashboard/_components/integrations-list.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(dashboard)/dashboard/_components/recent-activity.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(dashboard)/dashboard/_components/stats-overview.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(dashboard)/dashboard/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(dashboard)/history/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(dashboard)/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(dashboard)/projects/_components/projects-table.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(dashboard)/projects/_components/projects-toolbar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(dashboard)/projects/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(dashboard)/settings/_components/settings-tabs.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(dashboard)/settings/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(marketing)/_components/footer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(marketing)/_components/navbar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(marketing)/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(marketing)/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(project)/projects/[projectId]/analyze/_components/analysis-terminal.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(project)/projects/[projectId]/analyze/_components/edit-stack-dialog.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(project)/projects/[projectId]/analyze/_components/stack-card.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(project)/projects/[projectId]/analyze/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(project)/projects/[projectId]/configure/_components/stage-settings-dialog.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(project)/projects/[projectId]/configure/_components/stages-list.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(project)/projects/[projectId]/configure/_components/system-selector.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(project)/projects/[projectId]/configure/_components/trigger-selector.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(project)/projects/[projectId]/configure/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(project)/projects/[projectId]/editor/_components/code-editor.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(project)/projects/[projectId]/editor/_components/publish-dialog.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(project)/projects/[projectId]/editor/_components/success-view.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(project)/projects/[projectId]/editor/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(project)/projects/[projectId]/generate/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(project)/projects/[projectId]/validate/_components/ai-explanation.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(project)/projects/[projectId]/validate/_components/issue-row.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(project)/projects/[projectId]/validate/_components/validation-report.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/(project)/projects/[projectId]/validate/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/globals.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/ui/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/ui/accordion.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/ui/alert.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/ui/badge.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/ui/button.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/ui/card.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/ui/checkbox.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/ui/dialog.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/ui/dropdown-menu.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/ui/input.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/ui/label.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/ui/progress.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/ui/radio-group.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/ui/scroll-area.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/ui/select.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/ui/separator.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/ui/sheet.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/ui/switch.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/ui/table.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/ui/tabs.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/ui/textarea.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/ui/toast.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/eslint.config.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/lib/utils.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/next.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/postcss.config.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/file.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/globe.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/next.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/vercel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/window.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/self-deploy/node_modules/@tailwindcss/oxide-win32-x64-msvc/tailwindcss-oxide.win32-x64-msvc.node" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/core/ExplainEngine.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/core/PipelineComposer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/core/TemplateLibrary.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/core/Validator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/core/VariableAnalyzer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/core/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/core/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/generate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/templates/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/templates/docker/build.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/templates/docker/build_and_push.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/templates/docker/deploy_compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/templates/docker/deploy_k8s.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/templates/docker/deploy_ssh.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/templates/docker/push.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/templates/docker/security_scan.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/templates/node/lint.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/templates/node/nestjs/build.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/templates/node/nestjs/install.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/templates/node/nestjs/test.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/templates/node/react/build.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/templates/node/react/install.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/templates/node/react/test.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/templates/node/test_jest.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/templates/node/test_mocha.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/templates/node/vue/build.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/templates/node/vue/install.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/templates/node/vue/test.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/templates/python/django/install.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/templates/python/django/migrations.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/templates/python/django/test.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/templates/python/fastapi/build.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/templates/python/fastapi/install.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/templates/python/fastapi/security.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/templates/python/fastapi/test.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/templates/python/flask/install.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/templates/python/flask/test.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/templates/python/lint.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/templates/python/test_pytest.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/ci_generator/templates/python/test_unittest.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/print_pipline.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline_generator(cursor)/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stack_recognize/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stack_recognize/OUTPUT_JSON_QUICK_REFERENCE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stack_recognize/OUTPUT_JSON_SPECIFICATION.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stack_recognize/SWAGGER_FIX.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stack_recognize/api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stack_recognize/detector.py" beforeDir="false" afterPath="$PROJECT_DIR$/stack_recognize/detector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stack_recognize/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stack_recognize/run.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/FINAL_REPORT.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/REAL_PROJECTS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/comprehensive_test.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/real_apps_analysis/FINAL_TEST_REPORT.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/real_apps_analysis/keycloak_api_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/TypeScript-React-Starter.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/TypeScript.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/amplication.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/angular-cli.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/appwrite.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/create-react-app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/django.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/docker.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/etcd.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/express.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/fastapi.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/flask.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/gin.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/gitpod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/go.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/grafana.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/jest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/kafka.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/kubernetes.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/lerna.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/mattermost-server.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/medusa.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/micronaut-core.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/nest-cli.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/nest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/next.js.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/node.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/novu.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/nx.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/outline.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/pandas.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/playwright.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/preact.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/pytest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/quarkus.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/react-native.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/react.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/remix.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/requests.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/spring-boot.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/strapi.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/supabase.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/svelte.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/turbo.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/vscode-python.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/vscode.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/vue-cli.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results/vue.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results_real_projects/mattermost-server.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results_real_projects/outline.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/results_real_projects/supabase.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/terraform_k8s_test/TERRAFORM_K8S_REPORT.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/test_api.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/test_output.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/test_output_extended.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/test_real_apps.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/test_real_projects.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_repos/test_real_projects.sh" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,22 +291,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.example_usage.executor&quot;: &quot;Run&quot;,
-    &quot;Python.fff.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main_generator.executor&quot;: &quot;Run&quot;,
-    &quot;Python.print_pipline.executor&quot;: &quot;Run&quot;,
-    &quot;Python.stage_selector.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/daniil/Рабочий стол/T1&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.example_usage.executor": "Run",
+    "Python.fff.executor": "Run",
+    "Python.main_generator.executor": "Run",
+    "Python.print_pipline.executor": "Run",
+    "Python.stage_selector.executor": "Run",
+    "Python.t.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHELLCHECK.PATH": "/home/daniil/.local/share/JetBrains/PyCharm2024.1/Shell Script/shellcheck",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/daniil/Рабочий стол/T1"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="example_usage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="T1" />
@@ -155,11 +360,39 @@
       <option name="project" value="LOCAL" />
       <updated>1764096496560</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add">
+      <option name="closed" value="true" />
+      <created>1764142643785</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1764142643785</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add">
+      <option name="closed" value="true" />
+      <created>1764142783372</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1764142783372</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="edit stack recognize" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit stack recognize" />
+    <MESSAGE value="add" />
+    <option name="LAST_COMMIT_MESSAGE" value="add" />
   </component>
 </project>

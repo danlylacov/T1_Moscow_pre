@@ -86,21 +86,96 @@ test:
     {# ============ JAVA ============ #}
     {% elif ctx.language == 'java' %}
     {% if ctx.build_tool == 'maven' %}
-    - mvn test || true
-    - mvn jacoco:report || true
+    - |
+      # Находим директорию с pom.xml
+      if [ -f "pom.xml" ]; then
+        mvn test || true
+        mvn jacoco:report || true
+      else
+        # Ищем pom.xml в поддиректориях
+        POM_DIR=$(find . -name "pom.xml" -type f | head -1 | xargs dirname)
+        if [ -n "$POM_DIR" ]; then
+          cd "$POM_DIR"
+          mvn test || true
+          mvn jacoco:report || true
+        else
+          echo "POM file not found, skipping tests"
+        fi
+      fi
     {% elif ctx.build_tool == 'gradle' %}
-    - ./gradlew test jacocoTestReport || gradle test jacocoTestReport || true
+    - |
+      if [ -f "build.gradle" ] || [ -f "build.gradle.kts" ]; then
+        ./gradlew test jacocoTestReport || gradle test jacocoTestReport || true
+      else
+        GRADLE_DIR=$(find . -name "build.gradle*" -type f | head -1 | xargs dirname)
+        if [ -n "$GRADLE_DIR" ]; then
+          cd "$GRADLE_DIR"
+          ./gradlew test jacocoTestReport || gradle test jacocoTestReport || true
+        else
+          echo "Gradle build file not found, skipping tests"
+        fi
+      fi
     {% else %}
-    - mvn test jacoco:report || ./gradlew test jacocoTestReport || true
+    - |
+      if [ -f "pom.xml" ]; then
+        mvn test jacoco:report || true
+      elif [ -f "build.gradle" ] || [ -f "build.gradle.kts" ]; then
+        ./gradlew test jacocoTestReport || true
+      else
+        POM_DIR=$(find . -name "pom.xml" -type f | head -1 | xargs dirname)
+        GRADLE_DIR=$(find . -name "build.gradle*" -type f | head -1 | xargs dirname)
+        if [ -n "$POM_DIR" ]; then
+          cd "$POM_DIR"
+          mvn test jacoco:report || true
+        elif [ -n "$GRADLE_DIR" ]; then
+          cd "$GRADLE_DIR"
+          ./gradlew test jacocoTestReport || true
+        else
+          echo "Build file not found, skipping tests"
+        fi
+      fi
     {% endif %}
     {# ============ KOTLIN ============ #}
     {% elif ctx.language == 'kotlin' %}
     {% if ctx.build_tool == 'gradle' %}
-    - ./gradlew test jacocoTestReport || gradle test jacocoTestReport || true
+    - |
+      if [ -f "build.gradle" ] || [ -f "build.gradle.kts" ]; then
+        ./gradlew test jacocoTestReport || gradle test jacocoTestReport || true
+      else
+        GRADLE_DIR=$(find . -name "build.gradle*" -type f | head -1 | xargs dirname)
+        if [ -n "$GRADLE_DIR" ]; then
+          cd "$GRADLE_DIR"
+          ./gradlew test jacocoTestReport || gradle test jacocoTestReport || true
+        else
+          echo "Gradle build file not found, skipping tests"
+        fi
+      fi
     {% elif ctx.build_tool == 'maven' %}
-    - mvn test jacoco:report || true
+    - |
+      if [ -f "pom.xml" ]; then
+        mvn test jacoco:report || true
+      else
+        POM_DIR=$(find . -name "pom.xml" -type f | head -1 | xargs dirname)
+        if [ -n "$POM_DIR" ]; then
+          cd "$POM_DIR"
+          mvn test jacoco:report || true
+        else
+          echo "POM file not found, skipping tests"
+        fi
+      fi
     {% else %}
-    - ./gradlew test jacocoTestReport || true
+    - |
+      if [ -f "build.gradle" ] || [ -f "build.gradle.kts" ]; then
+        ./gradlew test jacocoTestReport || true
+      else
+        GRADLE_DIR=$(find . -name "build.gradle*" -type f | head -1 | xargs dirname)
+        if [ -n "$GRADLE_DIR" ]; then
+          cd "$GRADLE_DIR"
+          ./gradlew test jacocoTestReport || true
+        else
+          echo "Build file not found, skipping tests"
+        fi
+      fi
     {% endif %}
     {# ============ UNKNOWN LANGUAGE ============ #}
     {% else %}

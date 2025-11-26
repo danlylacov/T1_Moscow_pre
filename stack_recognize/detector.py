@@ -5,6 +5,7 @@ import subprocess
 import tempfile
 import logging
 from pathlib import Path
+from typing import Optional
 
 try:
     from .models import ProjectStack
@@ -97,6 +98,14 @@ class ProjectStackDetector:
 
             # Анализ точек входа
             self.entry_point_analyzer.analyze(self.repo_path, stack)
+            
+            # Определяем версию Java из pom.xml до очистки
+            java_version = self._extract_java_version_from_pom()
+            if java_version:
+                if not hasattr(stack, 'java_version'):
+                    stack.files_detected['java_version'] = java_version
+                else:
+                    stack.java_version = java_version
 
         except Exception as e:
             logger.error(f"Ошибка при анализе репозитория: {e}")
@@ -120,6 +129,60 @@ class ProjectStackDetector:
             self.repo_path = Path(self.temp_dir)
         except subprocess.CalledProcessError as e:
             raise Exception(f"Ошибка клонирования репозитория: {e.stderr}")
+
+    def _extract_java_version_from_pom(self) -> Optional[str]:
+        """Извлечь версию Java из pom.xml файлов в репозитории.
+        
+        Возвращает максимальную версию Java из всех найденных pom.xml файлов,
+        чтобы образ поддерживал все модули монорепозитория.
+        """
+        import re
+        
+        if not self.repo_path or not self.repo_path.exists():
+            return None
+        
+        # Ищем все pom.xml файлы
+        pom_files = list(self.repo_path.rglob("pom.xml"))
+        if not pom_files:
+            return None
+        
+        versions = []
+        
+        # Пробуем найти версию Java в каждом pom.xml
+        for pom_file in pom_files:
+            try:
+                with open(pom_file, 'r', encoding='utf-8') as f:
+                    content = f.read()
+                
+                # Ищем maven.compiler.release, source, target или java.version
+                patterns = [
+                    r'<maven\.compiler\.release>(\d+)</maven\.compiler\.release>',
+                    r'<maven\.compiler\.source>(\d+)</maven\.compiler\.source>',
+                    r'<maven\.compiler\.target>(\d+)</maven\.compiler\.target>',
+                    r'<java\.version>(\d+)</java\.version>',
+                    r'<javaVersion>(\d+)</javaVersion>',
+                ]
+                
+                for pattern in patterns:
+                    match = re.search(pattern, content)
+                    if match:
+                        version = match.group(1)
+                        # Нормализуем версию (например, 21 -> 21, 1.8 -> 8)
+                        if version.startswith('1.'):
+                            version = version[2:]
+                        try:
+                            versions.append(int(version))
+                        except ValueError:
+                            pass
+                        break
+            except Exception:
+                continue
+        
+        # Возвращаем максимальную версию Java
+        if versions:
+            return str(max(versions))
+        
+        return None
 
     def _cleanup(self):
         """Очистка временных файлов."""

@@ -85,9 +85,9 @@ def main(argv=None):
     # Добавляем build_image для Java/Kotlin
     if language in ["java", "kotlin"]:
         ctx["build_image"] = user_settings.get("build_image") or (
-            f"maven:{user_settings.get('java_version', analysis.get('java_version', '17'))}-eclipse-temurin" 
+            f"maven:3.9-eclipse-temurin-{user_settings.get('java_version', analysis.get('java_version', '17'))}" 
             if language in ["java", "kotlin"] and (build_tool or user_settings.get("build_tool") or "maven") == "maven"
-            else f"gradle:{user_settings.get('java_version', analysis.get('java_version', '17'))}-jdk"
+            else f"gradle:8.5-jdk{user_settings.get('java_version', analysis.get('java_version', '17'))}"
             if language in ["java", "kotlin"] and (build_tool or user_settings.get("build_tool")) == "gradle"
             else None
         )

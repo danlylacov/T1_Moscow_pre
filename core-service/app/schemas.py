@@ -7,13 +7,6 @@ from pydantic import BaseModel, HttpUrl, Field, field_validator
 # ---------- Проект и анализ репозитория ----------
 
 
-class EntryPoint(BaseModel):
-    path: str
-    type: str
-    lang: Optional[str] = None
-    confidence: float
-
-
 class ProjectAnalysis(BaseModel):
     languages: List[str] = []
     frameworks: List[str] = []
@@ -21,14 +14,14 @@ class ProjectAnalysis(BaseModel):
     backend_frameworks: List[str] = []
     package_manager: Optional[str] = None
     test_runner: Optional[str] = None
+    java_version: Optional[str] = None  # Версия Java из pom.xml
     docker: bool = False
     docker_context: str = ""
     dockerfile_path: Optional[str] = None
+    dockerfile_paths: List[str] = []  # Список всех Dockerfile
     kubernetes: bool = False
     terraform: bool = False
     databases: List[str] = []
-    entry_points: List[EntryPoint] = []
-    main_entry: Optional[EntryPoint] = None
 
     @field_validator("test_runner", mode="before")
     @classmethod
